@@ -1,0 +1,25 @@
+{
+  "login": {
+    "username": {
+      "placeholder": "משתמש"
+    },
+    "password": {
+      "placeholder": "סיסמה"
+    },
+    "submit": "התחברות"
+  },
+  "logout": {
+    "text": "יציאה"
+  },
+  "header": {
+    "user": {
+      "message": "שלום"
+    }
+  },
+  "version": {
+    "text": "גירסה"
+  },
+  "routes": {
+    "mahshava-admin-home": "דף ראשי"
+  }
+}
