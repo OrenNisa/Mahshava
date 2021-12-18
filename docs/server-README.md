@@ -19,7 +19,7 @@ python .\manage.py dumpdata --database=core auth.group auth.user auth.user_group
   * Install 3rd parties: `pip install -r requirements.txt`
   * Run DB scripts from `build/db`
   * Run migration: `python manage.py migrate --database=core`
-  * Populate DB: `python manage.py loaddata core`
+  * Populate DB: `python manage.py loaddata core --database=core`
   * Copy `build/.env/.env.dev` to `code/server/src/mahshava` and rename it to `.env`
 
 ### Setup surveys env
