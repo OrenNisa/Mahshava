@@ -1,21 +1,69 @@
 .header-container {
     display: flex;
-    width: 100%;
-    left: 0;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 20px;
+    column-gap: 20px;
 }
 
 .logo {
     order: 1;
+    align-self: flex-end;
 }
 
-.user {
+.notifications {
     order: 2;
     align-self: flex-end;
 }
 
-.logoutButton {
+.mail {
     order: 3;
     align-self: flex-end;
-    flex-basis: 30px
+}
+
+.calendar {
+    order: 4;
+    align-self: flex-end;
+}
+
+.line {
+    order: 5;
+    align-self: flex-end;
+}
+
+.user {
+    order: 6;
+    align-self: flex-end;
+}
+
+.header-user {
+    order: 7;
+    align-self: flex-end;
+    flex-basis: 100px
+}
+
+.logoutButton {
+    order: 8;
+    align-self: flex-end;
+}
+
+.mail:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.calendar:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.notifications:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.user:hover{
+    filter: brightness(95%);
+    cursor: pointer;
 }
