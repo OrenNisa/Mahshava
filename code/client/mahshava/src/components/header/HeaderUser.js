@@ -7,7 +7,7 @@ const HeaderUser = () => {
     const { formatMessage } = useIntl();
 
     return (
-        <label className={'header-user'}>
+        <label>
             {formatMessage({ id: 'header.user.message' })}: {asapUser?.first_name} {asapUser?.last_name}
         </label>
     );

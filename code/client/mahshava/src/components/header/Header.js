@@ -1,24 +1,15 @@
 import React from 'react';
-import './Header.module.css';
+import './Header.css';
 import Logout from '../auth/Logout';
-import HeaderUser from "./HeaderUser";
-import CalendarIcon from "./icons/CalendarIcon";
-import MailIcon from "./icons/MailIcon";
-import NotificationsIcon from "./icons/NotificationsIcon";
-import UserIcon from "./icons/UserIcon";
 
 const Header = () => {
     return (
         <div className="header-container">
-            <div className="logo">logo</div>
-            <HeaderUser/>
-            <NotificationsIcon/>
-            <MailIcon/>
-            <CalendarIcon/>
-            <svg className={'line'} width="2" height="49" viewBox="0 0 2 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0.951172" y1="49" x2="0.951174" y2="-2.18557e-08" stroke="#2F3A5F"/>
-            </svg>
-            <UserIcon/>
+            <div className="logo1">logo1</div>
+            <div className="logo2">logo2</div>
+            <div className="logo3">logo3</div>
+            <div className="logo4">logo4</div>
+            <div className="userGreeting">hello guest</div>
             <div className="logoutButton">
                 <Logout />
             </div>
