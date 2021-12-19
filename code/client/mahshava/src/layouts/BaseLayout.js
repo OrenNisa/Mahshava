@@ -4,6 +4,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import Sidebar from '../components/sidebar/Sidebar';
 import style from './BaseLayout.module.css';
+import MahshavaTable from '../components/table/table';
 
 const BaseLayout = () => {
     return (
@@ -19,6 +20,9 @@ const BaseLayout = () => {
                 <main>
                     <BaseLayoutRoutes />
                 </main>
+            </div>
+            <div>
+                <MahshavaTable />
             </div>
             <div className={style.footerContainer}>
                 <Footer />
