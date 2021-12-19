@@ -2,20 +2,31 @@
     display: flex;
     width: 100%;
     left: 0;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
-.logo {
-    order: 1;
-}
-
-.user {
+.logo1 {
     order: 2;
-    align-self: flex-end;
+    margin:10px;
 }
-
-.logoutButton {
+.logo2 {
     order: 3;
+    margin:10px;
+}
+.logo3 {
+    order: 4;
+    margin:10px;
+}
+.logo4 {
+    order: 5;
+    margin:10px;
+}
+.userGreeting {
+    order: 6;
+    margin:10px;
+}
+.logoutButton {
+    order: 1;
     align-self: flex-end;
     flex-basis: 30px
 }
