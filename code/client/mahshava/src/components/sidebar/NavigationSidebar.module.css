@@ -11,11 +11,12 @@
 
 
 }
-.logo{
+
+.logo {
     margin-top: 10%;
 }
 
-.bottomLogo{
+.bottomLogo {
     order: 5;
     align-self: flex-end;
     margin-top: auto;
