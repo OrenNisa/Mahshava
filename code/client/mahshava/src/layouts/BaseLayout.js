@@ -2,7 +2,7 @@ import React from 'react';
 import BaseLayoutRoutes from './BaseLayoutRoutes';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
-import Sidebar from '../components/sidebar/Sidebar';
+import NavigationSidebar from '../components/sidebar/NavigationSidebar';
 import style from './BaseLayout.module.css';
 import AdminMainViewTable from '../components/table/AdminMainViewTable';
 
@@ -14,7 +14,7 @@ const BaseLayout = () => {
                 <Header />
             </div>
             <div className={style.sidebarContainer}>
-                <Sidebar />
+                <NavigationSidebar />
             </div>
             <div className={style.baseLayoutContent}>
                 <main>
