@@ -1,7 +1,7 @@
 import React from 'react';
 import HistoryLogo from './logo/Substract.svg';
 
-const HistorySchoolLogo = () => {
+const PlaceHolderLogo = () => {
     return (
         <div>
             <img src={HistoryLogo} alt={'main-page-logo'} width={150} height={50} />
@@ -9,4 +9,4 @@ const HistorySchoolLogo = () => {
     );
 };
 
-export default  HistorySchoolLogo;
+export default  PlaceHolderLogo;
