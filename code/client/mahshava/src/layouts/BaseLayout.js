@@ -4,7 +4,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import Sidebar from '../components/sidebar/Sidebar';
 import style from './BaseLayout.module.css';
-import MahshavaTable from '../components/table/table';
+import AdminMainViewTable from '../components/table/AdminMainViewTable';
 
 const BaseLayout = () => {
     return (
@@ -22,7 +22,7 @@ const BaseLayout = () => {
                 </main>
             </div>
             <div>
-                <MahshavaTable />
+                <AdminMainViewTable />
             </div>
             <div className={style.footerContainer}>
                 <Footer />

@@ -3,7 +3,7 @@ import { DataGrid } from '@mui/x-data-grid';
 import { useIntl } from 'react-intl';
 import ActionsButton from './ActionsButton';
 
-const MahshavaTable = () => {
+const AdminMainViewTable = () => {
     const { formatMessage } = useIntl();
 
     // these are arbitrary values, can be changed
@@ -68,5 +68,5 @@ const MahshavaTable = () => {
     );
 };
 
-export default MahshavaTable;
+export default AdminMainViewTable;
 
