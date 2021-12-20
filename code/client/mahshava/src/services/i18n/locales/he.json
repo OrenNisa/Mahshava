@@ -21,5 +21,15 @@
   },
   "routes": {
     "mahshava-admin-home": "דף ראשי"
+  },
+  "admin-main-view-table": {
+    "school": {"text": "בית הספר"},
+    "communicationDetails": {"text": "פרטי תקשורת"},
+    "stepInProcess": {"text": "שלב בתהליך"},
+    "recentActivity": {"text": "פעילות אחרונה"},
+    "taskToPerform": {"text": "משימה לביצוע"}
+  },
+  "actions-button": {
+    "editText": "ערוך"
   }
 }
