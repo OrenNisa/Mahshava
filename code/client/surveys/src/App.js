@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { CreatorPage } from "./Creator";
+import {BrowserRouter as Router, Switch} from  'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div>
+          <nav className="navbar navbar-default">
+            <div className="container-fluid">
+              <div className="navbar-header">
+                <a className="navbar-brand" href="/">
+                  SurveyJS Creator
+                </a>
+              </div>
+            </div>
+          </nav>
+            <Switch>
+                <CreatorPage />
+            </Switch>
+        </div>
+      </Router>
   );
 }
 
 export default App;
+
