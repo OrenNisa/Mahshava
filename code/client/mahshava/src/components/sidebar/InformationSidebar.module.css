@@ -21,11 +21,12 @@
     margin-top: 35px;
 }
 
-p{
+li{
     margin: 3px 10px;
     text-decoration: underline;
     color: black;
     font-size: 14px;
+    list-style: none;
 }
 
 .SchoolProgressHeader {

@@ -8,10 +8,10 @@ import {useIntl} from "react-intl";
 
 const InformationSidebar = () => {
     const { formatMessage } = useIntl();
-
     return (
         <Card className={style.SchoolInformation}>
             <CardContent>
+
                 <div className={style.SchoolsInProgress}>
                     <Avatar className={style.SchoolCounter} > 6 </Avatar>
                     {formatMessage({ id: 'SchoolInformationSideBar.SchoolsInProgress.message' })}
@@ -24,9 +24,17 @@ const InformationSidebar = () => {
                     </div>
 
                     <Typography variant="body2" color="text.secondary">
-                        <p>{formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool1' })}</p>
-                        <p>{formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool2' })}</p>
-                        <p>{formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool3' })}</p>
+                        <list>
+                            <li>
+                                {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool1' })}
+                            </li>
+                            <li>
+                                {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool2' })}
+                            </li>
+                            <li>
+                                {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool3' })}
+                            </li>
+                        </list>
                     </Typography>
                 </div>
 
@@ -37,8 +45,14 @@ const InformationSidebar = () => {
                     </div>
 
                     <Typography variant="body2" color="text.secondary">
-                        <p>{formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool1' })}</p>
-                        <p>{formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool2' })}</p>
+                        <list>
+                            <li>
+                                {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool1' })}
+                            </li>
+                            <li>
+                                {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool2' })}
+                            </li>
+                        </list>
                     </Typography>
                 </div>
 
@@ -49,7 +63,9 @@ const InformationSidebar = () => {
                     </div>
 
                     <Typography variant="body2" color="text.secondary">
+                        <list>
 
+                        </list>
                     </Typography>
                 </div>
             </CardContent>
