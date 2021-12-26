@@ -1,28 +1,25 @@
 import React from 'react';
 import './App.css';
-import { CreatorPage } from "./Creator";
 import {BrowserRouter as Router, Switch} from  'react-router-dom';
+import SurveyCreator from "./Creator";
 
 function App() {
-  return (
-      <Router>
-        <div>
-          <nav className="navbar navbar-default">
-            <div className="container-fluid">
-              <div className="navbar-header">
-                <a className="navbar-brand" href="/">
-                  SurveyJS Creator
-                </a>
-              </div>
+    return (
+        <Router>
+            <div>
+                <nav className="navbar navbar-default">
+                    <div className="container-fluid">
+                        <div className="navbar-header">
+                                SurveyJS Creator
+                        </div>
+                    </div>
+                </nav>
+                <Switch>
+                    <SurveyCreator/>
+                </Switch>
             </div>
-          </nav>
-            <Switch>
-                <CreatorPage />
-            </Switch>
-        </div>
-      </Router>
-  );
+        </Router>
+    );
 }
 
 export default App;
-

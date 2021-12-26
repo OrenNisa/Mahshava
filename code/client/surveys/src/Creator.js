@@ -1,22 +1,28 @@
-import React from "react";
-import * as SurveyCreator from "survey-creator";
+import React, { Component } from "react";
+import * as SurveyJSCreator from "survey-creator";
 import "survey-creator/survey-creator.css";
 
+SurveyJSCreator.StylesManager.applyTheme("default");
 
-export function CreatorPage() {
-    // Show Designer, Test Survey, JSON Editor and additionally Logic tabs
-    var options = {
-        showLogicTab: true
+
+class SurveyCreator extends Component {
+    surveyCreator;
+    componentDidMount() {
+        let options = { showEmbededSurveyTab: true };
+        this.surveyCreator = new SurveyJSCreator.SurveyCreator(
+            null,
+            options
+        );
+        this.surveyCreator.render("surveyCreatorContainer");
+    }
+    render() {
+        return (<div>
+            <div id="surveyCreatorContainer" />
+        </div>);
+    }
+    saveMySurvey = () => {
+        console.log(JSON.stringify(this.surveyCreator.text));
     };
-    //create the SurveyJS Creator and render it in div with id equals to "creatorElement"
-    var creator = new SurveyCreator.SurveyCreator("creatorElement", options);
-    //Show toolbox in the right container. It is shown on the left by default
-    creator.showToolbox = "right";
-    //Show property grid in the right container, combined with toolbox
-    creator.showPropertyGrid = "right";
-    //Make toolbox active by default
-    creator.rightContainerActiveItem("toolbox");
-    return (
-        <div id="surveyCreatorContainer"></div>
-    );
 }
+
+export default SurveyCreator;
