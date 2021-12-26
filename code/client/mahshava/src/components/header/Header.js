@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import style from './Header.module.css';
 import Logout from '../auth/Logout';
 import CalendarIcon from "./icons/CalendarIcon";
 import NotificationsIcon from "./icons/NotificationsIcon";
@@ -7,13 +7,13 @@ import MailIcon from "./icons/MailIcon";
 import UserIcon from "./icons/UserIcon";
 const Header = () => {
     return (
-        <div className="header-container">
-            <div className="NotificationsIcon"><NotificationsIcon/></div>
-            <div className="MailIcon"><MailIcon/></div>
-            <div className="CalendarIcon"><CalendarIcon/></div>
-            <div className="UserIcon"><UserIcon/></div>
-            <div className="userGreeting">hello guest</div>
-            <div className="logoutButton">
+        <div className={style.headerContainer}>
+            <div className={style.NotificationsIcon}><NotificationsIcon/></div>
+            <div className={style.MailIcon}><MailIcon/></div>
+            <div className={style.CalendarIcon}><CalendarIcon/></div>
+            <div className={style.UserIcon}><UserIcon/></div>
+            <div className={style.userGreeting}>hello guest</div>
+            <div className={style.logoutButton}>
                 <Logout />
             </div>
         </div>
