@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Switch} from  'react-router-dom';
+import SurveyCreator from "./Creator";
 
 function App() {
-    const [survey, setSurvey] = useState(null);
-
-    const saveOnClick = () => {
-        service.SaveSurveyService.getSurvey(surveyData)
-            .then(response => {
-                setSurvey(response.survey)
-            })
-    }
-
-
     return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <button onClick={saveOnClick}>Save</button>
-    </div>
-  );
+        <Router>
+            <div>
+                <nav className="navbar navbar-default">
+                    <div className="container-fluid">
+                        <div className="navbar-header">
+                            SurveyJS Creator
+                        </div>
+                    </div>
+                </nav>
+                <Switch>
+                    <SurveyCreator/>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
