@@ -4,7 +4,6 @@ import "survey-creator/survey-creator.css";
 
 SurveyJSCreator.StylesManager.applyTheme("default");
 
-
 class SurveyCreator extends Component {
     surveyCreator;
     componentDidMount() {
