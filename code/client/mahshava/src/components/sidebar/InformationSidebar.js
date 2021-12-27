@@ -12,19 +12,22 @@ const InformationSidebar = () => {
         <Card className={style.SchoolInformation}>
             <CardContent>
                 <div className={style.SchoolsInProgress}>
-                    <Avatar className={style.SchoolCounter}> 6 </Avatar>
+                    {/* TODO: Pull school amount from database. */}
+                    <Avatar className={style.SchoolCounter}> 6 </Avatar> {/* Orange circle component. */}
                     {formatMessage({ id: 'SchoolInformationSideBar.SchoolsInProgress.message' })}
                 </div>
 
                 <div className={style.ResilienceCheck}>
                     <div className={style.SchoolProgressHeader}>
                         ^ {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.header' })}
+                        {/* TODO: Pull amount of schools out of total. */}
                         <span className={style.HeaderAmount}>4</span>
                         <span className={style.HeaderTotal}>/6</span>
                     </div>
 
                     <Typography variant="body2" color="text.secondary">
                         <list>
+                            {/* TODO: Pull school list from database.*/}
                             <li>
                                 {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool1' })}
                             </li>
@@ -41,12 +44,14 @@ const InformationSidebar = () => {
                 <div className={style.InterventionCheck}>
                     <div className={style.SchoolProgressHeader}>
                         ^ {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.header' })}
+                        {/* TODO: Pull amount of schools out of total. */}
                         <span className={style.HeaderAmount}>2</span>
                         <span className={style.HeaderTotal}>/6</span>
                     </div>
 
                     <Typography variant="body2" color="text.secondary">
                         <list>
+                            {/* TODO: Pull school list from database.*/}
                             <li>
                                 {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool1' })}
                             </li>
@@ -60,8 +65,10 @@ const InformationSidebar = () => {
                 <div className={style.InterventionCheck}>
                     <div className={style.SchoolProgressHeader}>
                         V {formatMessage({ id: 'SchoolInformationSideBar.ReevaluationCheck.header' })}
+                        {/* TODO: Pull amount of schools out of total. */}
                         <span className={style.HeaderAmount}>0</span>
                         <span className={style.HeaderTotal}>/6</span>
+                        {/* TODO: Pull school list from database.*/}
                     </div>
                 </div>
             </CardContent>
