@@ -5,8 +5,8 @@ from rest_framework.response import Response
 
 from core.decorators import authorized_roles
 from core.roles import Role
-from .models import School_info_table, Process
-from .serializers import SchoolInfoTableSerializers, ProcessSerializers
+from .models import School
+from .serializers import SchoolSerializers
 
 
 @api_view(['POST'])
@@ -28,10 +28,7 @@ def get_current_user(request):
 @renderer_classes([JSONRenderer])
 @authorized_roles(roles=[Role.MAHSHAVA_ADMIN, Role.SCHOOL_ADMIN])
 def get_table_data(request):
-    school_info = School_info_table.object.all()
-    serializer_info = SchoolInfoTableSerializers(school_info)
+    school_info = School.object.all()
+    serializer_info = SchoolSerializers(school_info)
 
-    process = Process.object.all()
-    serializer_process = ProcessSerializers(process)
-
-    return Response(serializer_info.data, serializer_process.date, status=status.HTTP_200_OK)
+    return Response(serializer_info.data, status=status.HTTP_200_OK)
