@@ -27,7 +27,7 @@ def get_current_user(request):
 @api_view(['GET'])
 @renderer_classes([JSONRenderer])
 @authorized_roles(roles=[Role.MAHSHAVA_ADMIN, Role.SCHOOL_ADMIN])
-def get_table_data(request):
+def updated_table(request):
     school_info = School.object.all()
     serializer_info = SchoolSerializers(school_info)
 

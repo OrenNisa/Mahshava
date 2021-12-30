@@ -8,6 +8,6 @@ urlpatterns = [
     path('auth/refresh-token/', refresh_jwt_token),
 
     path('users/get-current-user/', views.get_current_user),
-    path('users/get-current-user/get-table-data', views.get_table_data),
+    path('users/get-current-user/updated-table', views.updated_table),
 
 ]
