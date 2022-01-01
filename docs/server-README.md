@@ -2,7 +2,7 @@
 
 ### System users
 * django admin user: `mahshavaadmin`/`4S4uC3rfUlOFS3crETs`
-* mahshava admin dummy user: `dummy-mahshava-admin`/`mahshava@dmin123!`
+  * mahshava admin dummy user: `dummy-mahshava-admin`/`mahshava@dmin123!`
 * mahshava admin dummy user: `dummy-shcool-admin`/`shcooladmin123`
 
 ### DB
