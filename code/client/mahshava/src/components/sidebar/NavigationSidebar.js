@@ -1,25 +1,27 @@
 import React from 'react';
 import style from './NavigationSidebar.module.css';
-import PlaceHolderLogo from "./PlaceHolderLogo";
-
-
+import AddSchoolLogo from "./logo/AddSchoolLogo";
+import DataBaseLogo from "./logo/DataBaseLogo";
+import HistorySchoolLogo from "./logo/HistorySchoolLogo";
+import MainPageLogo from "./logo/MainPageLogo";
+import HelpLogo from "./logo/HelpLogo";
 const NavigationSidebar = () => {
     return (
         <div className={style.sidebarContainer}>
             <div className={style.logo}>
-                <PlaceHolderLogo/>
+                <MainPageLogo/>
             </div>
             <div className={style.logo}>
-                <PlaceHolderLogo/>
+                <AddSchoolLogo/>
             </div>
             <div className={style.logo}>
-                <PlaceHolderLogo/>
+                <HistorySchoolLogo/>
             </div>
             <div className={style.logo}>
-                <PlaceHolderLogo/>
+                <DataBaseLogo/>
             </div>
             <div className={style.bottomLogo}>
-                <PlaceHolderLogo/>
+                <HelpLogo/>
             </div>
         </div>
     );

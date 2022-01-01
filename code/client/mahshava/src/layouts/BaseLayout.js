@@ -19,10 +19,11 @@ const BaseLayout = () => {
             <div className={style.baseLayoutContent}>
                 <main>
                     <BaseLayoutRoutes />
+                    <AdminMainViewTable />
                 </main>
             </div>
             <div>
-                <AdminMainViewTable />
+
             </div>
             <div className={style.footerContainer}>
                 <Footer />
