@@ -44,7 +44,9 @@ class VersionService {
 
 class AppointmentService {
     static getAppointment() {
-        return $axios.get('appointments/get-table-data/').then(response => response.data);
+        return $axios
+            .get('users/get-current-user/updated-table', { headers: authHeader() })
+            .then(response => response.data);
     }
 }
 

@@ -20,3 +20,7 @@ class Process(models.Model):
     last_activity = models.DateTimeField(max_length=10)
     task_to_preform = models.CharField(max_length=50)
     task_due_time = models.DateTimeField(max_length=10)
+
+
+School.objects = School.objects.using('core')
+Process.objects = Process.objects.using('core')
