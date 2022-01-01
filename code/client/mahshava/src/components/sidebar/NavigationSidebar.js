@@ -5,6 +5,7 @@ import DataBaseLogo from "./logo/DataBaseLogo";
 import HistorySchoolLogo from "./logo/HistorySchoolLogo";
 import MainPageLogo from "./logo/MainPageLogo";
 import HelpLogo from "./logo/HelpLogo";
+
 const NavigationSidebar = () => {
     return (
         <div className={style.sidebarContainer}>
