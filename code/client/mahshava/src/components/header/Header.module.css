@@ -3,31 +3,41 @@
     width: 100%;
     left: 0;
     justify-content: flex-end;
-    position:absolute;
+    position: absolute;
 }
 
 .NotificationsIcon {
     order: 2;
-    margin:10px;
+    margin: 10px;
 }
+
 .MailIcon {
     order: 3;
-    margin:10px;
+    margin: 10px;
 }
+
 .CalendarIcon {
     order: 4;
-    margin:10px;
+    margin: 10px;
 }
+
 .UserIcon {
-    order: 5;
-    margin:10px;
-}
-.userGreeting {
     order: 6;
-    margin:10px;
+    margin: 10px;
 }
+
+.userGreeting {
+    order: 7;
+    margin: 10px;
+}
+
 .logoutButton {
     order: 1;
     align-self: flex-end;
     flex-basis: 30px
+}
+
+.LineIcon {
+    padding-top: 0.5%;
+    order: 5;
 }
