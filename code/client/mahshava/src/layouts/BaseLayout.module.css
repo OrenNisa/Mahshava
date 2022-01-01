@@ -1,13 +1,13 @@
 .baseLayoutContainer {
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 20% 15fr 1fr;
     grid-template-columns: 2fr 10fr;
     gap: 2px;
     grid-template-areas:
-      "header  header"
-      "sidebar content"
-      "footer  footer";
+      "sidebar  header"
+      "sidebar  content"
+      "sidebar  footer";
 }
 
 .headerContainer {
