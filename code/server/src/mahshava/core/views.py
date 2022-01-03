@@ -28,7 +28,7 @@ def get_current_user(request):
 @renderer_classes([JSONRenderer])
 @authorized_roles(roles=[Role.MAHSHAVA_ADMIN, Role.SCHOOL_ADMIN])
 def updated_table(request):
-    school_info = School.object.all()
-    serializer_info = SchoolSerializers(school_info)
+    school_info = School.objects.all()
+    serializer_info = SchoolSerializers(school_info, many=True)
 
     return Response(serializer_info.data, status=status.HTTP_200_OK)
