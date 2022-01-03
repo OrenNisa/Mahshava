@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch} from  'react-router-dom';
 import SurveyCreator from "./Creator";
+import service from "./api";
 
 function App() {
+
     return (
         <Router>
             <div>

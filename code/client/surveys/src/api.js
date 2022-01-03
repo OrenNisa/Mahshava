@@ -19,15 +19,16 @@ $axios.interceptors.response.use(
 
 
 class SaveSurveyService {
-    static getQuarters(firstNum,secondNum) {
-        return $axios
-            .get('quarters/calc-quarter', {params:{firstNumber:firstNum,secondNumber:secondNum}})
-            .then(response => response.data)
-    }
+    // static getQuarters(firstNum,secondNum) {
+    //     return $axios
+    //         .get('quarters/calc-quarter', {params:{firstNumber:firstNum,secondNumber:secondNum}})
+    //         .then(response => response.data)
+    // }
 
-    static getSurvey(firstNum,secondNum) {
+    static getSurvey(SurveyJSON) {
         return $axios
-            .post('surveys/save-survey', {params:{firstNumber:firstNum,secondNumber:secondNum}})
+            .post('surveys/save-surveyForm', {
+                SurveyJSON: SurveyJSON})
             .then(response => response.data)
     }
 }

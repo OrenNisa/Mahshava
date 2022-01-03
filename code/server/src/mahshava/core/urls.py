@@ -8,5 +8,4 @@ urlpatterns = [
     path('auth/refresh-token/', refresh_jwt_token),
 
     path('users/get-current-user/', views.get_current_user),
-    path('api/surveys/save-survey', views.save_survey),
 ]
