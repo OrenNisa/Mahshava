@@ -4,9 +4,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 from core.decorators import authorized_roles
-from core.models import Surveys
 from core.roles import Role
-from core.serializers import SurveysSerializer
 
 
 @api_view(['POST'])
@@ -22,12 +20,3 @@ def get_current_user(request):
         'roles': roles,
     }
     return Response(content, status=status.HTTP_200_OK)
-
-
-@api_view(['POST'])
-@renderer_classes([JSONRenderer])
-def save_survey(request):
-    survey_obj = Surveys(title="title", surveyFile="surveyFile", author="author")
-    survey_obj.save()
-    serializer = SurveysSerializer(survey_obj)
-    return Response(serializer.data, status=status.HTTP_200_OK)
