@@ -7,48 +7,15 @@ import { useEffect, useState } from 'react';
 
 const AdminMainViewTable = () => {
     const { formatMessage } = useIntl();
-    const [rows, setRows] = useState([]);
-
-    const getTableData = () => {
-        apiService.AppointmentService.getAppointment().then(response => {
-            makeRowsData(response);
-        });
-    };
-
-    useEffect(() => {
-        getTableData();
-    }, []);
-
-    useEffect(() => {
-        console.log(rows);
-    }, [rows]);
-
-    const makeRowsData = data => {
-        setRows(
-            data.map(element => {
-                return {
-                    image: element['contact_info_image'],
-                    id: element['id'],
-                    school: element['school_name'],
-                    communicationDetails: element['contact_info_name'],
-                    stepInProcess: element.process[0]['stage_in_process'],
-                    recentActivity: element.process[0]['last_activity'],
-                    taskToPerform: element.process[0]['task_to_preform'],
-                };
-            })
-        );
-    };
-
     // these are arbitrary values, can be changed
-    const tableWidth = 1200;
+    const tableWidth = 800;
     const tableHeight = 400;
     const pageSize = 4;
 
     const columns = [
         {
-            field: 'image',
-            renderCell: params => <img src={params.formattedValue} alt={'profile'} />,
-            headerName: '',
+            field: 'id',
+            hide: 'true',
         },
         {
             field: 'school',
@@ -88,6 +55,18 @@ const AdminMainViewTable = () => {
             headerName: formatMessage({ id: 'admin-main-view-table.taskToPerform.text' }),
             flex: 0.5,
             renderCell: () => <ActionsButton />,
+        },
+    ];
+
+    const rows = [
+        //data example
+        {
+            id: 1,
+            school: 'sapir',
+            communicationDetails: 'טל פסיכולוגית',
+            stepInProcess: 'הערכת חוסן שאלון',
+            recentActivity: '05/09/2021',
+            taskToPerform: 'אישור שאלות שאלון',
         },
     ];
 

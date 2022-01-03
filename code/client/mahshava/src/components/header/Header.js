@@ -1,11 +1,11 @@
 import React from 'react';
 import style from './Header.module.css';
-import Logout from '../auth/Logout';
 import CalendarIcon from './icons/CalendarIcon';
 import NotificationsIcon from './icons/NotificationsIcon';
 import MailIcon from './icons/MailIcon';
 import UserIcon from './icons/UserIcon';
-import HeaderUser from './HeaderUser';
+import LineIcon from './icons/LineIcon';
+
 const Header = () => {
     return (
         <div className={style.headerContainer}>
@@ -18,15 +18,13 @@ const Header = () => {
             <div className={style.CalendarIcon}>
                 <CalendarIcon />
             </div>
+            <div className={style.LineIcon}>
+                <LineIcon />
+            </div>
             <div className={style.UserIcon}>
                 <UserIcon />
             </div>
-            <div className={style.userGreeting}>
-                <HeaderUser />
-            </div>
-            <div className={style.logoutButton}>
-                <Logout />
-            </div>
+            <div className={style.userGreeting}>hello guest</div>
         </div>
     );
 };

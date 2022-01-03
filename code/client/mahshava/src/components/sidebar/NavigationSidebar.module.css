@@ -1,6 +1,6 @@
 .sidebarContainer {
     height: 100%;
-    width: 12%;
+    width: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,6 @@
     background-color: #F2F2F2;
     padding: 10px;
     position: absolute;
-
 
 }
 
@@ -18,10 +17,7 @@
 
 .bottomLogo {
     order: 5;
-    align-self: flex-end;
     margin-top: auto;
-    position: center;
-
 }
 
 .link {
