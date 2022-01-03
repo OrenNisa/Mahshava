@@ -48,6 +48,7 @@ const AdminMainViewTable = () => {
         {
             field: 'image',
             renderCell: params => <img src={params.formattedValue} alt={'profile'} />,
+            headerName: '',
         },
         {
             field: 'school',
