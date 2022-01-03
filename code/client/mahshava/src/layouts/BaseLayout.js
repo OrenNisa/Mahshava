@@ -11,22 +11,20 @@ const BaseLayout = () => {
         <div className={style.baseLayoutContainer}>
             {/*<AsapErrorDialog />*/}
             <div className={style.headerContainer}>
-                <Header/>
+                <Header />
             </div>
             <div className={style.sidebarContainer}>
-                <NavigationSidebar/>
+                <NavigationSidebar />
             </div>
             <div className={style.baseLayoutContent}>
                 <main>
-                    <BaseLayoutRoutes/>
-                    <AdminMainViewTable/>
+                    <BaseLayoutRoutes />
+                    <AdminMainViewTable />
                 </main>
             </div>
-            <div>
-
-            </div>
+            <div></div>
             <div className={style.footerContainer}>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     );

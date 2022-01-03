@@ -1,11 +1,10 @@
 import * as React from 'react';
-import {DataGrid} from '@mui/x-data-grid';
-import {useIntl} from 'react-intl';
+import { DataGrid } from '@mui/x-data-grid';
+import { useIntl } from 'react-intl';
 import ActionsButton from './ActionsButton';
 
 const AdminMainViewTable = () => {
-    const {formatMessage} = useIntl();
-
+    const { formatMessage } = useIntl();
     // these are arbitrary values, can be changed
     const tableWidth = 800;
     const tableHeight = 400;
@@ -17,19 +16,17 @@ const AdminMainViewTable = () => {
             hide: 'true',
         },
         {
-
             field: 'school',
             align: 'center',
             headerAlign: 'center',
-            headerName: formatMessage({id: 'admin-main-view-table.school.text'}),
+            headerName: formatMessage({ id: 'admin-main-view-table.school.text' }),
             flex: 1.5,
-
         },
         {
             field: 'communicationDetails',
             align: 'center',
             headerAlign: 'center',
-            headerName: formatMessage({id: 'admin-main-view-table.communicationDetails.text'}),
+            headerName: formatMessage({ id: 'admin-main-view-table.communicationDetails.text' }),
             flex: 0.3,
         },
         {
@@ -37,7 +34,7 @@ const AdminMainViewTable = () => {
             align: 'center',
             headerAlign: 'center',
             disableColumnMenu: true,
-            headerName: formatMessage({id: 'admin-main-view-table.stepInProcess.text'}),
+            headerName: formatMessage({ id: 'admin-main-view-table.stepInProcess.text' }),
             flex: 1,
         },
         {
@@ -45,7 +42,7 @@ const AdminMainViewTable = () => {
             type: 'date',
             align: 'center',
             headerAlign: 'center',
-            headerName: formatMessage({id: 'admin-main-view-table.recentActivity.text'}),
+            headerName: formatMessage({ id: 'admin-main-view-table.recentActivity.text' }),
             flex: 1,
         },
         {
@@ -53,9 +50,9 @@ const AdminMainViewTable = () => {
             align: 'center',
             headerAlign: 'center',
             disableColumnMenu: true,
-            headerName: formatMessage({id: 'admin-main-view-table.taskToPerform.text'}),
+            headerName: formatMessage({ id: 'admin-main-view-table.taskToPerform.text' }),
             flex: 0.5,
-            renderCell: () => <ActionsButton/>,
+            renderCell: () => <ActionsButton />,
         },
     ];
 
@@ -67,16 +64,15 @@ const AdminMainViewTable = () => {
             communicationDetails: 'טל פסיכולוגית',
             stepInProcess: 'הערכת חוסן שאלון',
             recentActivity: '05/09/2021',
-            taskToPerform: 'אישור שאלות שאלון'
+            taskToPerform: 'אישור שאלות שאלון',
         },
     ];
 
     return (
-        <div style={{height: tableHeight, width: tableWidth}}>
-            <DataGrid rows={rows} columns={columns} pageSize={pageSize} rowsPerPageOptions={[5]}/>
+        <div style={{ height: tableHeight, width: tableWidth }}>
+            <DataGrid rows={rows} columns={columns} pageSize={pageSize} rowsPerPageOptions={[5]} />
         </div>
     );
 };
 
 export default AdminMainViewTable;
-
