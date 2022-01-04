@@ -5,6 +5,8 @@ from rest_framework.response import Response
 
 from core.decorators import authorized_roles
 from core.roles import Role
+from .models import School
+from .serializers import SchoolSerializers
 
 
 @api_view(['POST'])
@@ -20,3 +22,13 @@ def get_current_user(request):
         'roles': roles,
     }
     return Response(content, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+@renderer_classes([JSONRenderer])
+@authorized_roles(roles=[Role.MAHSHAVA_ADMIN, Role.SCHOOL_ADMIN])
+def updated_table(request):
+    school_info = School.objects.all()
+    serializer_info = SchoolSerializers(school_info, many=True)
+
+    return Response(serializer_info.data, status=status.HTTP_200_OK)

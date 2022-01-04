@@ -1,0 +1,51 @@
+.SchoolCounter {
+    background-color: #E78536;
+    font-weight: bolder;
+    font-size: x-large;
+    left: -42%;
+}
+
+.SchoolInformation {
+    float: left;
+    width: 300px;
+    height: 100%;
+    color: #2F3A5F;
+}
+
+.SchoolsInProgress {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.ResilienceCheck {
+    margin-top: 35px;
+}
+
+li{
+    margin: 3px 10px;
+    text-decoration: underline;
+    color: black;
+    font-size: 14px;
+    list-style: none;
+}
+
+.SchoolProgressHeader {
+    color: #2F3A5F;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.HeaderAmount {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.HeaderTotal {
+    font-weight: normal;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.InterventionCheck {
+    margin-top: 20px;
+}
