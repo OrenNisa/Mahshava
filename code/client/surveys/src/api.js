@@ -19,12 +19,6 @@ $axios.interceptors.response.use(
 
 
 class SaveSurveyService {
-    // static getQuarters(firstNum,secondNum) {
-    //     return $axios
-    //         .get('quarters/calc-quarter', {params:{firstNumber:firstNum,secondNumber:secondNum}})
-    //         .then(response => response.data)
-    // }
-
     static getSurvey(SurveyJSON) {
         return $axios
             .post('surveys/save-surveyForm', {

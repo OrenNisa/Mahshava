@@ -73,7 +73,6 @@ class SurveyCreator extends Component {
             // .then(response => {
             //     setSurvey(response.survey)
             // })
-        //return JSON.stringify(this.surveyCreator.text);
         console.log(this.surveyCreator.text);
     };
 }

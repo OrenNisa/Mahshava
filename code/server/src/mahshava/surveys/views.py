@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, renderer_classes, authentication_classes, permission_classes
 from rest_framework.renderers import JSONRenderer
 
-from core.decorators import authorized_roles
 from surveys.models import Surveys
 from surveys.serializers import SurveysSerializer
 
