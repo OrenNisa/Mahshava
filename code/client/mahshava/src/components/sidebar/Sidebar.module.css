@@ -18,9 +18,10 @@
 
 .link {
     width: 100%;
-    color: #000000;
-    text-decoration: none;
+    color: #000000 !important;
+    text-decoration: none !important;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .sidebarItemContainer {
@@ -32,4 +33,5 @@
     justify-content: center;
     gap: 8px;
     background-color: transparent;
+    text-decoration: none;
 }

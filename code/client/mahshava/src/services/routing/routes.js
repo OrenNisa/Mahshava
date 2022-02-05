@@ -39,7 +39,7 @@ export const ROUTES = [
         isProtected: true,
         roles: [ROLES.MAHSHAVA_ADMIN],
         LogoComponent: AddSchoolLogo,
-        i18nKey: 'routes.mahshava-admin-home',
+        i18nKey: 'routes.mahshava-admin-add-school',
     },
     {
         id: MAHSHAVA_ADMIN_SCHOOL_HISTORY,
@@ -49,7 +49,7 @@ export const ROUTES = [
         isProtected: true,
         roles: [ROLES.MAHSHAVA_ADMIN],
         LogoComponent: HistorySchoolLogo,
-        i18nKey: 'routes.mahshava-admin-home',
+        i18nKey: 'routes.mahshava-admin-school-history',
     },
     {
         id: MAHSHAVA_ADMIN_DATA_SOURCES,
@@ -59,6 +59,6 @@ export const ROUTES = [
         isProtected: true,
         roles: [ROLES.MAHSHAVA_ADMIN],
         LogoComponent: DataBaseLogo,
-        i18nKey: 'routes.mahshava-admin-home',
+        i18nKey: 'routes.mahshava-admin-data-sources',
     },
 ];

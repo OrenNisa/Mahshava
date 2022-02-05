@@ -39,7 +39,11 @@
     "text": "גירסה"
   },
   "routes": {
-    "mahshava-admin-home": "דף ראשי"
+    "mahshava-admin-home": "דף ראשי",
+    "mahshava-admin-add-school": "הוספת בית ספר",
+    "mahshava-admin-school-history": "היסטוריה",
+    "mahshava-admin-data-sources": "מאגרי מידע",
+    "mahshava-admin-help": "מידע ותמיכה"
   },
   "admin-main-view-table": {
     "school": {"text": "בית הספר"},

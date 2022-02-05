@@ -1,10 +1,9 @@
 import React from 'react';
+import { useIntl } from 'react-intl';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import style from './StrengthSummary.module.css';
 import { Avatar } from '@mui/material';
-import { useIntl } from 'react-intl';
+import style from './StrengthSummary.module.css';
 
 const StrengthSummary = () => {
     const { formatMessage } = useIntl();
