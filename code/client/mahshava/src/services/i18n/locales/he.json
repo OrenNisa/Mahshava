@@ -16,10 +16,43 @@
       "message": "שלום"
     }
   },
+  "SchoolInformationSideBar": {
+    "SchoolsInProgress": {
+      "message": "בתי ספר בתהליך"
+    },
+    "ResilienceCheck": {
+      "header": "בדיקת חוסן",
+      "placeholderSchool1": "בית ספר הרואה",
+      "placeholderSchool2": "בית ספר העיוור",
+      "placeholderSchool3": "בית ספר החירש"
+    },
+    "InterventionCheck": {
+      "header": "תוכנית התערבות",
+      "placeholderSchool1": "בית ספר למדעים אלון",
+      "placeholderSchool2": "בית ספר לספרים ג׳קי"
+    },
+    "ReevaluationCheck": {
+      "header": "מדידה חוזרת"
+    }
+  },
   "version": {
     "text": "גירסה"
   },
   "routes": {
-    "mahshava-admin-home": "דף ראשי"
+    "mahshava-admin-home": "דף ראשי",
+    "mahshava-admin-add-school": "הוספת בית ספר",
+    "mahshava-admin-school-history": "היסטוריה",
+    "mahshava-admin-data-sources": "מאגרי מידע",
+    "mahshava-admin-help": "מידע ותמיכה"
+  },
+  "admin-main-view-table": {
+    "school": {"text": "בית הספר"},
+    "communicationDetails": {"text": "פרטי תקשורת"},
+    "stepInProcess": {"text": "שלב בתהליך"},
+    "recentActivity": {"text": "פעילות אחרונה"},
+    "taskToPerform": {"text": "משימה לביצוע"}
+  },
+  "actions-button": {
+    "editText": "ערוך"
   }
 }

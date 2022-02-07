@@ -1,3 +1,13 @@
 from django.db import models
 
-# Create your models here.
+
+class Surveys(models.Model):
+    id = models.AutoField(primary_key=True)
+    creation_date = models.DateTimeField(auto_now_add=True)
+    title = models.CharField(max_length=40)
+    surveyData = models.JSONField()
+    author = models.CharField(max_length=40)
+    modify_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return '%s' % self.title
