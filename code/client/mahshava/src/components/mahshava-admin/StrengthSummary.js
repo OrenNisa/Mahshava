@@ -1,12 +1,11 @@
 import React from 'react';
+import { useIntl } from 'react-intl';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import style from './InformationSidebar.module.css';
 import { Avatar } from '@mui/material';
-import { useIntl } from 'react-intl';
+import style from './StrengthSummary.module.css';
 
-const InformationSidebar = () => {
+const StrengthSummary = () => {
     const { formatMessage } = useIntl();
     return (
         <Card className={style.SchoolInformation}>
@@ -25,20 +24,12 @@ const InformationSidebar = () => {
                         <span className={style.HeaderTotal}>/6</span>
                     </div>
 
-                    <Typography variant="body2" color="text.secondary">
-                        <list>
-                            {/* TODO: Pull school list from database.*/}
-                            <li>
-                                {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool1' })}
-                            </li>
-                            <li>
-                                {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool2' })}
-                            </li>
-                            <li>
-                                {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool3' })}
-                            </li>
-                        </list>
-                    </Typography>
+                    <ul>
+                        {/* TODO: Pull school list from database.*/}
+                        <li>{formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool1' })}</li>
+                        <li>{formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool2' })}</li>
+                        <li>{formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.placeholderSchool3' })}</li>
+                    </ul>
                 </div>
 
                 <div className={style.InterventionCheck}>
@@ -49,17 +40,15 @@ const InformationSidebar = () => {
                         <span className={style.HeaderTotal}>/6</span>
                     </div>
 
-                    <Typography variant="body2" color="text.secondary">
-                        <list>
-                            {/* TODO: Pull school list from database.*/}
-                            <li>
-                                {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool1' })}
-                            </li>
-                            <li>
-                                {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool2' })}
-                            </li>
-                        </list>
-                    </Typography>
+                    <ul>
+                        {/* TODO: Pull school list from database.*/}
+                        <li>
+                            {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool1' })}
+                        </li>
+                        <li>
+                            {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.placeholderSchool2' })}
+                        </li>
+                    </ul>
                 </div>
 
                 <div className={style.InterventionCheck}>
@@ -75,4 +64,4 @@ const InformationSidebar = () => {
         </Card>
     );
 };
-export default InformationSidebar;
+export default StrengthSummary;

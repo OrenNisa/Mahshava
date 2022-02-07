@@ -1,35 +1,26 @@
-import * as React from 'react';
+import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { useIntl } from 'react-intl';
 import ActionsButton from './ActionsButton';
-import apiService from '../../services/api/api';
-import { useEffect, useState } from 'react';
+import style from './AdminMainViewTable.module.css';
 
 const AdminMainViewTable = () => {
     const { formatMessage } = useIntl();
-    // these are arbitrary values, can be changed
-    const tableWidth = 800;
-    const tableHeight = 400;
-    const pageSize = 4;
 
     const columns = [
-        {
-            field: 'id',
-            hide: 'true',
-        },
         {
             field: 'school',
             align: 'center',
             headerAlign: 'center',
             headerName: formatMessage({ id: 'admin-main-view-table.school.text' }),
-            flex: 1.5,
+            flex: 1,
         },
         {
             field: 'communicationDetails',
             align: 'center',
             headerAlign: 'center',
             headerName: formatMessage({ id: 'admin-main-view-table.communicationDetails.text' }),
-            flex: 0.3,
+            flex: 1,
         },
         {
             field: 'stepInProcess',
@@ -71,8 +62,8 @@ const AdminMainViewTable = () => {
     ];
 
     return (
-        <div style={{ height: tableHeight, width: tableWidth }}>
-            <DataGrid rows={rows} columns={columns} pageSize={pageSize} rowsPerPageOptions={[5]} />
+        <div className={style.appointmentsContainer}>
+            <DataGrid rows={rows} columns={columns} autoPageSize />
         </div>
     );
 };
