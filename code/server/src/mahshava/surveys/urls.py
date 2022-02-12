@@ -1,10 +1,9 @@
 from django.urls import path
 
-
 from surveys import views
 
 urlpatterns = [
-    path('surveys/save-surveyForm', views.save_survey),
+    path('surveys/save-survey/', views.save_survey),
 ]
 
 
