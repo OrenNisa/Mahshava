@@ -24,12 +24,18 @@ class TaskSerializers(serializers.ModelSerializer):
 
 
 class ProcessStepsSerializers(serializers.ModelSerializer):
+    taskID = TaskSerializers(read_only=True)
+
     class Meta:
         model = ProcessSteps
         fields = "__all__"
 
 
 class SchoolProcessSerializers(serializers.ModelSerializer):
+    schoolID = SchoolSerializers(read_only=True)
+    contactID = ContactSerializers(read_only=True)
+    processID = ProcessStepsSerializers(read_only=True)
+
     class Meta:
         model = SchoolProcess
         fields = "__all__"

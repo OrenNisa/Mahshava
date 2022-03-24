@@ -7,34 +7,34 @@ class School(models.Model):
     # contact_info_name = models.CharField(max_length=50)
     # contact_info_email = models.EmailField(max_length=50)
     id = models.AutoField(primary_key=True)
-    schoolName = models.CharField(max_length=50)
-    city = models.CharField(max_length=50)
-    district = models.CharField(max_length=50)
-    pic = models.CharField
-    phoneNo = models.CharField(max_length=13)
+    schoolName = models.CharField(max_length=50, default="")
+    city = models.CharField(max_length=50, default="")
+    district = models.CharField(max_length=50, default="")
+    pic = models.URLField(max_length=200, blank=True)
+    phoneNo = models.CharField(max_length=13, default="")
     noOfTeachers = models.IntegerField(default=0)
     noOfStudents = models.IntegerField(default=0)
-    consultant = models.CharField(max_length=50)
-    psychologist = models.CharField(max_length=50)
+    consultant = models.CharField(max_length=50, default="")
+    psychologist = models.CharField(max_length=50, default="")
     processStartDate = models.DateField
 
 
 class Contact(models.Model):
     id = models.AutoField(primary_key=True)
-    contactName = models.CharField(max_length=50)
+    contactName = models.CharField(max_length=50, default="")
     email = models.EmailField(max_length=50)
-    phone = models.CharField(max_length=10)
+    phone = models.CharField(max_length=10, default="")
 
 
 class Task(models.Model):
     id = models.AutoField(primary_key=True)
-    taskName = models.CharField(max_length=50)
+    taskName = models.CharField(max_length=50, default="")
     idDone = models.BooleanField(default=False)
 
 
 class ProcessSteps(models.Model):
     id = models.AutoField(primary_key=True)
-    processName = models.CharField(max_length=50)
+    processName = models.CharField(max_length=50, default="")
     taskID = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='task_name')
     idDone = models.BooleanField(default=False)
 
@@ -47,6 +47,5 @@ class SchoolProcess(models.Model):
     lastActionDate = models.DateField
     schedule = models.TextField(default="")
 
-
-School.objects = School.objects.using('core')
-SchoolProcess.objects = SchoolProcess.objects.using('core')
+# School.objects = School.objects.using('core')
+# SchoolProcess.objects = SchoolProcess.objects.using('core')

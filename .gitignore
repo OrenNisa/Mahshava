@@ -12,3 +12,4 @@ lib64
 share
 pyvenv.cfg
 *.iml
+code/server/src/mahshava/core/fixtures/core_backup.json
