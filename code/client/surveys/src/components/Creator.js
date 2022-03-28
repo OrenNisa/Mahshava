@@ -8,8 +8,7 @@ import 'survey-creator-core/survey-creator-core.i18n.js';
 import 'survey-core/defaultV2.css';
 import 'survey-creator-core/survey-creator-core.css';
 import service from '../api';
-
-const Creator = () => {
+function Creator() {
     const saveSurvey = () => {
         const survey = creator.text;
         service.SurveyService.saveSurvey(survey).then(response => {
