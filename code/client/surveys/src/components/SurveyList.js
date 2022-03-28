@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+//import * as Scroll from 'react-scroll';
+//import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class SurveyList extends React.Component {
 

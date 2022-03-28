@@ -3,6 +3,12 @@ import Creator from './components/Creator';
 import SurveyList from './components/SurveyList';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { render } from "react-dom";
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
 
 class App extends React.Component {
 
@@ -29,22 +35,27 @@ class App extends React.Component {
 
     render() {
         return (
-            <>
-                <h1 style={this.titleStyle}>Surveys</h1>
-                <input style={this.buttonStyle} type='button' value='Survey Creator' onClick={this.renderCreator} />
-                <input style={this.buttonStyle} type='button' value='Survey List' onClick={this.renderSurveyList} />
-            </>
+            // <>
+            //     <h1 style={this.titleStyle}>Surveys</h1>
+            //    <input style={this.buttonStyle} type='button' value='Survey Creator' onClick={this.renderCreator} />
+            //     <input style={this.buttonStyle} type='button' value='Survey List' onClick={this.renderSurveyList} />
+            // </>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/Creator" element={<Creator />} />
+                </Routes>
+            </BrowserRouter>
         );
     }
 
-    renderCreator() {
-
-        ReactDOM.render(<Creator/>, document.getElementById('root'));
-    }
-
-    renderSurveyList() {
-        ReactDOM.render(<SurveyList/>, document.getElementById('root'));
-    }
+    // renderCreator() {
+    //
+    //     ReactDOM.render(<Creator/>, document.getElementById('root'));
+    // }
+    //
+    // renderSurveyList() {
+    //     ReactDOM.render(<SurveyList/>, document.getElementById('root'));
+    // }
 }
 
 export default App;
