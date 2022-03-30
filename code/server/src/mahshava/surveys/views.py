@@ -14,8 +14,8 @@ from surveys.serializers import SurveysSerializer
 @permission_classes([])
 def save_survey(request):
     survey_json = request.data['survey']
-    #survey_title = survey_json['title'][0]
-    survey_obj = Surveys(title="dummy-title", surveyData=survey_json, author="author")
+    actual_json = json.loads(survey_json)
+    survey_obj = Surveys(title=actual_json['title'], surveyData=survey_json, author="author")
     survey_obj.save()
 
     serializer = SurveysSerializer(survey_obj)

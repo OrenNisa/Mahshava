@@ -3,8 +3,7 @@ import Creator from './components/Creator';
 import SurveyList from './components/SurveyList';
 import Home from './components/Home';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
 function App() {
     return (
