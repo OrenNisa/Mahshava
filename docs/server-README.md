@@ -9,6 +9,8 @@
 #### Dump data
 ```
 python .\manage.py dumpdata --database=core auth.group auth.user auth.user_groups > core\fixtures\core.json
+
+python .\manage.py dumpdata --database=core --format=xml core.contact core.processsteps core.school core.schoolprocess core.task > core\fixtures\appData.xml
 ```
 
 
