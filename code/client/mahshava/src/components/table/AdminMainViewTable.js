@@ -53,11 +53,43 @@ const AdminMainViewTable = () => {
         //data example
         {
             id: 1,
-            school: 'sapir',
+            school:'בית ספר הרואה, שדרות' ,
             communicationDetails: 'טל פסיכולוגית',
             stepInProcess: 'הערכת חוסן שאלון',
             recentActivity: '05/09/2021',
             taskToPerform: 'אישור שאלות שאלון',
+        },
+        {
+            id: 2,
+            school:'בית ספר גל',
+            communicationDetails: 'יונה פסיכולוגית',
+            stepInProcess: 'תוכנית התערבות-המתנה לתשובות',
+            recentActivity: '05/09/2021',
+            taskToPerform: 'בניית תוכנית התערבות',
+        },
+        {
+            id: 3,
+            school:'בית ספר הרואה',
+            communicationDetails: 'יונה פסיכולוגית',
+            stepInProcess: 'תוכנית התערבות',
+            recentActivity: '05/09/2021',
+            taskToPerform: 'אישור שאלות שאלון',
+        },
+        {
+            id: 4,
+            school:'בית ספר היובל',
+            communicationDetails: 'יונה פסיכולוגית',
+            stepInProcess: 'מדידה חוזרת-המתנה לדו"ח',
+            recentActivity: '05/09/2021',
+            taskToPerform: 'בניית תוכנית התערבות',
+        },
+        {
+            id: 2,
+            school:'בית ספר גל',
+            communicationDetails: 'יונה פסיכולוגית',
+            stepInProcess: 'תוכנית התערבות-המתנה לתשובות',
+            recentActivity: '05/09/2021',
+            taskToPerform: 'בניית תוכנית התערבות',
         },
     ];
 

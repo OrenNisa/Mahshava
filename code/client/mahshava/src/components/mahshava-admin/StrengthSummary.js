@@ -4,6 +4,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Avatar } from '@mui/material';
 import style from './StrengthSummary.module.css';
+import LogoPolygon1 from "./LogoHelp/LogoPolygon1";
+import LogoPolygon2 from "./LogoHelp/LogoPolygon2";
+
 
 const StrengthSummary = () => {
     const { formatMessage } = useIntl();
@@ -18,7 +21,7 @@ const StrengthSummary = () => {
 
                 <div className={style.ResilienceCheck}>
                     <div className={style.SchoolProgressHeader}>
-                        ^ {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.header' })}
+                        <LogoPolygon2 /> {formatMessage({ id: 'SchoolInformationSideBar.ResilienceCheck.header' })}
                         {/* TODO: Pull amount of schools out of total. */}
                         <span className={style.HeaderAmount}>4</span>
                         <span className={style.HeaderTotal}>/6</span>
@@ -34,7 +37,7 @@ const StrengthSummary = () => {
 
                 <div className={style.InterventionCheck}>
                     <div className={style.SchoolProgressHeader}>
-                        ^ {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.header' })}
+                        <LogoPolygon2 /> {formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.header' })}
                         {/* TODO: Pull amount of schools out of total. */}
                         <span className={style.HeaderAmount}>2</span>
                         <span className={style.HeaderTotal}>/6</span>
@@ -53,7 +56,7 @@ const StrengthSummary = () => {
 
                 <div className={style.InterventionCheck}>
                     <div className={style.SchoolProgressHeader}>
-                        V {formatMessage({ id: 'SchoolInformationSideBar.ReevaluationCheck.header' })}
+                        <LogoPolygon1 /> {formatMessage({ id: 'SchoolInformationSideBar.ReevaluationCheck.header' })}
                         {/* TODO: Pull amount of schools out of total. */}
                         <span className={style.HeaderAmount}>0</span>
                         <span className={style.HeaderTotal}>/6</span>
@@ -65,3 +68,4 @@ const StrengthSummary = () => {
     );
 };
 export default StrengthSummary;
+

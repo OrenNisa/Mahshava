@@ -5,10 +5,15 @@ import NotificationsIcon from './icons/NotificationsIcon';
 import MailIcon from './icons/MailIcon';
 import UserIcon from './icons/UserIcon';
 import LineIcon from './icons/LineIcon';
+import HeaderAutoLayout from "../mahshava-admin/AutoLayout/HeaderAutoLayout";
+import UserName from "./icons/UserName";
 
 const Header = () => {
     return (
         <div className={style.headerContainer}>
+            <div className={style.LayoutContainer}>
+                <HeaderAutoLayout />
+            </div>
             <div className={style.NotificationsIcon}>
                 <NotificationsIcon />
             </div>
@@ -24,7 +29,9 @@ const Header = () => {
             <div className={style.UserIcon}>
                 <UserIcon />
             </div>
-            <div className={style.userGreeting}>hello guest</div>
+            <div className={style.userGreeting}>
+                <UserName/>
+            </div>
         </div>
     );
 };

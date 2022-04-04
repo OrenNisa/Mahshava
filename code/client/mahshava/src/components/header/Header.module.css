@@ -7,27 +7,27 @@
 }
 
 .NotificationsIcon {
-    order: 2;
+    order: 9;
     margin: 10px;
 }
 
 .MailIcon {
-    order: 3;
+    order: 9;
     margin: 10px;
 }
 
 .CalendarIcon {
-    order: 4;
+    order: 9;
     margin: 10px;
 }
 
 .UserIcon {
-    order: 6;
+    order: 9;
     margin: 10px;
 }
 
 .userGreeting {
-    order: 7;
+    order: 9;
     margin: 10px;
 }
 
@@ -39,5 +39,9 @@
 
 .LineIcon {
     padding-top: 0.5%;
-    order: 5;
+    order: 9;
+}
+.LayoutContainer{
+    order: 9;
+    margin: 60px;
 }

@@ -6,9 +6,13 @@
 }
 
 .schoolsTableContainer {
-    width: 70%;
+    width: 67%;
 }
 
 .strengthSummaryContainer {
-    width: 30%;
+    width: 32%;
+}
+
+.LayoutContainer {
+    width: 10%;
 }

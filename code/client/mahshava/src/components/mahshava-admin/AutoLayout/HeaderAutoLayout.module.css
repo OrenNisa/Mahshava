@@ -1,0 +1,62 @@
+.Layout{
+    order: 1;
+    margin: 13px;
+    position: absolute;
+    left: 12%;
+    right: 13.9%;
+    top: 50%;
+    bottom: 0%;
+}
+
+    /* Rectangle 228 */
+.Search {
+    position: absolute;
+    left: 50.06%;
+    right: 3%;
+    top: 52%;
+    bottom: 25%;
+
+    order: 10;
+    margin: 15px;
+}
+.StrSchool{
+    position: absolute;
+    left: 9%;
+    right: -77%;
+    top: -26%;
+    bottom: 15%;
+    order: 10;
+    margin: 18px;
+
+}
+
+.FilteringLog{
+    position: absolute;
+    left: 80.06%;
+    right: -3%;
+    top: 13.5%;
+    bottom: 25.5%;
+    order: 10;
+    margin: 15px;
+
+}
+.Main{
+    /* ישאר */
+
+    position: absolute;
+    left: 96.89%;
+    right: 0%;
+    top: -0.11%;
+    bottom: 97.43%;
+
+    /* text bold */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: right;
+    color: #333333;
+
+}

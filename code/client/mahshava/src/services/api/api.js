@@ -53,3 +53,4 @@ class AppointmentService {
 const apiService = { AuthService, UserService, AppointmentService, VersionService };
 
 export default apiService;
+
