@@ -7,6 +7,7 @@ import DataBaseLogo from '../../components/sidebar/logo/DataBaseLogo';
 import HistorySchoolLogo from '../../components/sidebar/logo/HistorySchoolLogo';
 import HelpLogo from '../../components/sidebar/logo/HelpLogo';
 
+
 const ROUTE_LOGIN = 'login';
 const MAHSHAVA_ADMIN_HOME = 'home';
 const MAHSHAVA_ADMIN_ADD_SCHOOL = 'add-school';
@@ -64,9 +65,6 @@ export const ROUTES = [
         LogoComponent: DataBaseLogo,
         i18nKey: 'routes.mahshava-admin-data-sources',
     },
-
-
-
     {
         id: MAHSHAVA_ADMIN_HELP,
         path: `/${MAHSHAVA_ADMIN_HELP}`,
@@ -77,5 +75,4 @@ export const ROUTES = [
         LogoComponent: HelpLogo,
         i18nKey: 'routes.mahshava-admin-help',
     },
-
 ];
