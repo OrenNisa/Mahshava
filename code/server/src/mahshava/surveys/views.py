@@ -14,9 +14,20 @@ from surveys.serializers import SurveysSerializer
 @permission_classes([])
 def save_survey(request):
     survey_json = request.data['survey']
-    actual_json = json.loads(survey_json)
-    survey_obj = Surveys(title=actual_json['title'], surveyData=survey_json, author="author")
+    json_data = json.loads(survey_json)
+    survey_title = json_data['title']
+    survey_obj = Surveys(title=survey_title, surveyData=survey_json, author="author")
     survey_obj.save()
 
     serializer = SurveysSerializer(survey_obj)
     return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+@renderer_classes([JSONRenderer])
+@authentication_classes([])
+@permission_classes([])
+def get_survey_title(request):
+    survey_id = int(request.GET['id'])
+    return Response(Surveys.objects.get(pk=survey_id).title, status=status.HTTP_200_OK)
+

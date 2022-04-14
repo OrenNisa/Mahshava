@@ -1,11 +1,9 @@
-import React from 'react';
-import ReactDOM from "react-dom";
-//import * as Scroll from 'react-scroll';
-//import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import React, { useState, useEffect } from 'react';
+import service from "../api";
 
-class SurveyList extends React.Component {
+function SurveyList() {
 
-    titleStyle = {
+    const titleStyle = {
         position: 'relative',
         textAlign: 'center',
         color: 'darkblue',
@@ -15,7 +13,7 @@ class SurveyList extends React.Component {
 
     }
 
-    tableStyle = {
+    const tableStyle = {
         position: 'relative',
         overflow: 'scroll',
         height: '10cm',
@@ -28,23 +26,33 @@ class SurveyList extends React.Component {
         color: 'blue',
     };
 
-    render() {
-        return (
-            <>
-                <h1 style={this.titleStyle}>Choose a Survey</h1>
-                <div style={this.tableStyle}>
-                    Test
+    // const [apiInputId, setInputId] = useState(0);
+    const [surveyTitle, setSurveyTitle] = useState(null);
+
+    useEffect(() => {
+
+        service.SurveyListService.getSurveyTitle(24).then(response => {
+            setSurveyTitle(response);
+            console.log(surveyTitle);
+        });
+    }, []);
+
+    return (
+            <div>
+                <h1 style={titleStyle}>Choose a Survey</h1>
+
+                <div style={tableStyle}>
+                    <div>salat</div>
+                    <div>{surveyTitle}</div>
+                    <div>salad</div>
                 </div>
-            </>
-        );
-    }
+            </div>
+    );
 }
-
-
 
 export default SurveyList;
 
-// dummy list:
+// dummy survey list:
 
 {/*<div>סקר שביעות רצון - מקיף כללי - כיתה א</div>*/}
 {/*<div>---------------------------------------------------------------------------------------------</div>*/}

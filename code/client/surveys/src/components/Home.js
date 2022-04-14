@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
+import SurveyList from "./SurveyList";
 
 function Home() {
 
