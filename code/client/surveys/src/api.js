@@ -24,8 +24,17 @@ class SurveyService {
     }
 }
 
+class SurveyListService {
+    static getSurveyTitle(id) {
+        return $axios.get('surveys/get-survey-title/', {
+            params: {id: id}
+        }).then(response => response.data);
+    }
+}
+
 const service = {
     SurveyService,
+    SurveyListService
 };
 
 export default service;

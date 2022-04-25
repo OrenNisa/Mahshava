@@ -1,26 +1,20 @@
 import './App.css';
 import Creator from './components/Creator';
+import SurveyList from './components/SurveyList';
+import Home from './components/Home';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
-class App extends React.Component {
-    render() {
-        return (
-            <>
-                <input type='button' value='Survey Creator' onClick={this.renderCreator} />
-                <input type='button' value='Survey List' onClick={this.renderSurveyList} />
-            </>
-        );
-    }
-
-    renderCreator() {
-
-        ReactDOM.render(<Creator/>, document.getElementById('root'));
-    }
-
-    renderSurveyList() {
-        ReactDOM.render(<p>Testing</p>, document.getElementById('root'));
-    }
-}
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Creator" element={<Creator />} />
+                <Route path="/SurveyList" element={<SurveyList />} />
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;
