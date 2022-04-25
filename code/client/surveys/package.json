@@ -16,6 +16,7 @@
     "react-scroll": "^1.8.6",
     "survey-core": "^1.9.12",
     "survey-creator-react": "^1.9.12-beta.1",
+    "survey-react-ui": "^1.9.26",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
