@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import SurveyList from "./SurveyList";
 
 function Home() {
 
@@ -30,7 +29,6 @@ const titleStyle = {
     return (
         <>
         <h1 style={titleStyle}>Surveys</h1>
-
         <input type='button' style={buttonStyle} value='Survey Creator' onClick={() => {navigate("/Creator")}}></input>
         <input type='button' style={buttonStyle} value='Survey List' onClick={() => {navigate("/SurveyList")}}></input>
         </>

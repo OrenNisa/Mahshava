@@ -10,7 +10,6 @@ function SurveyList() {
         top: '40px',
         fontFamily: 'Helvetica',
         fontSize: '40px',
-
     }
 
     const tableStyle = {
@@ -31,7 +30,7 @@ function SurveyList() {
 
     useEffect(() => {
 
-        service.SurveyListService.getSurveyTitle(24).then(response => {
+        service.SurveyListService.getSurveyTitle(5).then(response => {
             setSurveyTitle(response);
             console.log(surveyTitle);
         });
