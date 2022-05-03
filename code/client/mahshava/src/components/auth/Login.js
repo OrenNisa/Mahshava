@@ -12,7 +12,7 @@ import style from './Login.module.css';
 const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { updateAsapAuth } = useMahshavaContext();
+    const { updateMahshavaAuth } = useMahshavaContext();
     const [credentials, setCredentials] = useState({ username: '', password: '', showPassword: false });
     const { formatMessage } = useIntl();
 
@@ -30,7 +30,7 @@ const Login = () => {
             .then(data => {
                 const token = data.token;
                 const decodedToken = jwt_decode(token);
-                updateAsapAuth({ ...decodedToken, token });
+                updateMahshavaAuth({ ...decodedToken, token });
                 navigate(from, { replace: true });
             })
             .catch(() => {

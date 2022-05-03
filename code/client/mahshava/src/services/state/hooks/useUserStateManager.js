@@ -1,14 +1,14 @@
 import { useCallback, useState } from 'react';
 
-const asapUserInitialState = {};
+const mahshavaUserInitialState = {};
 
 export const useUserStateManager = () => {
-    const [asapUser, setAsapUser] = useState(asapUserInitialState);
+    const [mahshavaUser, setMahshavaUser] = useState(mahshavaUserInitialState);
 
-    const updateAsapUser = useCallback(updatedAsapUser => {
-        setAsapUser(currentAsapUser => ({ ...currentAsapUser, ...updatedAsapUser }));
+    const updateMahshavaUser = useCallback(updatedMahshavaUser => {
+        setMahshavaUser(currentMahshavaUser => ({ ...currentMahshavaUser, ...updatedMahshavaUser }));
     }, []);
 
-    return { asapUser, updateAsapUser };
+    return { mahshavaUser, updateMahshavaUser };
 };
 

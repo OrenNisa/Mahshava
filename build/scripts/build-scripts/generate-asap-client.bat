@@ -2,7 +2,7 @@
 
 echo.
 echo Bundle %PROJECT_NAME% static content...
-pushd %PROJECT_NAME%\code\client\asap
+pushd %PROJECT_NAME%\code\client\mahshava
 cmd /c npm install
 cmd /c npm run build
 
