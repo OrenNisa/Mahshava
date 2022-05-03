@@ -50,7 +50,20 @@ class AppointmentService {
     }
 }
 
-const apiService = { AuthService, UserService, AppointmentService, VersionService };
+class processService {
+    // static getSchoolProcess() {
+    //     return $axios
+    //         .get('schoolInfo', { headers: authHeader() })
+    //         .then(response => response.data);
+    // }
+    static getSchoolProcess() {
+        return $axios
+            .get('schoolProcess', { headers: authHeader() })
+            .then(response => response.data);
+    }
+}
+
+const apiService = { AuthService, UserService, AppointmentService, VersionService , processService};
 
 export default apiService;
 
