@@ -8,7 +8,7 @@ const HeaderUser = () => {
 
     return (
         <label>
-            {formatMessage({ id: 'header.user.message' })}: {mahshavaUser?.first_name} {mahshavaUser?.last_name}
+            {formatMessage({ id: 'header.user.message' })}, {mahshavaUser?.first_name} {mahshavaUser?.last_name}
         </label>
     );
 };
