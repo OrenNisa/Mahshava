@@ -1,6 +1,3 @@
-import Login from '../../auth/Login';
-import Home from '../Home';
-import { ROLES } from '../../../constants';
 import React from 'react';
 import style from './HeaderAutoLayout.module.css';
 import Layout from './Layout';
@@ -13,7 +10,9 @@ import MainName from "./MainName";
 const HeaderAutoLayout = () => {
     return (
             <div className={style.Layout}>
-                <Layout />
+                <div className={style.Layout1}>
+                    <Layout />
+                </div>
                 <div className={style.Main}>
                     <MainName />
                 </div>
