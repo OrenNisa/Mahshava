@@ -9,23 +9,21 @@ import './App.css';
 import useAuth from './services/auth/hooks/useAuth';
 
 const App = () => {
-    const { updateAsapUser } = useMahshavaContext();
+    const { updateMahshavaUser } = useMahshavaContext();
     const { isAuthenticated } = useAuth();
 
     useEffect(() => {
         if (isAuthenticated) {
-            apiService.UserService.getCurrentUser().then(user => updateAsapUser({ ...user }));
+            apiService.UserService.getCurrentUser().then(user => updateMahshavaUser({ ...user }));
         }
-    }, [isAuthenticated, updateAsapUser]);
+    }, [isAuthenticated, updateMahshavaUser]);
 
     return (
         <div className="App">
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route
-                    path="*"
-                    exact
-                    element={
+                    path="*" exact element={
                         <PrivateRoute>
                             <BaseLayout />
                         </PrivateRoute>

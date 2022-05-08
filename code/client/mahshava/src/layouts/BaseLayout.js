@@ -8,7 +8,7 @@ import style from './BaseLayout.module.css';
 const BaseLayout = () => {
     return (
         <div className={style.baseLayoutContainer}>
-            {/*<AsapErrorDialog />*/}
+            {/*<MahshavaErrorDialog />*/}
             <div className={style.headerContainer}>
                 <Header />
             </div>

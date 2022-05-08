@@ -7,6 +7,7 @@ import UserIcon from './icons/UserIcon';
 import LineIcon from './icons/LineIcon';
 import HeaderAutoLayout from "../mahshava-admin/AutoLayout/HeaderAutoLayout";
 import UserName from "./icons/UserName";
+import HeaderUser from "./HeaderUser";
 
 const Header = () => {
     return (
@@ -30,7 +31,7 @@ const Header = () => {
                 <UserIcon />
             </div>
             <div className={style.userGreeting}>
-                <UserName/>
+                <HeaderUser/>
             </div>
         </div>
     );

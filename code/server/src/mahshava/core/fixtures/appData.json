@@ -1,0 +1,216 @@
+[
+{
+    "model": "core.contact",
+    "pk": 1,
+    "fields": {
+        "contactName": "טל כהן פסיכולוגית",
+        "email": "talco@gmail.com",
+        "phone": "0545548973"
+    }
+},
+{
+    "model": "core.contact",
+    "pk": 2,
+    "fields": {
+        "contactName": "יונה שמואלי פסיכולוגית",
+        "email": "yonash@yahoo.com",
+        "phone": "0534435789"
+    }
+},
+{
+    "model": "core.contact",
+    "pk": 3,
+    "fields": {
+        "contactName": "דוד לוי פסיכולוג",
+        "email": "davidmejj@walla.com",
+        "phone": "0522233432"
+    }
+},
+{
+    "model": "core.processsteps",
+    "pk": 1,
+    "fields": {
+        "processName": "הערכת חוסן",
+        "taskID": 1,
+        "isDone": false
+    }
+},
+{
+    "model": "core.processsteps",
+    "pk": 2,
+    "fields": {
+        "processName": "תוכנית התערבות",
+        "taskID": 7,
+        "isDone": false
+    }
+},
+{
+    "model": "core.processsteps",
+    "pk": 3,
+    "fields": {
+        "processName": "מדידה חוזרת",
+        "taskID": 7,
+        "isDone": false
+    }
+},
+{
+    "model": "core.school",
+    "pk": 1,
+    "fields": {
+        "schoolName": "הרואה",
+        "city": "שדרות",
+        "district": "שער הנגב",
+        "pic": "https://i.ibb.co/0JBjzhG/roee.jpg",
+        "phoneNo": "042345698",
+        "noOfTeachers": 20,
+        "noOfStudents": 300,
+        "consultant": "נוגה טור",
+        "psychologist": "מתן לוי"
+    }
+},
+{
+    "model": "core.school",
+    "pk": 2,
+    "fields": {
+        "schoolName": "שער הנגב",
+        "city": "שער הנגב",
+        "district": "שער הנגב",
+        "pic": "https://i.ibb.co/0JBjzhG/roee.jpg",
+        "phoneNo": "043459098",
+        "noOfTeachers": 20,
+        "noOfStudents": 300,
+        "consultant": "נוגה טור",
+        "psychologist": "מתן לוי"
+    }
+},
+{
+    "model": "core.school",
+    "pk": 3,
+    "fields": {
+        "schoolName": "טל",
+        "city": "אשקלון",
+        "district": "דרום",
+        "pic": "https://i.ibb.co/0JBjzhG/roee.jpg",
+        "phoneNo": "045677676",
+        "noOfTeachers": 30,
+        "noOfStudents": 400,
+        "consultant": "נוגה טור",
+        "psychologist": "מתן לוי"
+    }
+},
+{
+    "model": "core.school",
+    "pk": 4,
+    "fields": {
+        "schoolName": "אמי\"ת",
+        "city": "אשקלון",
+        "district": "דרום",
+        "pic": "https://i.ibb.co/0JBjzhG/roee.jpg",
+        "phoneNo": "033342345",
+        "noOfTeachers": 10,
+        "noOfStudents": 200,
+        "consultant": "נוגה טור",
+        "psychologist": "מתן לוי"
+    }
+},
+{
+    "model": "core.schoolprocess",
+    "pk": 1,
+    "fields": {
+        "schoolID": 1,
+        "contactID": 1,
+        "processID": 1,
+        "lastActionDate": "2022-03-30",
+        "schedule": ""
+    }
+},
+{
+    "model": "core.schoolprocess",
+    "pk": 2,
+    "fields": {
+        "schoolID": 2,
+        "contactID": 1,
+        "processID": 1,
+        "lastActionDate": "2022-03-29",
+        "schedule": ""
+    }
+},
+{
+    "model": "core.schoolprocess",
+    "pk": 3,
+    "fields": {
+        "schoolID": 3,
+        "contactID": 2,
+        "processID": 1,
+        "lastActionDate": "2022-03-28",
+        "schedule": ""
+    }
+},
+{
+    "model": "core.schoolprocess",
+    "pk": 4,
+    "fields": {
+        "schoolID": 4,
+        "contactID": 3,
+        "processID": 1,
+        "lastActionDate": "2022-03-27",
+        "schedule": ""
+    }
+},
+{
+    "model": "core.task",
+    "pk": 1,
+    "fields": {
+        "taskName": "שאלון בית ספר",
+        "isDone": false
+    }
+},
+{
+    "model": "core.task",
+    "pk": 2,
+    "fields": {
+        "taskName": "תשובות שאלון",
+        "isDone": false
+    }
+},
+{
+    "model": "core.task",
+    "pk": 3,
+    "fields": {
+        "taskName": "דו\"ח ראשוני",
+        "isDone": false
+    }
+},
+{
+    "model": "core.task",
+    "pk": 4,
+    "fields": {
+        "taskName": "שאלון עומק ומיקוד",
+        "isDone": false
+    }
+},
+{
+    "model": "core.task",
+    "pk": 5,
+    "fields": {
+        "taskName": "תשובות עומק ומיקוד",
+        "isDone": false
+    }
+},
+{
+    "model": "core.task",
+    "pk": 6,
+    "fields": {
+        "taskName": "דו\"ח חממה",
+        "isDone": false
+    }
+},
+{
+    "model": "core.task",
+    "pk": 7,
+    "fields": {
+        "taskName": "to fill",
+        "isDone": false
+    }
+}
+]
