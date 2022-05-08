@@ -1,0 +1,82 @@
+.Current{
+    /* יחכונה בלשה */
+    position: absolute;
+    left: 90.49%;
+    right: 0;
+    top: -1.85%;
+    bottom: 57.41%;
+
+}
+.ProcessName{
+    /* ןסוחה תכרעה */
+
+    position: absolute;
+    left: 76.99%;
+    right: 0%;
+    top: 12.96%;
+    bottom: -11.11%;
+}
+.Question{
+    /* ןולאשה */
+
+    position: static;
+    left: 0;
+    right: 18.18%;
+    top: 0%;
+    bottom: 0%;
+}
+.Group{
+    /* קמוע תונויארו דוקימ תוצובק */
+    position: static;
+    left: -13.29%;
+    right: 6.94%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.Line{
+    /* Rectangle 488 */
+    position: static;
+    width: 2px;
+    height: 40px;
+    left: 437px;
+    top: 6px;
+
+    background: #C4C4C4;
+}
+.MainProcess{
+    /* הבשחמ ךילה יבלש */
+
+    position: static;
+    left: 65.62%;
+    right: 0%;
+    top: 0%;
+    bottom: 51.02%;
+}
+.One{
+    /* ןסוחה תקידב */
+
+    position: static;
+    left: 0%;
+    right: 23.76%;
+    top: 0%;
+    bottom: 0%;
+}
+.Two{
+    /* תוברעתה תינכות */
+    position: static;
+    left: 0%;
+    right: 20.17%;
+    top: 0%;
+    bottom: 0%;
+
+}
+.Three{
+    /* תרזוח הדידמ */
+
+    position: static;
+    left: 0%;
+    right: 24.74%;
+    top: 0%;
+    bottom: 0%;
+}

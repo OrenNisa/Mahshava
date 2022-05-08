@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SearchLine = () => {
+
     return(
         <svg width="800" height="30" viewBox="2 0 1255 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="8" width="388.193" height="32" fill="white"/>
