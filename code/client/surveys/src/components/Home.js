@@ -15,14 +15,14 @@ function Home() {
     borderRadius: '100px',
 }
 
-const titleStyle = {
-    position: 'relative',
-    textAlign: 'center',
-    color: 'darkblue',
-    top: '40px',
-    fontFamily: 'Helvetica',
-    fontSize: '75px',
-}
+    const titleStyle = {
+        position: 'relative',
+        textAlign: 'center',
+        color: 'darkblue',
+        top: '40px',
+        fontFamily: 'Helvetica',
+        fontSize: '75px',
+    }
 
     let navigate = useNavigate();
 
