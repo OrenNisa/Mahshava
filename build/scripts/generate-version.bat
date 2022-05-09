@@ -12,14 +12,14 @@ pushd %RELEASE_DIR%\%RELEASE_FOLDER_NAME%
 cmd /c %BUILD_SCRIPTS_DIR%\clone-project.bat
 cmd /c %BUILD_SCRIPTS_DIR%\generate-directory-structure.bat %1
 cmd /c %BUILD_SCRIPTS_DIR%\generate-virtual-env.bat
-cmd /c %BUILD_SCRIPTS_DIR%\generate-asap-client.bat
-cmd /c %BUILD_SCRIPTS_DIR%\generate-asap-server.bat
+cmd /c %BUILD_SCRIPTS_DIR%\generate-mahshava-client.bat
+cmd /c %BUILD_SCRIPTS_DIR%\generate-mahshava-server.bat
 cmd /c %BUILD_SCRIPTS_DIR%\cleanup.bat
 
 popd
 goto :eof
 
 :usage
-@echo Usage: %0 ^<Environment Name^> (e.g. generate-version.bat asap)
+@echo Usage: %0 ^<Environment Name^> (e.g. generate-version.bat mahshava)
 
 exit /B 1

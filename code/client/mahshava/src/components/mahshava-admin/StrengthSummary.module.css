@@ -1,5 +1,4 @@
 .SchoolCounter {
-    background-color: #z;
     font-weight: bolder;
     font-size: x-large;
     left: -42%;
@@ -33,6 +32,7 @@ li{
     color: #2F3A5F;
     font-weight: bolder;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .HeaderAmount {
@@ -47,5 +47,9 @@ li{
 }
 
 .InterventionCheck {
+    margin-top: 20px;
+}
+
+.ReevaluationCheck {
     margin-top: 20px;
 }
