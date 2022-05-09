@@ -1,36 +1,24 @@
 import React from "react";
+//import styles from '../App.css';
+import '../App.css';
+
 import { useNavigate } from 'react-router-dom';
 
+
 function Home() {
-
-    const buttonStyle = {
-    position: 'relative',
-    marginLeft: '20px',
-    left: '38.5%',
-    top: '150px',
-    width: '150px',
-    height: '150px',
-    fontSize: '18px',
-    backgroundColor: 'lightblue',
-    borderRadius: '100px',
-}
-
-const titleStyle = {
-    position: 'relative',
-    textAlign: 'center',
-    color: 'darkblue',
-    top: '40px',
-    fontFamily: 'Helvetica',
-    fontSize: '75px',
-}
 
     let navigate = useNavigate();
 
     return (
         <>
-        <h1 style={titleStyle}>Surveys</h1>
-        <input type='button' style={buttonStyle} value='Survey Creator' onClick={() => {navigate("/Creator")}}></input>
-        <input type='button' style={buttonStyle} value='Survey List' onClick={() => {navigate("/SurveyList")}}></input>
+        <div className="homeBackground">
+
+            <img className="logoStyle" src={"https://cdn.discordapp.com/attachments/896788926193365033/970713087881654392/survey-system_logo.png"}/>
+
+            <input type='button' className="creatorButtonStyle" value='CREATE' onClick={() => {navigate("/Creator")}}></input>
+            <input type='button' className="listButtonStyle" value='LIST' onClick={() => {navigate("/SurveyList")}}></input>
+        </div>
+
         </>
 );
 }
