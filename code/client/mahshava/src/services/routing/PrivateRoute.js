@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router';
-import { Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router';
 import useAuth from '../auth/hooks/useAuth';
 import { LOGIN_ROUTE } from './routes';
 
