@@ -1,82 +1,98 @@
+.ProcessNow{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 17%;
+    top: 9%;
+}
 .Current{
-    /* יחכונה בלשה */
+    /* השלב הנוכחי */
     position: absolute;
     left: 90.49%;
-    right: 0;
-    top: -1.85%;
-    bottom: 57.41%;
-
+    right: 15%;
+    top: 20%;
+    bottom: 72%;
+    color: #272525;
 }
 .ProcessName{
-    /* ןסוחה תכרעה */
-
+    /* הערכת החוסן */
     position: absolute;
-    left: 76.99%;
-    right: 0%;
-    top: 12.96%;
-    bottom: -11.11%;
+    left: 90.49%;
+    right: 15%;
+    top: 25%;
+    bottom: 72%;
 }
 .Question{
-    /* ןולאשה */
-
-    position: static;
-    left: 0;
-    right: 18.18%;
-    top: 0%;
-    bottom: 0%;
+    /* השאלון */
+    position: absolute;
+    left: 90.49%;
+    right: 40%;
+    top: 20%;
+    bottom: 72%;
+    order: 0;
 }
 .Group{
-    /* קמוע תונויארו דוקימ תוצובק */
-    position: static;
-    left: -13.29%;
-    right: 6.94%;
-    top: 0%;
-    bottom: 0%;
+    /* קבוצת מיקוד וראיונות עמוק */
+    position: absolute;
+    left: 90.49%;
+    right: 40%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
 }
 
 .Line{
-    /* Rectangle 488 */
-    position: static;
-    width: 2px;
-    height: 40px;
-    left: 437px;
-    top: 6px;
-
-    background: #C4C4C4;
+    position: absolute;
+    left: 90.49%;
+    right: 61%;
+    top: 21%;
+    bottom: 75%;
+    order: 2
 }
 .MainProcess{
     /* הבשחמ ךילה יבלש */
-
-    position: static;
-    left: 65.62%;
-    right: 0%;
-    top: 0%;
-    bottom: 51.02%;
+    position: absolute;
+    left: 90.49%;
+    right: 65%;
+    top: 20%;
+    bottom: 72%;
+    order: 0;
 }
 .One{
-    /* ןסוחה תקידב */
-
-    position: static;
-    left: 0%;
-    right: 23.76%;
-    top: 0%;
-    bottom: 0%;
+    /* הערכת חוסן */
+    position: absolute;
+    left: 90.49%;
+    right: 65%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
 }
 .Two{
-    /* תוברעתה תינכות */
-    position: static;
-    left: 0%;
-    right: 20.17%;
-    top: 0%;
-    bottom: 0%;
-
+    /* תוכנית התערבות */
+    position: absolute;
+    left: 90.49%;
+    right: 77%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
 }
 .Three{
-    /* תרזוח הדידמ */
+    /* מדידה חוזרת */
+    position: absolute;
+    left: 90.49%;
+    right: 91%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
 
-    position: static;
-    left: 0%;
-    right: 24.74%;
-    top: 0%;
-    bottom: 0%;
+}
+.Size{
+    /* Rectangle 488 */
+    width: 2px;
+    height: 40px;
+    background: #C4C4C4;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }

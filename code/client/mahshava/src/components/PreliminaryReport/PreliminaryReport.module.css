@@ -1,0 +1,28 @@
+
+.StepNow{
+    width: 0%;
+}
+.AutoLayout{
+    width: 5%;
+}
+.Question{
+    /* ןולאשה */
+    position: absolute;
+    left: 90.49%;
+    right: 15%;
+    top: 34%;
+    bottom: 72%;
+    color: #333333;
+}
+.SchoolDetails{
+    width: 32%;
+}
+.PreliminaryReportContainer {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+}
+.PreliminaryReportPage{
+    width: 67%;
+}

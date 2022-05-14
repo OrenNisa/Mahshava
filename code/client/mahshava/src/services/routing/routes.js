@@ -6,7 +6,7 @@ import AddSchoolLogo from '../../components/sidebar/logo/AddSchoolLogo';
 import DataBaseLogo from '../../components/sidebar/logo/DataBaseLogo';
 import HistorySchoolLogo from '../../components/sidebar/logo/HistorySchoolLogo';
 import HelpLogo from '../../components/sidebar/logo/HelpLogo';
-import PreliminaryReport from "../../components/PreliminaryReport/AutoLayout/PreliminaryReport";
+import PreliminaryReport from "../../components/PreliminaryReport/PreliminaryReport";
 
 
 const ROUTE_LOGIN = 'login';

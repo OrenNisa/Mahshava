@@ -12,9 +12,6 @@ import HeaderUser from "./HeaderUser";
 const Header = () => {
     return (
         <div className={style.headerContainer}>
-            <div className={style.LayoutContainer}>
-                <HeaderAutoLayout />
-            </div>
             <div className={style.NotificationsIcon}>
                 <NotificationsIcon />
             </div>
