@@ -1,0 +1,20 @@
+.PageInformation{
+
+    position: absolute;
+    float: right;
+    width: 99%;
+    height: 100%;
+    left: -14%;
+    top: 45%;
+
+    background: #FFFFFF;
+}
+.PageCounter{
+    font-weight: bolder;
+    font-size: x-large;
+    left: -42%;
+}
+.PageInProgress{
+    text-align: center;
+    font-weight: bolder;
+}

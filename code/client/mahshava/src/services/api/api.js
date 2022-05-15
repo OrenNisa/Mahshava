@@ -51,11 +51,6 @@ class AppointmentService {
 }
 
 class processService {
-    // static getSchoolProcess() {
-    //     return $axios
-    //         .get('schoolInfo', { headers: authHeader() })
-    //         .then(response => response.data);
-    // }
     static getSchoolProcess() {
         return $axios
             .get('schoolProcess', { headers: authHeader() })

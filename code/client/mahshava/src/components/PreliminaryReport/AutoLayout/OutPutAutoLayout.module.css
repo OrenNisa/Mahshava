@@ -1,0 +1,78 @@
+.Auto{
+    position: absolute;
+    left: 90.49%;
+    right: 15%;
+    top: 36%;
+    bottom: 72%;
+    order: 0;
+}
+.DepthFocusAnswers{
+  /* תשובות עומק ומיקוד*/
+    position: absolute;
+    left: 91.49%;
+    right: 18%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+}
+.SchoolQuestion{
+    /* ןולאש תכירע */
+    position: absolute;
+    left: 91.49%;
+    right: 15%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.QuestionAnswers{
+    position: absolute;
+    left: 91.49%;
+    right: 18%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+}
+.ReportPreliminary{
+    position: absolute;
+    left: 91.49%;
+    right: 18%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+}
+.DepthFocusQuestion{
+    position: absolute;
+    left: 91.49%;
+    right: 18%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+}
+.GreenhouseReport{
+    position: absolute;
+    left: 91.49%;
+    right: 18%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+}
+.Sharing{
+    position: absolute;
+    left: 91.49%;
+    right: 18%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+}
+.Vector{
+    position: absolute;
+    left: 91.49%;
+    right: 18%;
+    top: 37%;
+    bottom: 97.43%;
+    color: #313131;
+}
