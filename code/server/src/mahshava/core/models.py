@@ -50,8 +50,8 @@ class WillingnessToChange_Survey(models.Model):
 class SurveysResults(models.Model):
     id = models.AutoField(primary_key=True)
     noOfParticipants = models.IntegerField(default=0)
-    processStartDate = models.DateField
-    processEndDate = models.DateField
+    startDate = models.DateField(null=True, blank=True)
+    endDate = models.DateField(null=True, blank=True)
     leadershipAndOrganizationalCultureSurvey = models.ForeignKey(LeadershipAndOrganizationalCulture_Survey,
                                                                  on_delete=models.CASCADE)
     relationshipNetworksSurvey = models.ForeignKey(RelationshipNetworks_Survey, on_delete=models.CASCADE)
@@ -69,10 +69,10 @@ class School(models.Model):
     noOfStudents = models.IntegerField(default=0)
     consultant = models.CharField(max_length=50, default="")
     psychologist = models.CharField(max_length=50, default="")
-    processStartDate = models.DateField
+    processStartDate = models.DateField(null=True, blank=True)
     religiousAffiliation = models.CharField(max_length=50, default="")
     lengthOfStudy = models.CharField(max_length=20, default="")
-    surveysResults = models.ForeignKey(SurveysResults, on_delete=models.CASCADE)
+    surveysRes = models.ForeignKey(SurveysResults, on_delete=models.CASCADE)
 
 
 class SchoolProcess(models.Model):

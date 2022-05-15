@@ -42,8 +42,8 @@ class WillingnessToChangeSurveySerializers(serializers.ModelSerializer):
 
 
 class SurveysResultsSerializers(serializers.ModelSerializer):
-    processStartDate = serializers.DateTimeField(format="%d.%m.%Y")
-    processEndDate = serializers.DateTimeField(format="%d.%m.%Y")
+    # startDate = serializers.DateTimeField(format=mahshava_settings.DATETIME_FORMAT)
+    # endDate = serializers.DateTimeField(format='DD-MM-YYYY')
     leadershipAndOrganizationalCultureSurvey = LeadershipAndOrganizationalCultureSurveySerializers(read_only=True)
     relationshipNetworksSurvey = RelationshipNetworksSurveySerializers(read_only=True)
     willingnessToChangeSurvey = WillingnessToChangeSurveySerializers(read_only=True)
@@ -54,7 +54,7 @@ class SurveysResultsSerializers(serializers.ModelSerializer):
 
 
 class SchoolSerializers(serializers.ModelSerializer):
-    surveysResultsID = SurveysResultsSerializers(read_only=True)
+    surveysRes = SurveysResultsSerializers(read_only=True)
 
     class Meta:
         model = School
