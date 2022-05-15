@@ -1,14 +1,6 @@
 from rest_framework import serializers
 
-from .models import School, Contact, Task, ProcessSteps, SchoolProcess
-
-
-class SchoolSerializers(serializers.ModelSerializer):
-    # process = ProcessSerializers(read_only=True, many=True)
-
-    class Meta:
-        model = School
-        fields = "__all__"
+from .models import *
 
 
 class ContactSerializers(serializers.ModelSerializer):
@@ -28,6 +20,44 @@ class ProcessStepsSerializers(serializers.ModelSerializer):
 
     class Meta:
         model = ProcessSteps
+        fields = "__all__"
+
+
+class LeadershipAndOrganizationalCultureSurveySerializers(serializers.ModelSerializer):
+    class Meta:
+        model = LeadershipAndOrganizationalCulture_Survey
+        fields = "__all__"
+
+
+class RelationshipNetworksSurveySerializers(serializers.ModelSerializer):
+    class Meta:
+        model = RelationshipNetworks_Survey
+        fields = "__all__"
+
+
+class WillingnessToChangeSurveySerializers(serializers.ModelSerializer):
+    class Meta:
+        model = WillingnessToChange_Survey
+        fields = "__all__"
+
+
+class SurveysResultsSerializers(serializers.ModelSerializer):
+    # startDate = serializers.DateTimeField(format=mahshava_settings.DATETIME_FORMAT)
+    # endDate = serializers.DateTimeField(format='DD-MM-YYYY')
+    leadershipAndOrganizationalCultureSurvey = LeadershipAndOrganizationalCultureSurveySerializers(read_only=True)
+    relationshipNetworksSurvey = RelationshipNetworksSurveySerializers(read_only=True)
+    willingnessToChangeSurvey = WillingnessToChangeSurveySerializers(read_only=True)
+
+    class Meta:
+        model = SurveysResults
+        fields = "__all__"
+
+
+class SchoolSerializers(serializers.ModelSerializer):
+    surveysRes = SurveysResultsSerializers(read_only=True)
+
+    class Meta:
+        model = School
         fields = "__all__"
 
 

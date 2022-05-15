@@ -10,9 +10,7 @@
 ```
 python .\manage.py dumpdata --database=core auth.group auth.user auth.user_groups > core\fixtures\core.json
 
-python -Xutf8 .\manage.py dumpdata core.contact core.processsteps core.school core.schoolprocess core.task --database=core --indent 4 --format json -o core\fixtures\appData.json
-```
-
+python -Xutf8 .\manage.py dumpdata core.contact core.processsteps core.school core.schoolprocess core.task core.surveysresults core.relationshipnetworks_survey core.leadershipandorganizationalculture_survey core.willingnesstochange_survey --database=core --indent 4 --format json -o core\fixtures\appData.json
 
 ### Setup mahshava env
 * Client
