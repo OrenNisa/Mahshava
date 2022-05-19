@@ -32,14 +32,13 @@ const OutPutAutoLayout = () => {
             <div className={style.GreenhouseReport}>
                 <GreenhouseReport />
             </div>
+
             <div className={style.Sharing}>
                 <Sharing />
             </div>
             <div className={style.Vector}>
                 <Vector />
             </div>
-
-
         </div>
 
 

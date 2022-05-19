@@ -6,6 +6,14 @@
 
 .SchoolInformation {
     position: absolute;
+
+    float: left;
+    left: 0%;
+    width: 300px;
+    height: 100%;
+    color: #2F3A5F;
+    top: 27%;
+   /*
     float: right;
     width: 30%;
     height: 115%;
@@ -19,6 +27,8 @@
     gap: 48px;
 
     filter: drop-shadow(2px 2px 16px rgba(137, 189, 193, 0.2))
+
+    */
 }
 
 .SchoolsInProgress {
@@ -36,14 +46,14 @@
     position: absolute;
     width: 176px;
     height: 13px;
-    left: 202px;
+    left: 40%;
     top: 188.08px;
 
     /* H2 */
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 100%;
     line-height: 29px;
     display: flex;
     align-items: center;
@@ -57,14 +67,14 @@
     position: absolute;
     width: 143px;
     height: 15px;
-    left: 232px;
-    top: 446.08px;
+    left: 50%;
+    top: 60%;
 
     /* H2 */
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 100%;
     line-height: 29px;
     display: flex;
     align-items: center;
