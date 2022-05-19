@@ -3,12 +3,12 @@
     width: 80%;
     height: 60%;
     left: 17%;
-    top: 9%;
+    top: 7%;
 }
 .Current{
     /* השלב הנוכחי */
     position: absolute;
-    left: 90.49%;
+    left: 70.49%;
     right: 15%;
     top: 20%;
     bottom: 72%;
@@ -17,8 +17,8 @@
 .ProcessName{
     /* הערכת החוסן */
     position: absolute;
-    left: 90.49%;
-    right: 15%;
+    left: 88.49%;
+    right: 14%;
     top: 25%;
     bottom: 72%;
 }
@@ -26,7 +26,7 @@
     /* השאלון */
     position: absolute;
     left: 90.49%;
-    right: 40%;
+    right: 28%;
     top: 20%;
     bottom: 72%;
     order: 0;
@@ -35,7 +35,7 @@
     /* קבוצת מיקוד וראיונות עמוק */
     position: absolute;
     left: 90.49%;
-    right: 40%;
+    right: 34%;
     top: 27%;
     bottom: 72%;
     order: 0;
@@ -44,7 +44,7 @@
 .Line{
     position: absolute;
     left: 90.49%;
-    right: 61%;
+    right: 54%;
     top: 21%;
     bottom: 75%;
     order: 2
@@ -53,7 +53,7 @@
     /* הבשחמ ךילה יבלש */
     position: absolute;
     left: 90.49%;
-    right: 65%;
+    right: 56%;
     top: 20%;
     bottom: 72%;
     order: 0;
@@ -62,7 +62,7 @@
     /* הערכת חוסן */
     position: absolute;
     left: 90.49%;
-    right: 65%;
+    right: 56%;
     top: 27%;
     bottom: 72%;
     order: 0;
@@ -71,7 +71,7 @@
     /* תוכנית התערבות */
     position: absolute;
     left: 90.49%;
-    right: 77%;
+    right: 68%;
     top: 27%;
     bottom: 72%;
     order: 0;
@@ -80,7 +80,7 @@
     /* מדידה חוזרת */
     position: absolute;
     left: 90.49%;
-    right: 91%;
+    right: 80%;
     top: 27%;
     bottom: 72%;
     order: 0;
