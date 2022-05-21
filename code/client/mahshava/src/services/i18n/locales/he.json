@@ -38,7 +38,8 @@
     "mahshava-admin-add-school": "הוספת בית ספר",
     "mahshava-admin-school-history": "היסטוריה",
     "mahshava-admin-data-sources": "מאגרי מידע",
-    "mahshava-admin-help": "מידע ותמיכה"
+    "mahshava-admin-help": "מידע ותמיכה",
+    "mahshava-admin-preliminary-report" : "דוח ראשוני"
   },
   "admin-main-view-table": {
     "school": {"text": "בית הספר"},
