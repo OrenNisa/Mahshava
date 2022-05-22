@@ -13,6 +13,7 @@ const AdminMainViewTable = (props) => {
         let arr = [];
         let len = array.length;
         for (let i = 0; i < len; i++) {
+            let schoolID = array[i].schoolID.id
             let schoolName = array[i].schoolID.schoolName
             let schoolCity = array[i].schoolID.city
             let schoolDistrict = array[i].schoolID.district
@@ -24,7 +25,7 @@ const AdminMainViewTable = (props) => {
             let tasksName = array[i].processID.taskID.taskName
             let lastActionDate = array[i].lastActionDate
             arr.push({
-                id: i+1,
+                id: schoolID,
                 school: {firstRow: 'בית ספר ' + schoolName, secRow: schoolCity + ', ' + schoolDistrict, pic: schoolPicture},
                 communicationDetails: {firstRow: contactName + '-', secRow: contactMail + ' | ' + contactphone},
                 stepInProcess: {firstRow: processName + '-', secRow: tasksName},
@@ -94,7 +95,7 @@ const AdminMainViewTable = (props) => {
             disableColumnMenu: true,
             headerName: formatMessage({ id: 'admin-main-view-table.taskToPerform.text' }),
             flex: 0.5,
-            renderCell: () => <ActionsButton />,
+            renderCell: (params) => <ActionsButton SchoolID = {params.id}/>,
         },
     ];
 
