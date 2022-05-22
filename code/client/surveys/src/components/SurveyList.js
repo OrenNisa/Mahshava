@@ -30,7 +30,7 @@ function SurveyList() {
 
     useEffect(() => {
 
-        service.SurveyListService.getSurveyTitle(24).then(response => {
+        service.SurveyListService.getSurveyTitle(5).then(response => {
             setSurveyTitle(response);
             console.log(surveyTitle);
         });

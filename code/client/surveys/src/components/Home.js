@@ -15,6 +15,7 @@ function Home() {
 
             <input type='button' className="creatorButtonStyle" value='CREATE' onClick={() => {navigate("/Creator")}}></input>
             <input type='button' className="listButtonStyle" value='LIST' onClick={() => {navigate("/SurveyList")}}></input>
+            <input type='button'  value='LIST' onClick={() => {navigate("/RenderSurvey")}}></input>
         </div>
 
         </>

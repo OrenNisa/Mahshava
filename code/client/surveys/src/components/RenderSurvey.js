@@ -2,8 +2,10 @@ import "survey-core/modern.min.css";
 import 'survey-core/survey.min.css';
 import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
+import React from "react";
+import '../App.css';
 
-StylesManager.applyTheme("orange");
+//StylesManager.applyTheme("modern");
 
 const surveyJson = {
     "title": "Survey Demo",
@@ -60,8 +62,21 @@ const surveyJson = {
 }
 
 function App() {
+
+    function orangeTheme() {
+        StylesManager.applyTheme("orange");
+    }
+
+    function greyStoneTheme() {
+        StylesManager.applyTheme("stone");
+    }
+
+    function blueWinterTheme() {
+        StylesManager.applyTheme("winter");
+    }
+
     const survey = new Model(surveyJson);
-    survey.focusFirstQuestionAutomatic = false;
+    survey.focusFirstQuestionAutomatic = true;
 
     // const alertResults = useCallback((sender) => {
     //     const results = JSON.stringify(sender.data);
@@ -70,7 +85,14 @@ function App() {
 
     // survey.onComplete.add(alertResults);
 
-    return <Survey model={survey} />;
+    // <button  value='Orange style' onClick={styleOrange}></button>
+    return <>
+        <button className="orangeThemeButton" onClick={orangeTheme}></button>
+        <button className="greyStoneThemeButton" onClick={greyStoneTheme}></button>
+        <button className="blueWinterThemeButton" onClick={blueWinterTheme}></button>
+        <Survey model={survey} />
+    </>;
+    //Check how to start function when button clicked, for some reason able to start every function once only.
 }
 
 export default App;

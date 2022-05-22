@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {createElement} from 'react';
 
 import * as SurveyCreator from 'survey-creator-react';
 import 'survey-core/survey.i18n.js';
@@ -18,6 +18,7 @@ function Creator() {
 
     const creatorOptions = {
         showEmbeddedSurveyTab: true,
+
 
     };
     const creator = new SurveyCreator.SurveyCreator(creatorOptions);
