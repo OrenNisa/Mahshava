@@ -1,8 +1,8 @@
 .Auto{
     position: absolute;
-    left: 90.49%;
+    left: 120%;
     right: 15%;
-    top: 36%;
+    top: 35%;
     bottom: 72%;
     order: 0;
 }
@@ -62,15 +62,15 @@
 }
 .Sharing{
     position: absolute;
-    left: 91.49%;
-    right: 18%;
+    left: 10.49%;
+    right: 50%;
     top: 37%;
     bottom: 97.43%;
     color: #313131;
 }
 .Vector{
     position: absolute;
-    left: 91.49%;
+    left: 50.49%;
     right: 18%;
     top: 37%;
     bottom: 97.43%;

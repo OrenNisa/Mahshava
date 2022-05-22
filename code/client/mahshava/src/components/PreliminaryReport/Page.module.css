@@ -1,13 +1,13 @@
 .PageInformation{
-
     position: absolute;
-    float: right;
-    width: 99%;
-    height: 100%;
-    left: -14%;
-    top: 45%;
+    width: 60%;
+    height: 90%;
+    left: 25%;
+    top: 43%;
 
     background: #FFFFFF;
+
+
 }
 .PageCounter{
     font-weight: bolder;
