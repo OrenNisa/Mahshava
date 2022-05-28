@@ -32,3 +32,18 @@ def get_survey_title(request):
 
     return Response(Surveys.objects.get(pk=survey_id).title, status=status.HTTP_200_OK)
 
+
+@api_view(['GET'])
+@renderer_classes([JSONRenderer])
+@authentication_classes([])
+@permission_classes([])
+def get_survey_json(request):
+    survey_id = int(request.GET['id'])
+    try:
+        survey_json = Surveys.objects.get(pk=survey_id).surveyData
+        json_data = json.loads(survey_json)
+    except Surveys.DoesNotExist:
+        json_data = None
+    return Response(json_data, status=status.HTTP_200_OK)
+
+

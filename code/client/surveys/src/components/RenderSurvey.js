@@ -2,65 +2,25 @@ import "survey-core/modern.min.css";
 import 'survey-core/survey.min.css';
 import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
+import service from "../api";
+import {useEffect, useState} from "react";
+import  {useLocation} from "react-router-dom";
 
-StylesManager.applyTheme("orange");
+StylesManager.applyTheme("modern");
 
-const surveyJson = {
-    "title": "Survey Demo",
-    "description": "nothing special really",
-    "logoPosition": "right",
-    "pages": [
-        {
-            "name": "page1",
-            "elements": [
-                {
-                    "type": "text",
-                    "name": "question1",
-                    "title": "What is your first name?"
-                },
-                {
-                    "type": "checkbox",
-                    "name": "question2",
-                    "title": "What are your favorite colors?",
-                    "choices": [
-                        {
-                            "value": "item1",
-                            "text": "Blue"
-                        },
-                        {
-                            "value": "item2",
-                            "text": "Green"
-                        },
-                        {
-                            "value": "item3",
-                            "text": "Yellow"
-                        },
-                        {
-                            "value": "item4",
-                            "text": "Red"
-                        }
-                    ],
-                    "noneText": "None of the above",
-                    "selectAllText": "Red"
-                },
-                {
-                    "type": "rating",
-                    "name": "question3",
-                    "title": "Rate our demo!",
-                    "rateMax": 7
-                },
-                {
-                    "type": "signaturepad",
-                    "name": "question4",
-                    "title": "Sign here:"
-                }
-            ]
-        }
-    ]
-}
+function RenderSurvey() {
 
-function App() {
-    const survey = new Model(surveyJson);
+    const [surveyJSON, setSurveyJSON] = useState(null);
+    const location = useLocation();
+
+    useEffect(() => {
+
+        service.RenderService.getSurveyJSON(location.state.surveyID).then(response => {
+            setSurveyJSON(response);
+        });
+    }, []);
+
+    const survey = new Model(surveyJSON);
     survey.focusFirstQuestionAutomatic = false;
 
     // const alertResults = useCallback((sender) => {
@@ -73,4 +33,4 @@ function App() {
     return <Survey model={survey} />;
 }
 
-export default App;
+export default RenderSurvey;
