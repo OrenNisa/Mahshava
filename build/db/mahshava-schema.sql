@@ -1,3 +1,4 @@
+
 CREATE DATABASE IF NOT EXISTS mahshava;
 
 DROP USER IF EXISTS 'mahshava_db_root'@'%';

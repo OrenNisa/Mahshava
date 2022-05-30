@@ -32,9 +32,21 @@ class SurveyListService {
     }
 }
 
+class RenderService {
+    static getSurveyJSON(id) {
+        console.log("IN API " +id)
+        return $axios.get('surveys/get-survey-json/', {
+            params: {id: id}
+        }).then(response => response.data);
+    }
+}
+
+
+
 const service = {
     SurveyService,
-    SurveyListService
+    SurveyListService,
+    RenderService,
 };
 
 export default service;
