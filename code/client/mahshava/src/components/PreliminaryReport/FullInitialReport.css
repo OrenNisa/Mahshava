@@ -113,6 +113,7 @@
 	justify-content: flex-end;
 }
 .FullInitialReport .ReportContent .Resilience .ResilienceTitle .ResilienceTitleText {
+	left: 68%;
 	position: relative;
 	flex: none;
 	margin-right: 17.6px;
@@ -129,6 +130,7 @@
 	line-height: 38.671875px;
 }
 .FullInitialReport .ReportContent .Resilience .ResilienceTitle .PolygoneFrame1 {
+	left: 87%;
 	position: relative;
 	flex: none;
 	margin-right: 17.6px;
@@ -136,6 +138,7 @@
 	height: 20.900000000000002px;
 }
 .FullInitialReport .ReportContent .Resilience .ResilienceTitle .PolygoneFrame1 .Polygon27 {
+
 	position: absolute;
 	left: 1.1px;
 	top: 4.4px;
@@ -470,7 +473,7 @@
 }
 .FullInitialReport .ReportContent .SchoolBG .SchoolBGTitle {
 	position: absolute;
-	left: 0px;
+	left: 68%;
 	top: 0px;
 	width: 100%;
 	height: 7.116104868913857%;
@@ -495,6 +498,7 @@
 	line-height: 38.671875px;
 }
 .FullInitialReport .ReportContent .SchoolBG .SchoolBGTitle .PolygonFrame2 {
+	left: 20%;
 	position: relative;
 	flex: none;
 	margin-right: 17.6px;
@@ -518,8 +522,8 @@
 }
 .FullInitialReport .ReportContent .MainData .PointsForImprovement {
 	position: absolute;
-	left: 238.07373046875003px;
-	top: 965.8000000000001px;
+	left: 160.07373046875003px;
+	top: 1080.8000000000001px;
 	width: 70.18932766384549%;
 	height: 25.27659574468085%;
 }
@@ -1243,8 +1247,8 @@
 }
 .FullInitialReport .ReportContent .MainData .StrengthPoints {
 	position: absolute;
-	left: 106.15px;
-	top: 589.6px;
+	left: 60.15px;
+	top: 720.6px;
 	width: 82.55208333333334%;
 	height: 27.063829787234045%;
 }
@@ -1673,8 +1677,8 @@
 }
 .FullInitialReport .ReportContent .MainData .SpiderGraph {
 	position: absolute;
-	left: 432.063671875px;
-	top: 40.7px;
+	left: 350.063671875px;
+	top: 100.9px;
 	width: 41.84027777777778%;
 	height: 40.93617021276596%;
 }
@@ -1932,10 +1936,10 @@
 }
 .FullInitialReport .ReportContent .MainData .MainScore {
 	position: absolute;
-	left: 1019.463671875px;
+	left: 960.463671875px;
 	top: 97.92578125000001px;
-	width: 14.84375%;
-	height: 7.402260638297872%;
+	width: 12.84375%;
+	height: 6.402260638297872%;
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -2020,7 +2024,7 @@
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu {
 	position: absolute;
-	left: 49.26367187500001px;
+	left: 13.26367187500001px;
 	top: 57.2px;
 	width: 24.479166666666664%;
 	height: 20.340425531914892%;
@@ -2075,7 +2079,7 @@
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__35 .__36 .__37 .__38 {
 	position: absolute;
-	left: 12.097918701171876px;
+	left: -30%;
 	top: 0px;
 	width: 94.86065179848524%;
 	height: 100%;
@@ -2097,6 +2101,7 @@
 	height: 90%;
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__35 .__36 ._5_3 {
+	left: 10%;
 	position: relative;
 	flex: none;
 	margin-bottom: 17.6px;
@@ -2114,6 +2119,7 @@
 	line-height: 20.625px;
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__35 .Ellipse120_1 {
+	left: 57%;
 	position: relative;
 	flex: none;
 	margin-right: 17.6px;
@@ -2152,7 +2158,7 @@
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__39 .__40 .__41 .__42 {
 	position: absolute;
-	left: 12.097918701171876px;
+	left: -36%;
 	top: 0px;
 	width: 94.86065179848524%;
 	height: 100%;
@@ -2174,6 +2180,7 @@
 	height: 90%;
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__39 .__40 ._4_3 {
+	left: 11%;
 	position: relative;
 	flex: none;
 	margin-bottom: 17.6px;
@@ -2191,6 +2198,7 @@
 	line-height: 20.625px;
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__39 .Ellipse120_2 {
+	left: 57%;
 	position: relative;
 	flex: none;
 	margin-right: 17.6px;
@@ -2221,6 +2229,7 @@
 	align-items: flex-end;
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__43 .__44 .__45 {
+	left: -13%;
 	position: relative;
 	flex: none;
 	margin-bottom: 17.6px;
@@ -2251,6 +2260,7 @@
 	height: 90%;
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__43 .__44 ._4_4 {
+	left: 11%;
 	position: relative;
 	flex: none;
 	margin-bottom: 17.6px;
@@ -2268,6 +2278,7 @@
 	line-height: 20.625px;
 }
 .FullInitialReport .ReportContent .MainData .GraphMenu .Frame .__43 .Ellipse120_3 {
+	left: 57%;
 	position: relative;
 	flex: none;
 	margin-right: 17.6px;
@@ -2278,7 +2289,7 @@
 }
 .FullInitialReport .ReportContent .MainData .MainDataTitle {
 	position: absolute;
-	left: 0px;
+	left: 70%;
 	top: 0px;
 	width: 100%;
 	height: 1.6170212765957446%;
@@ -2302,6 +2313,7 @@
 	line-height: 38.671875px;
 }
 .FullInitialReport .ReportContent .MainData .MainDataTitle .Frame1539 {
+	left: 19%;
 	position: relative;
 	flex: none;
 	margin-right: 17.6px;
@@ -2310,13 +2322,14 @@
 }
 .FullInitialReport .ReportContent .MainData .MainDataTitle .Frame1539 .Polygon27_2 {
 	position: absolute;
-	left: 1.1px;
+	left: 1px;
 	top: 4.4px;
 	width: 19.8px;
 	height: 13.200000000000001px;
 	background: rgba(47,58,95,1.00);
 }
 .FullInitialReport .ReportContent .IngredientDetails {
+	top: 3%;
 	position: relative;
 	flex: none;
 	margin-bottom: 70.4px;
@@ -2325,8 +2338,8 @@
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details {
 	position: absolute;
-	left: 57.75000000000001px;
-	top: 73.7px;
+	left: 60.75000000000001px;
+	top: 80.7px;
 	width: 90.77586206896552%;
 	height: 91.76904176904176%;
 	display: flex;
@@ -2353,6 +2366,7 @@
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .Title_2 {
 	position: relative;
 	flex: none;
+	left: 55%;
 	margin-bottom: 35.2px;
 	width: 300.2798248291016px;
 	height: 20.900000000000002px;
@@ -2378,6 +2392,7 @@
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .Title_2 .Polygon27_3 {
 	position: relative;
 	flex: none;
+	left: 90%;
 	margin-right: 17.6px;
 	width: 13.200000000000001px;
 	height: 19.8px;
@@ -2407,6 +2422,7 @@
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation .Text_2 .Group1358 {
 	position: relative;
+	left: 64%;
 	flex: none;
 	margin-bottom: 16.5px;
 	width: 252.44895935058597px;
@@ -2458,6 +2474,7 @@
 	font-size: 17.6px;
 	font-weight: 400;
 	line-height: 20.625px;
+	left: -8%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation .Frame_1 {
 	position: relative;
@@ -2465,14 +2482,16 @@
 	margin-right: 17.6px;
 	width: 13.200000000000001px;
 	height: 13.200000000000001px;
+	left: -9%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation .Frame_1 .Polygon27_4 {
 	position: absolute;
-	left: 0px;
+	left: 0%;
 	top: 442.20000000000005px;
 	width: 13.200000000000001px;
 	height: 8.8px;
 	background: rgba(47,58,95,1.00);
+
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_1 {
 	position: relative;
@@ -2499,6 +2518,7 @@
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_1 .TextFrame .Group1358_1 {
 	position: relative;
 	flex: none;
+	left: 63%;
 	margin-bottom: 16.5px;
 	width: 252.44895935058597px;
 	height: 12.58125px;
@@ -2549,6 +2569,7 @@
 	font-size: 17.6px;
 	font-weight: 400;
 	line-height: 20.625px;
+	left: -8%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_1 .__52 {
 	position: relative;
@@ -2556,10 +2577,11 @@
 	margin-right: 17.6px;
 	width: 13.200000000000001px;
 	height: 13.200000000000001px;
+	left: -9%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_1 .__52 .Polygon27_5 {
 	position: absolute;
-	left: 0px;
+	left: 0%;
 	top: 222.20000000000002px;
 	width: 13.200000000000001px;
 	height: 8.8px;
@@ -2593,6 +2615,7 @@
 	margin-bottom: 16.5px;
 	width: 252.44895935058597px;
 	height: 12.58125px;
+	left: 62%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_2 .TextFrame_1 .Group1358_2 .__53 {
 	position: absolute;
@@ -2640,6 +2663,7 @@
 	font-size: 17.6px;
 	font-weight: 400;
 	line-height: 20.625px;
+	left: -11%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_2 .__55 {
 	position: relative;
@@ -2647,10 +2671,11 @@
 	margin-right: 17.6px;
 	width: 13.200000000000001px;
 	height: 13.200000000000001px;
+	left: 80%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_2 .__55 .Polygon27_6 {
 	position: absolute;
-	left: 0px;
+	left: 0%;
 	top: 2.2px;
 	width: 13.200000000000001px;
 	height: 8.8px;
@@ -2684,6 +2709,7 @@
 	margin-bottom: 16.5px;
 	width: 252.44895935058597px;
 	height: 12.58125px;
+	left: 59%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_3 .TextFrame_2 .Group1358_3 .__56 {
 	position: absolute;
@@ -2731,6 +2757,7 @@
 	font-size: 17.6px;
 	font-weight: 400;
 	line-height: 20.625px;
+	left: -10%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_3 .__58 {
 	position: relative;
@@ -2738,10 +2765,11 @@
 	margin-right: 17.6px;
 	width: 13.200000000000001px;
 	height: 13.200000000000001px;
+	left: 80%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_3 .__58 .Polygon27_7 {
 	position: absolute;
-	left: 0px;
+	left: 0%;
 	top: -217.8px;
 	width: 13.200000000000001px;
 	height: 8.8px;
@@ -2775,6 +2803,7 @@
 	margin-bottom: 16.5px;
 	width: 252.44895935058597px;
 	height: 12.58125px;
+	left: 63%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_4 .TextFrame_3 .Group1358_4 .__59 {
 	position: absolute;
@@ -2808,6 +2837,7 @@
 	font-weight: 700;
 	line-height: 20.625px;
 }
+
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_4 .TextFrame_3 .__60 {
 	position: relative;
 	flex: none;
@@ -2822,6 +2852,7 @@
 	font-size: 17.6px;
 	font-weight: 400;
 	line-height: 20.625px;
+	left: -10%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_4 .__61 {
 	position: relative;
@@ -2829,10 +2860,10 @@
 	margin-right: 17.6px;
 	width: 13.200000000000001px;
 	height: 13.200000000000001px;
+	left: 80%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .LeadershipAndOrganizationalCultureSection .ComponenExplanation_4 .__61 .Polygon27_8 {
 	position: absolute;
-	left: 0px;
 	top: -437.8px;
 	width: 13.200000000000001px;
 	height: 8.8px;
@@ -2869,6 +2900,7 @@
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 25.781250000000004px;
+	left: 190%
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .RelationshipNetworks .Title_3 .Polygon27_9 {
 	position: relative;
@@ -2877,6 +2909,7 @@
 	width: 13.200000000000001px;
 	height: 19.8px;
 	background: rgba(47,58,95,1.00);
+	left: 289%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .WillingnessToChange {
 	position: relative;
@@ -2884,6 +2917,7 @@
 	margin-bottom: 50.6px;
 	width: 300.2798248291016px;
 	height: 20.900000000000002px;
+	left: 60%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .Details .WillingnessToChange .Title_4 {
 	position: absolute;
@@ -2917,10 +2951,11 @@
 	width: 13.200000000000001px;
 	height: 19.8px;
 	background: rgba(47,58,95,1.00);
+	left: 71%;
 }
 .FullInitialReport .ReportContent .IngredientDetails .IngredientDetailsTitle {
 	position: absolute;
-	left: 0px;
+	left: 65%;
 	top: 0px;
 	width: 100%;
 	height: 2.334152334152334%;
@@ -2952,7 +2987,7 @@
 }
 .FullInitialReport .ReportContent .IngredientDetails .IngredientDetailsTitle .Frame1539_1 .Polygon27_11 {
 	position: absolute;
-	left: 1.1px;
+	left: 1200%;
 	top: 4.4px;
 	width: 19.8px;
 	height: 13.200000000000001px;
@@ -2964,11 +2999,13 @@
 	margin-bottom: 70.4px;
 	width: 1287.5500000000002px;
 	height: 283.25px;
+	left: 0%;
+	top: 2%;
 }
 .FullInitialReport .ReportContent .ReportSummary .Remember {
 	position: absolute;
-	left: 0px;
-	top: 167.20000000000002px;
+	left: -9%;
+	top: 185px;
 	width: 96.561298590346%;
 	height: 40.97087378640777%;
 }
@@ -3020,7 +3057,7 @@
 }
 .FullInitialReport .ReportContent .ReportSummary .Line2_2 {
 	position: absolute;
-	left: 5.5px;
+	left: 56%;
 	top: 106.7px;
 	width: 96.11277231952157%;
 	height: 6.990291262135923%;
@@ -3036,7 +3073,7 @@
 }
 .FullInitialReport .ReportContent .ReportSummary .Line1_2 {
 	position: absolute;
-	left: 5.5px;
+	left: 27%;
 	top: 55.00000000000001px;
 	width: 96.11277231952157%;
 	height: 3.8834951456310676%;
@@ -3074,6 +3111,7 @@
 	font-size: 33px;
 	font-weight: 700;
 	line-height: 38.671875px;
+	left: 70%;
 }
 .FullInitialReport .ReportContent .ReportSummary .ReportSummaryTitle .Frame1539_2 {
 	position: relative;
@@ -3084,7 +3122,7 @@
 }
 .FullInitialReport .ReportContent .ReportSummary .ReportSummaryTitle .Frame1539_2 .Polygon27_12 {
 	position: absolute;
-	left: 1.1px;
+	left: 5100%;
 	top: 4.4px;
 	width: 19.8px;
 	height: 13.200000000000001px;
@@ -3096,6 +3134,8 @@
 	margin-bottom: 70.4px;
 	width: 1275.45px;
 	height: 20.900000000000002px;
+	left: 50%;
+	top: 2%;
 }
 .FullInitialReport .ReportContent .Recommendations .RecommendationsTitle {
 	position: absolute;
@@ -3129,6 +3169,7 @@
 	width: 19.8px;
 	height: 13.200000000000001px;
 	background: rgba(47,58,95,1.00);
+	left: 33%;
 }
 .FullInitialReport .ReportContent .RepresentativeReference {
 	position: relative;
@@ -3139,6 +3180,8 @@
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
+	left: 55%;
+	top: 3%;
 }
 .FullInitialReport .ReportContent .RepresentativeReference .RepresentativeReferenceTitle {
 	position: relative;
@@ -3172,6 +3215,7 @@
 	width: 19.8px;
 	height: 13.200000000000001px;
 	background: rgba(47,58,95,1.00);
+	left: 28%
 }
 .FullInitialReport .ReportContent .RepresentativeReference .Text_7 {
 	position: relative;
@@ -3187,4 +3231,5 @@
 	font-size: 17.6px;
 	font-weight: 400;
 	line-height: 20.625px;
+	left: -75%;
 }

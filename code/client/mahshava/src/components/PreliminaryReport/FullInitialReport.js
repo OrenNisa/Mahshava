@@ -17,9 +17,6 @@ export default function FullInitialReport () {
 				<div className='Resilience'>
 					<div className='ResilienceTitle'>
 						<span className='ResilienceTitleText'>החוסן הארגוני</span>
-						<div className='PolygoneFrame1'>
-							<div className='Polygon27'/>
-						</div>
 					</div>
 					<span className='ResilienceSubText1'>
 						חוסן הוא היכולת של ארגון לשרוד משבר ולשגשג בעולם של אי וודאות.
@@ -313,6 +310,9 @@ export default function FullInitialReport () {
 								<div className='Polygon27_3'/>
 							</div>
 							<div className='ComponenExplanation'>
+								<div className='Frame_1'>
+									<div className='Polygon27_4'/>
+								</div>
 								<div className='Text_2'>
 									<div className='Group1358'>
 										<span className='__48'>מעורבות הצוות</span>
@@ -324,11 +324,11 @@ export default function FullInitialReport () {
 										לטווח הארוך. כמו כן נמדדת המעורבות באופן בו הצוות מוכוון ומעודד על יד ההנהלה להשתמש בכישוריו, כדי לפתור בעיות.
 									</span>
 								</div>
-								<div className='Frame_1'>
-									<div className='Polygon27_4'/>
-								</div>
 							</div>
 							<div className='ComponenExplanation_1'>
+								<div className='__52'>
+									<div className='Polygon27_5'/>
+								</div>
 								<div className='TextFrame'>
 									<div className='Group1358_1'>
 										<span className='__50'>קבלת ההחלטות</span>
@@ -339,9 +339,6 @@ export default function FullInitialReport () {
 										<br/>
 										לאפשר תגובה מהירה למשבר. כמו כן משפיעים גם מידת המיומנות, הידע הספציפי, והמעורבות של הצוות.
 									</span>
-								</div>
-								<div className='__52'>
-									<div className='Polygon27_5'/>
 								</div>
 							</div>
 							<div className='ComponenExplanation_2'>
