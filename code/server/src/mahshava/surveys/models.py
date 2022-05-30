@@ -11,3 +11,9 @@ class Surveys(models.Model):
 
     def __str__(self):
         return '%s' % self.title
+
+
+# class Themes(models.Model):
+#     id = models.AutoField(primary_key=True)
+#     theme = models.JSONField()
+
