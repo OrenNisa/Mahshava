@@ -7,7 +7,6 @@ import json
 from surveys.models import Surveys
 from surveys.serializers import SurveysSerializer
 
-
 @api_view(['POST'])
 @renderer_classes([JSONRenderer])
 @authentication_classes([])
@@ -44,6 +43,7 @@ def get_survey_json(request):
         json_data = json.loads(survey_json)
     except Surveys.DoesNotExist:
         json_data = None
+
     return Response(json_data, status=status.HTTP_200_OK)
 
 
