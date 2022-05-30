@@ -5,6 +5,7 @@ import Card from "@mui/material/Card";
 import Img1 from "./Img1";
 import Img2 from "./Img2";
 import Img3 from "./Img3";
+import AccordionDetails from '../Details/AccordionDetails'
 
 export const Data = [
     {
@@ -100,7 +101,12 @@ export const Data = [
     },
     {
         title: 'פירוט הרכיבים',
-        content: 'אא ההה בבב .'
+        content: <div className={styled.SizeLength}>
+                <Card className={styled.FullInitialReport}>
+                    <AccordionDetails />
+
+                </Card>
+        </div>
     },
     {
         title: 'סיכום הדוח',

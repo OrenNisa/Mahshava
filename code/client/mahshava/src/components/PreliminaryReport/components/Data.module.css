@@ -607,3 +607,22 @@
     font-weight: 900;
     line-height: 46.40625000000001px;
 }
+.SizeLength{
+    width: 201px;
+    height: 300px;
+    float: left;
+    left: 90%;
+}
+.FullInitialReport {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    left: calc(85% - 1369px/2 - 0.5px);
+    top: calc(30% - 802px/2 + 473px);
+    overflow-y: scroll;
+
+    background: #FFFFFF;
+    /* blue shadow */
+
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
