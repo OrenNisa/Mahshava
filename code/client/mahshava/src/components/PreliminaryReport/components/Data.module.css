@@ -9,7 +9,7 @@
 }
 .sizee{
     width: 201px;
-    height: 60px;
+    height: 50px;
 }
 .Text1{
     position: absolute;
@@ -102,7 +102,7 @@
     /* בגנה רעש ,תורדש */
     width: 130px;
     height: 11px;
-    left: 70%;
+    left: 80%;
 
 
     /* Big text report */
@@ -609,16 +609,22 @@
 }
 .SizeLength{
     width: 201px;
-    height: 300px;
+    height: 500px;
     float: left;
+    left: 90%;
+}
+.NewData{
+    width: 201px;
+    height: 300px;
+    float: right;
     left: 90%;
 }
 .FullInitialReport {
     position: absolute;
     width: 700px;
-    height: 300px;
+    height: 400px;
     left: calc(85% - 1369px/2 - 0.5px);
-    top: calc(30% - 802px/2 + 473px);
+    top: calc(23% - 802px/2 + 473px);
     overflow-y: scroll;
 
     background: #FFFFFF;

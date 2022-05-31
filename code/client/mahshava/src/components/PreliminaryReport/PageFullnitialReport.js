@@ -78,8 +78,6 @@ const PageFullnitialReport = () => {
                            );
                        })}
                    </Container>
-
-
         </Card>
 
     );

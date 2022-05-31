@@ -5,7 +5,7 @@ import Card from "@mui/material/Card";
 import Img1 from "./Img1";
 import Img2 from "./Img2";
 import Img3 from "./Img3";
-import AccordionDetails from '../Details/AccordionDetails'
+import AccordionData from "../Details/AccordionData";
 
 export const Data = [
     {
@@ -19,7 +19,7 @@ export const Data = [
 						<br/>
 						רכיבים אלה משפיעים על המסוגלות של ארגון להתמודד באופן יעיל עם משימותיו בשגרה, כמו כן על היכולת להתאושש ממשברים ומקרי קיצון.
 						<br/>
-                        <br/><br/>
+                        <br/>
                 </span>
             </div>
     },
@@ -103,8 +103,7 @@ export const Data = [
         title: 'פירוט הרכיבים',
         content: <div className={styled.SizeLength}>
                 <Card className={styled.FullInitialReport}>
-                    <AccordionDetails />
-
+                    <div className={styled.NewData}> <AccordionData/></div>
                 </Card>
         </div>
     },

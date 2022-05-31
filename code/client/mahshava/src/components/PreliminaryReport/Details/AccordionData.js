@@ -9,8 +9,8 @@ import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
 const AccordionSection = styled.div`
   display: flex;
-  left: 51%;
-  top: 30%;
+  left: 55%;
+  top: 0%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -22,11 +22,12 @@ const AccordionSection = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: 20%;
-  left: 70%;
+  top: 0%;
+  left: -60%;
 `;
 
 const Wrap = styled.div`
+
   color: #2F3A5F;
   display: flex;
   justify-content: right;
@@ -35,8 +36,8 @@ const Wrap = styled.div`
   text-align: center;
   font-family: 'Heebo';
   font-style: normal;
-  font-weight: 800;
-  font-size: 30px;
+  font-weight: 700;
+  font-size: 10px;
   line-height: 20px;
   text-align: left;
   cursor: pointer;
@@ -64,7 +65,7 @@ const AccordionData = () => {
     return (
         <AccordionSection>
             <Container>
-                {Data.map((item, index) => {
+                {DetailsData.map((item, index) => {
                     return (
                         <>
                             <Wrap onClick={() => toggle(index)} key={index}>
@@ -83,4 +84,4 @@ const AccordionData = () => {
     );
 };
 
-export default Accordion;
+export default AccordionData;

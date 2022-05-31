@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Details } from './Details';
+import { DetailsB } from './DetailsB';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
@@ -7,20 +7,32 @@ import LogoPolygon1 from '../../mahshava-admin/LogoHelp/LogoPolygon1'
 import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
 
-
+const AccordionSection = styled.div`
+  display: flex;
+  left: -30%;
+  top: -20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 30vh;
+  width: 30%;
+  
+`;
 
 const Container = styled.div`
   position: absolute;
-  top: 10%;
-  left: 15%;
+  top: 12%;
+  left: 27%;
 `;
 
 const Wrap = styled.div`
   color: #2F3A5F;
   display: flex;
+  top: 20%;
   justify-content: right;
   align-items: center;
-  width: 200%;
+  width: 300%;
   text-align: center;
   font-family: 'Heebo';
   font-style: normal;
@@ -33,7 +45,7 @@ const Wrap = styled.div`
     padding: 1rem;
     font-family: 'Heebo';
 font-style: normal;
-font-weight: 300;
+font-weight: 400;
 font-size: 14px;
 line-height: 1px;
 
@@ -45,24 +57,24 @@ color: #333333;
   
 `;
 const Dropdown = styled.div`
-  width: 100%;
-  height: 20px;
+  width: 200%;
+  height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   float: left;
   p {
-    font-size: 1 rem;
+    font-size: 3 rem;
     font-family: 'Heebo';
 font-style: normal;
 text-align: right;
-color: #333333;
+color: red;
   }
 `;
 
 
-const AccordionDetails = () => {
+const AccordionDetailsB = () => {
     const [clicked, setClicked] = useState(false);
 
     const toggle = index => {
@@ -75,8 +87,9 @@ const AccordionDetails = () => {
     };
 
     return (
+        <AccordionSection>
             <Container>
-                {Details.map((item, index) => {
+                {DetailsB.map((item, index) => {
                     return (
                         <>
                             <Wrap onClick={() => toggle(index)} key={index}>
@@ -96,8 +109,9 @@ const AccordionDetails = () => {
                     );
                 })}
             </Container>
+        </AccordionSection>
 
     );
 };
 
-export default AccordionDetails;
+export default AccordionDetailsB;

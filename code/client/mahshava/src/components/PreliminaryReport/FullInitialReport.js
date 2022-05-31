@@ -376,8 +376,8 @@ export default function FullInitialReport () {
 							<div className='ComponenExplanation_4'>
 								<div className='TextFrame_3'>
 									<div className='Group1358_4'>
-										<span className='__59'>מודעות למצב</span>
-										<span className='_617_1'>6.1/7</span>
+										<span className='__59'>מודעות למצב  </span>
+										<span className='_617_1'> 6.1/7 </span>
 									</div>
 									<span className='__60'>
 										עירנות הצוות לבעיות צפויות ושיתוף בעמדות מקצועיות נמדדת על פי רמת העידוד שהצוות חווה בלהיות עירני לגבי הארגון,
