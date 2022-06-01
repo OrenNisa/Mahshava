@@ -5,8 +5,9 @@ import { Survey } from "survey-react-ui";
 import service from "../api";
 import {useEffect, useState} from "react";
 import  {useLocation} from "react-router-dom";
+import '../SurveyBranding.css';
 
-StylesManager.applyTheme("orange");
+//StylesManager.applyTheme("orange");
 
 function RenderSurvey() {
 
@@ -30,7 +31,18 @@ function RenderSurvey() {
 
     // survey.onComplete.add(alertResults);
 
-    return <Survey model={survey} />;
+    const [surveyBackgroundColor, setSurveyBackgroundColor] = useState("#fff");
+
+    useEffect(() => {
+
+        service.BrandingService.getBackgroundColor(location.state.surveyID).then(response => {
+            setSurveyBackgroundColor(response);
+        });
+    }, []);
+
+
+
+    return <Survey className={"sv_main sv_body"} style={{backgroundColor: surveyBackgroundColor}} model={survey} />;
 }
 
 export default RenderSurvey;

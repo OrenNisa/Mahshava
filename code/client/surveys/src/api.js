@@ -19,8 +19,8 @@ $axios.interceptors.response.use(
 );
 
 class SurveyService {
-    static saveSurvey(survey) {
-        return $axios.post('surveys/save-survey/', { survey }).then(response => response.data);
+    static saveSurvey(survey, color) {
+        return $axios.post('surveys/save-survey/', { survey, color }).then(response => response.data);
     }
 }
 
@@ -41,12 +41,22 @@ class RenderService {
     }
 }
 
+class BrandingService {
+    static getBackgroundColor(id){
+        return $axios.get('survey/get-survey-background-color', {
+            params: {id: id}
+        }).then(response => response.data);
+    }
+}
+
+
 
 
 const service = {
     SurveyService,
     SurveyListService,
     RenderService,
+    BrandingService,
 };
 
 export default service;

@@ -1,0 +1,91 @@
+.Header {
+
+    color: #2F3A5F;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+    /*padding: 30px;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-top: -150px;*/
+    /*border-style: solid;*/
+    /*border-width: 1px 0px 0px 0px;*/
+    /*border-color: #00147e;*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.SubTitle {
+
+    position: relative;
+    color: #2F3A5F;
+    font-size: 20px;
+    text-align: center;
+    top: 10px;
+}
+
+.ColorPickerButton {
+
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px;
+    top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.ColorPickerButton:hover {
+
+    background-color: #05d98b;
+}
+
+.UserChoice {
+
+    /*position: relative;*/
+    /*margin-top: 200px*/
+}
+
+.ChromePicker {
+
+    position: relative;
+    left: 41.75%;
+    top: 10px;
+}
+
+.ColorPreview {
+
+    position: relative;
+    border: solid 1px black;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    width: 25%;
+    border-radius: 10px;
+    margin: 0 auto;
+    top: 18px;
+}
+
+.NextButton {
+
+    position: relative;
+    background-color: #05d98b;
+    border: none;
+    color: white;
+    padding: 10px;
+    top: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.NextButton:hover {
+
+    background-color: #04AA6D;
+}
