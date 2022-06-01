@@ -283,7 +283,7 @@
 }
 .sizzee{
     width: 201px;
-    height: 191px;
+    height: 200px;
     float: left;
     left: 90%;
 }
@@ -319,8 +319,6 @@
     /* blue shadow */
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
-
-
 }
 .crid1{
     position: absolute;
@@ -500,16 +498,10 @@
     line-height: 46.40625000000001px;
 }
 .SizeEnd{
-     position: relative;
-     flex: none;
-     margin-bottom: 70.4px;
-     width: 1274.9px;
-     height: 118.80000000000001px;
-     display: flex;
-     flex-direction: column;
-     box-sizing: border-box;
-     left: 55%;
-     top: 3%;
+    width: 201px;
+    height: 600px;
+    float: left;
+    left: 90%;
  }
 .TextEnd{
     position: absolute;
@@ -541,7 +533,7 @@
     font-weight: 200;
     line-height: 15.625px;
     left: -235%;
-    top: 49%;
+    top:31.5%;
 }
 .TextELine2{
     position: absolute;
@@ -557,7 +549,7 @@
     font-weight: 200;
     line-height: 15.625px;
     left: -235%;
-    top: 53%;
+    top: 34.5%;
 }
 .TextELine3{
     position: absolute;
@@ -573,12 +565,12 @@
     font-weight: 200;
     line-height: 15.625px;
     left: -235%;
-    top: 57%;
+    top: 37.5%;
 }
 .c{
     position: absolute;
     left: -75.3251953125px;
-    top: 51%;
+    top: 33.5%;
     width: 79.2px;
     height: 33px;
     display: flex;
@@ -631,4 +623,312 @@
     /* blue shadow */
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.SizeBox1{
+    /* נקודות חולשה_הסבר */
+    position: absolute;
+right: 2%;
+    /* Auto layout */
+top: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 48px;
+
+    width: 670px;
+    height: 70px;
+
+    background: #FFFFFF;
+    /* blue shadow */
+
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.TitalBox1{
+    position: absolute;
+
+    /* מוכנות להשתנות */
+float: right;
+    right: 3%;
+    top: 15%;
+    width: 300px;
+    height: 6px;
+    /* H1 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #6377C0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Line1Box1{
+    position: absolute;
+    top: 40%;
+    /* אסטרטגיית תכנון */
+    width: 433px;
+    height: 9px;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    right: 3%;
+    color: #333333;
+}
+.Text1Box1{
+    position: absolute;
+    /* נמדדות ע"פ יכולת הפיתוח וההערכה של תוכניות ואסטרטגיות לניהול משברים ביחס לתחום הפעילות והשותפים הרלוונטיים. */
+    width: 500px;
+    height: 52px;
+    top: 54%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    right: 3%;
+    color: #333333;
+}
+.Line2Box1{
+    /* בדיקת תוכניות */
+    position: absolute;
+    width: 433px;
+    height: 11px;
+    top: 40%;
+    right: 50%;
+    /* Big text report bold */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #2F3A5F;
+}
+.Text2Box1{
+    /* נמדדת ע"פ מידת השתתפות הצוות בסימולציות או בתרחישים שנועדו לתרגל הסדרי תגובה ולאמת תוכניות. */
+
+    position: absolute;
+top: 54%;
+    width: 500px;
+    height: 52px;
+
+    /* Big text report */
+right: 50%;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+
+    color: #333333;
+}
+.SizeBox2{
+    position: absolute;
+    right: 2%;
+    /* Auto layout */
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 48px;
+
+    width: 290px;
+    height: 85px;
+    background: #FFFFFF;
+    /* blue shadow */
+
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.TitalBox2{
+    /* מנהיגות ותרבות אירגונית */
+    position: absolute;
+right: 2%;
+    top: 7%;
+    width: 497px;
+    height: 17px;
+    /* H1 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #E78536;
+}
+.LineBox2{
+    position: absolute;
+right: 2%;
+    top: 25%;
+    /* קבלת החלטות */
+    width: 121px;
+    height: 29px;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.TextBox2{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+
+    /* נמדד בדרגות החופש שיש לצוות לקבל החלטות הקשורות לעבודתם ושהסמכות לכך מואצלת באופן ברור כדי לאפשר תגובה מהירה למשבר. כמו כן משפיעים גם מידת המיומנות, הידע הספציפי, והמעורבות של הצוות . */
+    width: 497px;
+    height: 104px;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+
+    color: #333333;
+}
+.SizeBox3{
+    position: absolute;
+    right: 175%;
+    /* Auto layout */
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 48px;
+
+    width: 290px;
+    height: 85px;
+    background: #FFFFFF;
+    /* blue shadow */
+
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.TitalBox3{
+    position: absolute;
+right: 2%;
+    top: 7%;
+    /* רשתות של מערכות יחסים */
+    width: 497px;
+    height: 17px;
+    /* H1 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #2BA774;
+}
+.LineBox3{
+    position: absolute;
+    right: 2%;
+    top: 25%;
+
+    /* משאבים פנימיים */
+
+    width: 149px;
+    height: 29px;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.TextBox3{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+
+    /* נמדדים ע"פי ניהול וניוד משאבי הארגון בכדי להבטיח את יכולתו לפעול במהלך השגרה, כמו גם להיות מסוגל לעמוד במשימות נוספות, הנדרשות במהלך משבר. */
+    width: 497px;
+    height: 78px;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    color: #333333;
+}
+.EndImg{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 70%;
+    top: 73%;
+}
+.Help{
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    left: -150%;
+    right: 14%;
+    top: 77.5%;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+
+}
+.EndTextOF{
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    left: -150%;
+    right: 14%;
+    top: 80%;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
 }

@@ -28,7 +28,7 @@ const Container = styled.div`
 
 const Wrap = styled.div`
 
-  color: #2F3A5F;
+  color: #333333;
   display: flex;
   justify-content: right;
   align-items: center;

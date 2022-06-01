@@ -109,12 +109,49 @@ export const Data = [
     },
     {
         title: 'סיכום הדוח',
-        content: <div className={styled.sizzee}>
+        content: <div className={styled.SizeEnd}>
             <span className={styled.TextELine1}>בחלק זה תוכלו לראות סיכום מטומצת של תוצאות השאלון, תוך התמקדות ברכיבי החוסן שניתן ורצוי לחזק</span>
             <br/><br/>
             <span className={styled.TextELine2}>מן השאלון עולה כי מדד החוסן הבית ספרי הינו</span>
             <span className={styled.c}>גבוה</span>
             <span className={styled.TextELine3}>  עם זאת זוהו מספר<b><b> מרכיבים שניתן לחזקם: </b></b> </span>
+            <Card className={styled.SizeBox1}>
+                <div className={styled.TitalBox1}>מוכנות להשתנות</div>
+                <span className={styled.Line1Box1}>אסטרטגיית תכנון</span>
+                <span className={styled.Text1Box1}> נמדדות ע"פ יכולת הפיתוח וההערכה של תוכניות ואסטרטגיות לניהול
+                     <br/>משברים ביחס לתחום הפעילות והשותפים הרלוונטיים.</span>
+                <span className={styled.Line2Box1}> בדיקת תוכניות</span>
+                <span className={styled.Text2Box1}>נמדדת ע"פ מידת השתתפות הצוות בסימולציות או בתרחישים שנועדו <br/>לתרגל הסדרי תגובה ולאמת תוכניות.</span>
+            </Card>
+            <Card className={styled.SizeBox2}>
+                <div className={styled.TitalBox2}> מנהיגות ותרבות אירגונית</div>
+                <span className={styled.LineBox2}>קבלת החלטות</span>
+                <span className={styled.TextBox2}>
+                    נמדד בדרגות החופש שיש לצוות לקבל החלטות הקשורות לעבודתם <br/> ושהסמכות לכך מואצלת באופן ברור כדי לאפשר תגובה מהירה
+                    <br/> למשבר. כמו כן משפיעים גם מידת המיומנות, הידע הספציפי, <br/> והמעורבות של הצוות .
+                </span>
+            </Card>
+            <Card className={styled.SizeBox3}>
+                <div className={styled.TitalBox3}>רשתות של מערכות יחסים</div>
+                <span className={styled.LineBox3}> משאבים פנימיים</span>
+                <span className={styled.TextBox3}>
+                    נמדדים ע"פי ניהול וניוד משאבי הארגון בכדי להבטיח את יכולתו <br/>
+                    לפעול במהלך השגרה, כמו גם להיות מסוגל לעמוד במשימות נוספות,<br/>
+                    הנדרשות במהלך משבר.
+                </span>
+            </Card>
+            <div className={styled.EndImg}>
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18.0254" cy="18.2876" r="17.5" fill="#E78536"/>
+                    <path d="M19.5752 23.1665H15.9277L15.4004 8.45947H20.1025L19.5752 23.1665ZM15.2832 27.7075C15.2832 27.0435 15.5078 26.4917 15.957 26.0522C16.4062 25.603 17.002 25.3784 17.7441 25.3784C18.4961 25.3784 19.0967 25.603 19.5459 26.0522C19.9951 26.4917 20.2197 27.0435 20.2197 27.7075C20.2197 28.3716 19.9951 28.9282 19.5459 29.3774C19.0967 29.8169 18.4961 30.0366 17.7441 30.0366C17.002 30.0366 16.4062 29.8169 15.957 29.3774C15.5078 28.9282 15.2832 28.3716 15.2832 27.7075Z" fill="white"/>
+                </svg>
+            </div>
+            <span className={styled.Help}><b> חשוב לזכור <br/></b> </span>
+            <div className={styled.EndTextOF}>
+                על מנת להעמיק את הלמידה וההבנה של רמת החוסן הבית ספרי <br/>
+                  מומלץ להשלים את התהליך האבחוני באמצעות קבוצת מיקוד וראיונות עומק.
+            </div>
+
         </div>
     },
     {
