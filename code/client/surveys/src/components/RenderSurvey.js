@@ -11,6 +11,8 @@ import '../SurveyBranding.css';
 
 function RenderSurvey() {
 
+
+
     const [surveyJSON, setSurveyJSON] = useState(null);
     const location = useLocation();
 
@@ -41,8 +43,13 @@ function RenderSurvey() {
     }, []);
 
 
+    // const surveyBackground = document.getElementsByClassName("sv_main sv_body");
+    // surveyBackground.style.backgroundColor = '#000';
 
-    return <Survey className={"sv_main sv_body"} style={{backgroundColor: surveyBackgroundColor}} model={survey} />;
+    // const surveyBackgroundSelector = document.querySelector('.sv_main.sv_body');
+    // surveyBackgroundSelector.backgroundColor = '#000';
+
+    return <Survey className="sv_main sv_body" style={{backgroundColor: '#000'}} model={survey} />;
 }
 
 export default RenderSurvey;

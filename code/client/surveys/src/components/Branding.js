@@ -35,7 +35,7 @@ function Branding() {
                 {/*changing div color dynamically*/}
                 <div className= "ColorPreview" style={{backgroundColor: color}}></div>
 
-                <button className={"NextButton"} onClick={sendColorToCreator}>Next</button>
+                <button className="NextButton" onClick={sendColorToCreator}>Next</button>
             </h1>
             {
                 showColorPicker && (<ChromePicker className="ChromePicker" color={color} onChange={updatedColor => setColor(updatedColor.hex)} />)
