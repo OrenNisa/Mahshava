@@ -43,7 +43,7 @@ class RenderService {
 
 class BrandingService {
     static getBackgroundColor(id){
-        return $axios.get('survey/get-survey-background-color', {
+        return $axios.get('surveys/get-survey-background-color/', {
             params: {id: id}
         }).then(response => response.data);
     }
