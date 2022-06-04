@@ -23,14 +23,19 @@ def save_survey(request):
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-@api_view(['GET'])
-@renderer_classes([JSONRenderer])
-@authentication_classes([])
-@permission_classes([])
-def get_survey_title(request):
-    survey_id = int(request.GET['id'])
-
-    return Response(Surveys.objects.get(pk=survey_id).title, status=status.HTTP_200_OK)
+# @api_view(['POST'])
+# @renderer_classes([JSONRenderer])
+# @authentication_classes([])
+# @permission_classes([])
+# def save_survey_results(request):
+#     survey_json = request.data['survey']
+#     json_data = json.loads(survey_json)
+#     survey_title = json_data['title']
+#     survey_obj = SurveyResults(title=survey_title, surveyData=survey_json)
+#     survey_obj.save()
+#     serializer = SurveyResultsSerializer(survey_obj)
+#
+#     return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])

@@ -51,7 +51,7 @@ function SurveyList() {
 
     // gets all survey IDs and Titles from the database into arrays
     useEffect(() => {
-        service.SurveyListService.getAllSurveys().then(response => {
+        service.SurveyService.getAllSurveys().then(response => {
             setSurveyIdArray(response.id);
             setSurveyTitleArray(response.title);
         });

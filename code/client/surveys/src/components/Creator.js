@@ -16,12 +16,7 @@ function Creator() {
         });
     };
 
-    const creatorOptions = {
-        showEmbeddedSurveyTab: true,
-
-    };
-    const creator = new SurveyCreator.SurveyCreator(creatorOptions);
-
+    const creator = new SurveyCreator.SurveyCreator();
     creator.saveSurveyFunc = saveSurvey;
 
     return <SurveyCreator.SurveyCreatorComponent creator={creator} />;
