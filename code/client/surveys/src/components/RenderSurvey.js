@@ -4,7 +4,7 @@ import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import service from "../api";
 import {useEffect, useState} from "react";
-import  {useLocation} from "react-router-dom";
+import  { useLocation } from "react-router-dom";
 
 StylesManager.applyTheme("orange");
 

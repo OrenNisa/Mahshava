@@ -7,7 +7,7 @@ const $axios = Axios.create({
     },
 });
 
-//Example of a cross-cutting concern - client api error-handling
+// Example of a cross-cutting concern - client api error-handling
 $axios.interceptors.response.use(
     response => response,
     error => {
@@ -25,8 +25,8 @@ class SurveyService {
 }
 
 class SurveyListService {
-    static getSurveyTitle(id) {
-        return $axios.get('surveys/get-survey-title/', {
+    static getAllSurveys(id) {
+        return $axios.get('surveys/get-all-surveys/', {
             params: {id: id}
         }).then(response => response.data);
     }
@@ -34,14 +34,11 @@ class SurveyListService {
 
 class RenderService {
     static getSurveyJSON(id) {
-        console.log("IN API " +id)
         return $axios.get('surveys/get-survey-json/', {
             params: {id: id}
         }).then(response => response.data);
     }
 }
-
-
 
 const service = {
     SurveyService,

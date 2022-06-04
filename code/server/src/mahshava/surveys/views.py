@@ -7,6 +7,7 @@ import json
 from surveys.models import Surveys
 from surveys.serializers import SurveysSerializer
 
+
 @api_view(['POST'])
 @renderer_classes([JSONRenderer])
 @authentication_classes([])
@@ -47,3 +48,22 @@ def get_survey_json(request):
     return Response(json_data, status=status.HTTP_200_OK)
 
 
+@api_view(['GET'])
+@renderer_classes([JSONRenderer])
+@authentication_classes([])
+@permission_classes([])
+def get_all_surveys(request):
+    all_surveys = Surveys.objects.all()
+    surveys_id = []
+    surveys_title = []
+
+    for survey in all_surveys:
+        surveys_id.append(survey.id)
+        surveys_title.append(survey.title)
+
+    content = {
+        "id": surveys_id,
+        "title": surveys_title,
+    }
+
+    return Response(content, status=status.HTTP_200_OK)
