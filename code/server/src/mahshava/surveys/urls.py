@@ -5,4 +5,7 @@ from surveys import views
 urlpatterns = [
     path('surveys/save-survey/', views.save_survey),
     path('surveys/get-survey-title/', views.get_survey_title),
+    # path('surveys/get-surveys/', views.get_surveys),
+    path('surveys/get-survey-json/', views.get_survey_json),
+    path('surveys/get-all-surveys/', views.get_all_surveys),
 ]
