@@ -93,6 +93,11 @@
     background-color: #cb8414;
 }
 
+.OrangeButton:focus {
+
+    border: solid 2px black;
+}
+
 .GreenButton {
 
     position: relative;
@@ -110,6 +115,11 @@
 .GreenButton:hover {
 
     background-color: #5fb232;
+}
+
+.GreenButton:focus {
+
+    border: solid 2px black;
 }
 
 .BlueButton {
@@ -131,6 +141,11 @@
     background-color: #5eb2a6;
 }
 
+.BlueButton:focus {
+
+    border: solid 2px black;
+}
+
 .PinkButton {
 
     position: relative;
@@ -148,6 +163,11 @@
 .PinkButton:hover {
 
     background-color: #be8298;
+}
+
+.PinkButton:focus {
+
+    border: solid 2px black;
 }
 
 .WhiteButton {
@@ -168,3 +188,29 @@
 
     background-color: #adadad;
 }
+
+.WhiteButton:focus {
+
+    border: solid 2px black;
+}
+
+.NextStepButton {
+
+    position: relative;
+    background-color: #05d98b;
+    border: none;
+    color: white;
+    padding: 10px;
+    top: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.NextStepButton:hover {
+
+    background-color: #04AA6D;
+}
+
+
