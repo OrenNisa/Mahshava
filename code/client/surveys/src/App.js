@@ -7,6 +7,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Branding from "./components/Branding";
 import SurveyBranding from "./components/SurveyBranding";
+import SurveyRendering from "./components/SurveyRendering";
 
 function App() {
     return (
@@ -16,7 +17,8 @@ function App() {
                 <Route path="/Creator" element={<Creator />} />
                 {/*<Route path="/Branding" element={<Branding />} />*/}
                 <Route path="/SurveyList" element={<SurveyList />} />
-                <Route path="/RenderSurvey" element={<RenderSurvey />} />
+                {/*<Route path="/RenderSurvey" element={<RenderSurvey />} />*/}
+                <Route path="/SurveyRendering" element={<SurveyRendering />} />
                 <Route path="/SurveyBranding" element={<SurveyBranding />} />
             </Routes>
         </Router>
