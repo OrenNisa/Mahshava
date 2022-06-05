@@ -5,7 +5,7 @@ import { Survey } from "survey-react-ui";
 import service from "../api";
 import {useEffect, useState} from "react";
 import  {useLocation} from "react-router-dom";
-import '../SurveyBranding.css';
+import '../SurveyBrandingTest.css';
 
 //StylesManager.applyTheme("orange");
 
