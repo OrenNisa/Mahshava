@@ -62,33 +62,46 @@ function RenderSurvey() {
     //
     // }
 
-    // const myCss = {
-    //     root: {
-    //         border: '1px solid lightgray',
-    //         borderRadius: '5px',
-    //         borderLeft: '4px solid #18a689',
-    //         padding: '10px',
-    //         backgroundColor: 'black',
-    //     },
-    //     // question: {
-    //     //     content: "sd-question__content question_content_custom",
-    //     //     titleOnAnswer: "question-title-answered"
-    //     // }
-    // };
+    const myCss = {
+        // root: {
+        //     border: '1px solid lightgray',
+        //     borderRadius: '5px',
+        //     borderLeft: '4px solid #18a689',
+        //     padding: '10px',
+        //     backgroundColor: 'orange',
+        // },
+
+        question: {
+            content: "sd-question__content question_content_custom",
+            titleOnAnswer: "question-title-answered",
+
+
+        },
+
+        title: "sd-title",
+        headerText: "sd-header__text",
+
+
+
+
+
+        // root: {
+        //     backgroundColor: 'orange',
+        // }
+    };
 
 
     return (
         <>
-            <div className="surveyBackground" style={{backgroundColor: surveyBackgroundColor}}>
-
-                <Survey className="mainSurvey" model={survey} />
-
-
-                {/*<Survey className="mainSurvey" css={myCss} model={survey} />*/}
+            {/*<div className="surveyBackground" style={{backgroundColor: surveyBackgroundColor}}>*/}
 
                 {/*<Survey className="mainSurvey" model={survey} />*/}
 
-            </div>
+                <Survey className="mainSurvey" css={myCss} model={survey} />
+
+                {/*<Survey className="mainSurvey" model={survey} />*/}
+
+            {/*</div>*/}
 
             {/*<Survey className="sv_main sv_body" style={{backgroundColor: surveyBackgroundColor}} model={survey} />*/}
 

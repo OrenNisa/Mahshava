@@ -72,3 +72,99 @@
 
     background-color: #04AA6D;
 }
+
+
+.OrangeButton {
+
+    position: relative;
+    background-color: #ffba2e;
+    border: none;
+    color: black;
+    height: 300px;
+    width: 300px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.OrangeButton:hover {
+
+    background-color: #cb8414;
+}
+
+.GreenButton {
+
+    position: relative;
+    background-color: #92ff57;
+    border: none;
+    color: black;
+    height: 300px;
+    width: 300px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.GreenButton:hover {
+
+    background-color: #5fb232;
+}
+
+.BlueButton {
+
+    position: relative;
+    background-color: #70e0d1;
+    border: none;
+    color: black;
+    height: 300px;
+    width: 300px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.BlueButton:hover {
+
+    background-color: #5eb2a6;
+}
+
+.PinkButton {
+
+    position: relative;
+    background-color: #fcb3cb;
+    border: none;
+    color: black;
+    height: 300px;
+    width: 300px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.PinkButton:hover {
+
+    background-color: #be8298;
+}
+
+.WhiteButton {
+
+    position: relative;
+    background-color: #f1f1f1;
+    border: solid 1px grey;
+    color: black;
+    height: 100px;
+    width: 1260px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.WhiteButton:hover {
+
+    background-color: #adadad;
+}
