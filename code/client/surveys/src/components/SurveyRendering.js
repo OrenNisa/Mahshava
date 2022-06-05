@@ -34,6 +34,9 @@ function SurveyRendering() {
         });
     }, []);
 
+
+    // Themes:
+
     const Orange_Theme = {
 
         question: {
@@ -85,18 +88,31 @@ function SurveyRendering() {
     };
 
 
-    return (
-        <>
+    function renderSurveyWithBranding(Theme_Hex_Color) {
 
+        switch (Theme_Hex_Color){
 
-            <Survey className="mainSurvey" css={Orange_Theme} model={survey} />
+            case '#ffba2e':
+                return <Survey className="mainSurvey" css={Orange_Theme} model={survey} />
 
-        </>
+            case '#92ff57':
+                return <Survey className="mainSurvey" css={Green_Theme} model={survey} />
 
+            case '#70e0d1':
+                return <Survey className="mainSurvey" css={Blue_Theme} model={survey} />
 
+            case '#fcb3cb':
+                return <Survey className="mainSurvey" css={Pink_Theme} model={survey} />
 
-    );
+            case '#fff':
+                return <Survey className="mainSurvey" css={White_Theme} model={survey} />
 
+            default:
+                return <Survey className="mainSurvey" css={White_Theme} model={survey} />
+        }
+    }
+
+    return renderSurveyWithBranding(surveyBackgroundColor)
 }
 
 export default SurveyRendering;
