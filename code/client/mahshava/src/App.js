@@ -7,6 +7,7 @@ import { useMahshavaContext } from './services/state/MahshavaContextProvider';
 import apiService from './services/api/api';
 import './App.css';
 import useAuth from './services/auth/hooks/useAuth';
+import {SchoolsProvider} from "./SchoolsContext";
 
 const App = () => {
     const { updateMahshavaUser } = useMahshavaContext();
@@ -19,18 +20,20 @@ const App = () => {
     }, [isAuthenticated, updateMahshavaUser]);
 
     return (
-        <div className="App">
-            <Routes>
-                <Route path="/login" element={<Login />} />
-                <Route
-                    path="*" exact element={
+        <SchoolsProvider>
+            <div className="App">
+                <Routes>
+                    <Route path="/login" element={<Login />} />
+                    <Route
+                        path="*" exact element={
                         <PrivateRoute>
                             <BaseLayout />
                         </PrivateRoute>
                     }
-                />
-            </Routes>
-        </div>
+                    />
+                </Routes>
+            </div>
+        </SchoolsProvider>
     );
 };
 
