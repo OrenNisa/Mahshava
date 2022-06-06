@@ -38,7 +38,10 @@ function RenderSurvey() {
         service.SurveyService.saveSurveyResults(results, location.state.surveyTitle).then(response => {
             console.log(response);
         })
+
+
     }, []);
+
 
     survey.onComplete.add(alertResults);
 
