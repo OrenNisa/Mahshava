@@ -17,6 +17,7 @@ function Creator() {
     };
 
     const creator = new SurveyCreator.SurveyCreator();
+
     creator.saveSurveyFunc = saveSurvey;
 
     return <SurveyCreator.SurveyCreatorComponent creator={creator} />;

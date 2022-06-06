@@ -3,8 +3,10 @@ import style from './PreliminaryReport.module.css';
 import HeaderProcess from "./Process/HeaderProcess";
 import OutputAutoLayout from "./AutoLayout/OutputAutoLayout";
 import SchoolDetails from "./SchoolDetails"
-import Page from "./Page";
 import Question from "./AutoLayout/Question";
+import FullInitialReport from "./FullInitialReport";
+import Accordion from "./components/Accordion";
+import PageFullnitialReport from "./PageFullnitialReport";
 
 const PreliminaryReport = () => {
     return (
@@ -22,7 +24,9 @@ const PreliminaryReport = () => {
                     <SchoolDetails />
                 </div>
                 <div className={style.PreliminaryReportPage}>
-                    <Page />
+                    <PageFullnitialReport />
+                    {/*delete it and component itself after it*/}
+                    {/*<Page /> <FullInitialReport />*/}
                 </div>
             </div>
 
