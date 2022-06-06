@@ -72,6 +72,8 @@ def get_all_surveys(request):
     }
 
     return Response(content, status=status.HTTP_200_OK)
+
+
 @api_view(['GET'])
 @renderer_classes([JSONRenderer])
 @authentication_classes([])

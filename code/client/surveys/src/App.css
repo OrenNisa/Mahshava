@@ -46,42 +46,6 @@
   margin-top: 50px;
 }
 
-.orangeThemeButton {
-
-  background-color: orange;
-  bottom: 140px;
-  width: 10px;
-  height: 10px;
-  margin-left: 3px;
-  border-radius: 10px;
-  border: solid 0px black;
-  padding-left: 10px;
-}
-
-.greyStoneThemeButton {
-
-  background-color: grey;
-  bottom: 140px;
-  width: 10px;
-  height: 10px;
-  margin-left: 3px;
-  border: solid 0px black;
-  border-radius: 10px;
-  padding-left: 10px;
-}
-
-.blueWinterThemeButton {
-
-  background-color: cornflowerblue;
-  bottom: 140px;
-  width: 10px;
-  height: 10px;
-  margin-left: 3px;
-  border: solid 0px black;
-  border-radius: 10px;
-  padding-left: 10px;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

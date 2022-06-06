@@ -39,9 +39,7 @@ class SurveyService {
             params: {id: id}
         }).then(response => response.data);
     }
-}
 
-class BrandingService {
     static getBackgroundColor(id){
         return $axios.get('surveys/get-survey-background-color/', {
             params: {id: id}
@@ -49,12 +47,8 @@ class BrandingService {
     }
 }
 
-
-
-
 const service = {
     SurveyService,
-    BrandingService,
 };
 
 export default service;

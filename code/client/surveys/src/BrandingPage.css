@@ -15,65 +15,6 @@
     top: 10px;
 }
 
-.ColorPickerButton {
-
-    position: relative;
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 10px;
-    top: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-}
-
-.ColorPickerButton:hover {
-
-    background-color: #05d98b;
-}
-
-.ChromePicker {
-
-    position: relative;
-    left: 41.75%;
-    top: 10px;
-}
-
-.ColorPreview {
-
-    position: relative;
-    border: solid 1px black;
-    width: 100px;
-    height: 50px;
-    width: 25%;
-    border-radius: 10px;
-    margin: 0 auto;
-    top: 18px;
-}
-
-.NextButton {
-
-    position: relative;
-    background-color: #05d98b;
-    border: none;
-    color: white;
-    padding: 10px;
-    top: 15px;
-    text-align: center;
-    font-size: 16px;
-    margin: 0 auto;
-    width: 25%;
-}
-
-.NextButton:hover {
-
-    background-color: #04AA6D;
-}
-
-
 .OrangeButton {
 
     position: relative;
@@ -212,5 +153,3 @@
 
     background-color: #04AA6D;
 }
-
-
