@@ -63,7 +63,8 @@ function SurveyList() {
 
         navigate("/RenderSurvey", {
             state: {
-                surveyID: surveyId
+                surveyID: surveyId,
+                surveyTitle: surveyTitleArray[surveyId - 1],
             }
         })
     }

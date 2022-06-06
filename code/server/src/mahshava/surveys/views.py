@@ -4,8 +4,8 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 import json
 
-from surveys.models import Surveys
-from surveys.serializers import SurveysSerializer
+from surveys.models import Surveys, SurveyResults
+from surveys.serializers import SurveysSerializer, SurveyResultsSerializer
 
 
 @api_view(['POST'])
@@ -23,19 +23,18 @@ def save_survey(request):
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-# @api_view(['POST'])
-# @renderer_classes([JSONRenderer])
-# @authentication_classes([])
-# @permission_classes([])
-# def save_survey_results(request):
-#     survey_json = request.data['survey']
-#     json_data = json.loads(survey_json)
-#     survey_title = json_data['title']
-#     survey_obj = SurveyResults(title=survey_title, surveyData=survey_json)
-#     survey_obj.save()
-#     serializer = SurveyResultsSerializer(survey_obj)
-#
-#     return Response(serializer.data, status=status.HTTP_200_OK)
+@api_view(['POST'])
+@renderer_classes([JSONRenderer])
+@authentication_classes([])
+@permission_classes([])
+def save_survey_results(request):
+    survey_json = request.data['survey']
+    survey_title = request.data['title']
+    survey_obj = SurveyResults(title=survey_title, surveyData=survey_json)
+    survey_obj.save()
+    serializer = SurveyResultsSerializer(survey_obj)
+
+    return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])

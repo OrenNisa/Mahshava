@@ -24,6 +24,10 @@ class SurveyService {
         return $axios.post('surveys/save-survey/', { survey }).then(response => response.data);
     }
 
+    static saveSurveyResults(survey, title) {
+        return $axios.post('surveys/save-survey-results/', { survey, title }).then(response => response.data);
+    }
+
     static getAllSurveys(id) {
         return $axios.get('surveys/get-all-surveys/', {
             params: {id: id}
@@ -34,10 +38,6 @@ class SurveyService {
         return $axios.get('surveys/get-survey-json/', {
             params: {id: id}
         }).then(response => response.data);
-    }
-
-    static saveSurveyResults(survey) {
-        return $axios.post('surveys/save-survey-results/', { survey }).then(response => response.data);
     }
 }
 
