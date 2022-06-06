@@ -87,11 +87,7 @@
 
 }
 .Size{
-    /* Rectangle 488 */
-    width: 2px;
-    height: 40px;
     background: #C4C4C4;
-    /* Inside auto layout */
     flex: none;
     order: 2;
     flex-grow: 0;

@@ -5,6 +5,7 @@ node_modules
 code/server/src/**/.env
 package-lock.json
 *.iml
+out
 .stignore
 .stfolder
 .stversions

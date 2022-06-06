@@ -8,3 +8,9 @@ class SurveysSerializer(serializers.ModelSerializer):
         model = Surveys
         fields = ['id', 'creation_date', 'title', 'surveyData', 'color', 'author', 'modify_date']
 
+
+
+class SurveyResultsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Surveys
+        fields = ['id', 'creation_date', 'title', 'surveyData']

@@ -6,7 +6,7 @@ import style from './Sidebar.module.css';
 const Sidebar = () => {
     const { routesMetadataForRole } = useRouting();
 
-    const links = routesMetadataForRole.map(({ id, path, LogoComponent, i18nKey, isUnderConstruction }) => (
+    const links = routesMetadataForRole.slice(0, 5).map(({ id, path, LogoComponent, i18nKey, isUnderConstruction }) => (
         <SidebarItem
             key={id}
             path={path}
