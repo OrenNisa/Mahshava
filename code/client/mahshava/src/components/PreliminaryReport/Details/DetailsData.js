@@ -19,5 +19,9 @@ export const DetailsData = [
         content: <div className={style.Text2}>
             <AccordionDetailsB />
         </div>
+    },
+    {
+        title: 'מוכנות להשתנות',
+        content: ''
     }
 ];
