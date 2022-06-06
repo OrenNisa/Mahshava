@@ -1,0 +1,41 @@
+
+.title {
+
+    position: relative;
+    text-align: center;
+    color: darkblue;
+    top: 40px;
+    font-family: Helvetica;
+    font-size: 40px;
+}
+
+.input {
+
+    position: relative;
+    text-align: center;
+    top: 40px;
+}
+
+.table {
+
+    position: relative;
+    height: 350px;
+    margin: auto;
+    width: 50%;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    text-align: center;
+    top: 80px;
+    color: blue;
+    overflow-y: scroll;
+    display: block;
+}
+
+.surveyList {
+
+    position: relative;
+    left: 175px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+}

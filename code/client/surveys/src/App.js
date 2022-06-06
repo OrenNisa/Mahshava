@@ -5,6 +5,8 @@ import Home from './components/Home';
 import RenderSurvey from "./components/RenderSurvey";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import SurveyBranding from "./components/SurveyBranding";
+
 
 function App() {
     return (
@@ -14,6 +16,7 @@ function App() {
                 <Route path="/Creator" element={<Creator />} />
                 <Route path="/SurveyList" element={<SurveyList />} />
                 <Route path="/RenderSurvey" element={<RenderSurvey />} />
+                <Route path="/SurveyBranding" element={<SurveyBranding />} />
             </Routes>
         </Router>
     );
