@@ -23,13 +23,6 @@ function RenderSurvey() {
     const survey = new Model(surveyJSON);
     survey.focusFirstQuestionAutomatic = false;
 
-    // const alertResults = useCallback((sender) => {
-    //     const results = JSON.stringify(sender.data);
-    //     alert(results);
-    // }, []);
-
-    // survey.onComplete.add(alertResults);
-
     return <Survey model={survey} />;
 }
 
