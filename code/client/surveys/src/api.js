@@ -19,20 +19,21 @@ $axios.interceptors.response.use(
 );
 
 class SurveyService {
+
     static saveSurvey(survey) {
         return $axios.post('surveys/save-survey/', { survey }).then(response => response.data);
     }
-}
 
-class SurveyListService {
+    static saveSurveyResults(survey, title) {
+        return $axios.post('surveys/save-survey-results/', { survey, title }).then(response => response.data);
+    }
+
     static getAllSurveys(id) {
         return $axios.get('surveys/get-all-surveys/', {
             params: {id: id}
         }).then(response => response.data);
     }
-}
 
-class RenderService {
     static getSurveyJSON(id) {
         return $axios.get('surveys/get-survey-json/', {
             params: {id: id}
@@ -42,8 +43,6 @@ class RenderService {
 
 const service = {
     SurveyService,
-    SurveyListService,
-    RenderService,
 };
 
 export default service;
