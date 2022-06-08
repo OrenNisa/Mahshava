@@ -54,7 +54,7 @@
     position: absolute;
     width: 700px;
     height: 80px;
-    left: -300%;
+    left: -330%;
     top: 15%;
 
     /* Big text report */
@@ -140,7 +140,7 @@
     position: absolute;
     width: 1900px;
     height: 10px;
-    top: 65%;
+    top: 20%;
     right: 29%;
     /* Big text report */
 
@@ -148,7 +148,58 @@
     font-style: normal;
     font-weight: 800;
     font-size: 12px;
-    line-height: 1px;
+    line-height: 13px;
+    text-align: right;
+
+    color: #333333;
+}
+.InText8{
+    position: absolute;
+    width: 1300px;
+    height: 10px;
+    top: 40%;
+    right: 29%;
+    /* Big text report */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: right;
+
+    color: #333333;
+}
+.InText9{
+    position: absolute;
+    width: 1300px;
+    height: 10px;
+    top: 65%;
+    right: 29%;
+    /* Big text report */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+
+    color: #333333;
+}
+.InText10{
+    position: absolute;
+    width: 1300px;
+    height: 10px;
+    top: 85%;
+    right: 29%;
+    /* Big text report */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
     text-align: right;
 
     color: #333333;

@@ -2,6 +2,7 @@ import React from "react";
 import style from './DetailsData.module.css';
 import AccordionDetails from "./AccordionDetails";
 import AccordionDetailsB from "./AccordionDetailsB";
+import AccordionDetailsC from "./AccordionDetailsC";
 
 
 export const DetailsData = [
@@ -19,5 +20,9 @@ export const DetailsData = [
         content: <div className={style.Text2}>
             <AccordionDetailsB />
         </div>
+    },
+    {
+        title: 'מוכנות להשתנות',
+        content: <AccordionDetailsC />
     }
 ];

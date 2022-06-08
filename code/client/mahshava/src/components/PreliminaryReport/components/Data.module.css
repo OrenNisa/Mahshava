@@ -282,8 +282,8 @@
     line-height: 23.203125000000004px;
 }
 .sizzee{
-    width: 201px;
-    height: 200px;
+    width: 225px;
+    height: 800px;
     float: left;
     left: 90%;
 }
@@ -294,7 +294,7 @@
     height: 20%;
     float: left;
     right: 190%;
-    top: 40%;
+    top: 15%;
     /* Inside auto layout */
     flex: none;
     order: 3;
@@ -302,6 +302,8 @@
 
 }
 .TextData .FullBack{
+    position: absolute;
+
     /* רקע מלא */
     /* Auto layout */
     float: right;
@@ -309,12 +311,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 32px;
+    padding: 39px;
     gap: 48px;
-
     width: 60%;
     height: 70px;
-
+left:-10%;
     background: #FFFFFF;
     /* blue shadow */
 
@@ -409,20 +410,20 @@
     left: 230%;
     top: 0%;
 }
-.TextData .FullBack .PointData .Lined1{
+.Lined1{
     /* 76.7% */
 
     position: absolute;
     width: 101px;
     height: 22px;
-    left: 35px;
-    top: 9px;
+    left: -30px;
+    top: 45px;
 
     /* H */
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 17px;
     line-height: 53px;
     display: flex;
     align-items: center;
@@ -451,7 +452,7 @@
     position: absolute;
     float: left;
     right: -168%;
-    top: 140%;
+    top: 120%;
     width: 205.70000000000002px;
     height: 13.200000000000001px;
     display: flex;
@@ -468,7 +469,7 @@
     position: absolute;
     float: left;
     left: 10%;
-    top: 210%;
+    top: 160%;
     width: 205.70000000000002px;
     height: 13.200000000000001px;
     display: flex;
@@ -484,7 +485,7 @@
 .b {
     position: absolute;
     left: -69.3251953125px;
-    top: 74.474218750000006px;
+    top: 150%;
     width: 79.2px;
     height: 33px;
     display: flex;
@@ -614,7 +615,7 @@
 .FullInitialReport {
     position: absolute;
     width: 700px;
-    height: 400px;
+    height: 500px;
     left: calc(85% - 1369px/2 - 0.5px);
     top: calc(23% - 802px/2 + 473px);
     overflow-y: scroll;
@@ -931,4 +932,217 @@ right: 2%;
     align-items: center;
     text-align: right;
     color: #333333;
+}
+.SizeGroup{
+    /* גרף עכביש */
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 230px;
+    top: 0px;
+}
+.PointPow{
+    /* נקודת חוזק */
+    position: absolute;
+    width: 597px;
+    height: 216px;
+    left: 15%;
+    top: 255.13px;
+    /* small soft */
+
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.12));
+}
+.TitalPointPow{
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    left: 70%;
+    top: 10%;
+
+    /* H1 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    color: #E78536;
+
+}
+.TextPoint{
+    /* מנהיגות ותרבות אירגונית */
+
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    left: 55.14%;
+    top: 34.81%;
+    bottom: 64.68%;
+
+    /* H1 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+}
+.NumberPoint{
+    /* 6 / 7 */
+
+
+    position: absolute;
+    left: 72.6%;
+    top: 50.82%;
+    bottom: 63.71%;
+
+    /* H2 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+}
+.Group2{
+    /* גרף עצמו */
+    position: absolute;
+    left: 20.47%;
+    right: 53.91%;
+    top: 10.66%;
+    bottom: 61.36%;
+}
+.TitalResult{
+    /* רופישל תודוקנ */
+
+
+    position: absolute;
+    width: 120px;
+    height: 13px;
+    left: 190%;
+    top: 190%;
+
+    /* H2 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #333333;
+}
+.TextResult{
+    /* םיסחי תוכרעמ לש תותשר */
+
+    width: 170px;
+    height: 15px;
+    position: absolute;
+    left: 160%;
+    top: 206%;
+    bottom: 58.02%;
+
+    /* H2 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #333333;
+}
+.Num1Result{
+    /* 5.81/7 */
+    position: absolute;
+    left: 154%;
+    top: 208%;
+    bottom: 57.79%;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 44px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+}
+.Text2Result{
+    position: absolute;
+    left: 57.52%;
+    top: 206%;
+    bottom: 58.06%;
+
+    /* H2 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #333333;
+}
+.Num2Result{
+    /* 5.66 /7 */
+
+
+    position: absolute;
+    left: 37.45%;
+    top: 206%;
+    bottom: 57.96%;
+
+    /* H2 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+}
+.SizeGrup1{
+    /* גרף עצמו */
+    position: absolute;
+    left: 123%;
+    top: 216.31%;
+    bottom: 51.59%;
+}
+.SizeGrup2{
+    /* גרף עצמו */
+    position: absolute;
+    left: -12%;
+    top: 216.31%;
+    bottom: 51.6%;
 }

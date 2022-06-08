@@ -22,7 +22,7 @@ const AccordionSection = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 27%;
 `;
 
@@ -32,7 +32,7 @@ const Wrap = styled.div`
   top: 20%;
   justify-content: right;
   align-items: center;
-  width: 300%;
+  width: 200%;
   text-align: center;
   font-family: 'Heebo';
   font-style: normal;
@@ -57,7 +57,7 @@ color: #333333;
   
 `;
 const Dropdown = styled.div`
-  width: 200%;
+  width: 70%;
   height: 30px;
   display: flex;
   flex-direction: column;
