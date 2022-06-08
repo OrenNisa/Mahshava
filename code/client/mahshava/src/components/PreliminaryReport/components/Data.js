@@ -1,6 +1,5 @@
 import styled from './Data.module.css'
 import React from "react";
-import ImgAsset from "../img";
 import Card from "@mui/material/Card";
 import Img1 from "./Img1";
 import Img2 from "./Img2";

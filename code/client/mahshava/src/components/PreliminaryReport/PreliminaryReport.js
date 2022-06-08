@@ -4,7 +4,6 @@ import HeaderProcess from "./Process/HeaderProcess";
 import OutputAutoLayout from "./AutoLayout/OutputAutoLayout";
 import SchoolDetails from "./SchoolDetails"
 import Question from "./AutoLayout/Question";
-import FullInitialReport from "./FullInitialReport";
 import Accordion from "./components/Accordion";
 import PageFullnitialReport from "./PageFullnitialReport";
 
@@ -25,8 +24,6 @@ const PreliminaryReport = () => {
                 </div>
                 <div className={style.PreliminaryReportPage}>
                     <PageFullnitialReport />
-                    {/*delete it and component itself after it*/}
-                    {/*<Page /> <FullInitialReport />*/}
                 </div>
             </div>
 
