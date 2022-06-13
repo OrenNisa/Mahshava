@@ -20,8 +20,8 @@ $axios.interceptors.response.use(
 
 class SurveyService {
 
-    static saveSurvey(survey) {
-        return $axios.post('surveys/save-survey/', { survey }).then(response => response.data);
+    static saveSurvey(survey, color) {
+        return $axios.post('surveys/save-survey/', { survey, color }).then(response => response.data);
     }
 
     static saveSurveyResults(survey, title) {
@@ -36,6 +36,12 @@ class SurveyService {
 
     static getSurveyJSON(id) {
         return $axios.get('surveys/get-survey-json/', {
+            params: {id: id}
+        }).then(response => response.data);
+    }
+
+    static getBackgroundColor(id){
+        return $axios.get('surveys/get-survey-background-color/', {
             params: {id: id}
         }).then(response => response.data);
     }

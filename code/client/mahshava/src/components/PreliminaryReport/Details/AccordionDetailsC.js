@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DetailsData } from './DetailsData';
+import { DetailsC } from './DetailsC';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
@@ -9,48 +9,72 @@ import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
 const AccordionSection = styled.div`
   display: flex;
-  left: 55%;
-  top: 0%;
+  left: -30%;
+  top: -20%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 100vh;
-  width: 107%;
-  background: white;
+  height: 30vh;
+  width: 30%;
+  
 `;
 
 const Container = styled.div`
   position: absolute;
-  top: 0%;
-  left: -60%;
+  top: -17%;
+  left: 27%;
 `;
 
 const Wrap = styled.div`
-
-  color: #333333;
+  color: #2F3A5F;
   display: flex;
+  top: 20%;
   justify-content: right;
   align-items: center;
-  width: 200%;
+  width: 300%;
   text-align: center;
   font-family: 'Heebo';
   font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 6px;
+  line-height: 5px;
   text-align: left;
   cursor: pointer;
   h1 {
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'Heebo';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1px;
+
+color: #333333;
   }
   span {
-    margin-right: 1 rem;
+    margin-right: 0.7 rem;
+  }
+  
+`;
+const Dropdown = styled.div`
+  width: 200%;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  p {
+    font-size: 3 rem;
+    font-family: 'Heebo';
+font-style: normal;
+text-align: right;
+color: red;
   }
 `;
 
-const AccordionData = () => {
+
+const AccordionDetailsC = () => {
     const [clicked, setClicked] = useState(false);
 
     const toggle = index => {
@@ -65,7 +89,7 @@ const AccordionData = () => {
     return (
         <AccordionSection>
             <Container>
-                {DetailsData.map((item, index) => {
+                {DetailsC.map((item, index) => {
                     return (
                         <>
                             <Wrap onClick={() => toggle(index)} key={index}>
@@ -73,7 +97,13 @@ const AccordionData = () => {
                                 <h1>{item.title}</h1>
                             </Wrap>
                             {clicked === index ? (
-                                <p>{item.content}</p>
+
+                                <Dropdown>
+
+                                    <p>{item.content}</p>
+
+                                </Dropdown>
+
                             ) : null}
                         </>
                     );
@@ -84,4 +114,4 @@ const AccordionData = () => {
     );
 };
 
-export default AccordionData;
+export default AccordionDetailsC;

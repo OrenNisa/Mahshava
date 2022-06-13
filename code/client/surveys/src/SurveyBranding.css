@@ -1,0 +1,110 @@
+
+/*----------------------------------------------Orange Theme-----------------------------------------------*/
+
+
+.orange-content {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-left: 4px solid #ff8341;
+    /*border-left: 4px solid #18a689;*/
+    padding: 25px;
+    background-color: #ffba2e;
+}
+
+.orange-question-title-answered {
+
+    background-color: lightblue;
+}
+
+.orange-sd-title {
+
+    color: black;
+    background-color: #ffe1a9;
+}
+
+/*----------------------------------------------Green Theme-----------------------------------------------*/
+
+.green-content {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-left: 4px solid #18a689;
+    /*border-left: 4px solid #18a689;*/
+    padding: 25px;
+    background-color: #92ff57;
+}
+
+.green-question-title-answered {
+
+    background-color: lightblue;
+}
+
+.green-sd-title {
+
+    color: black;
+    background-color: #cbec81;
+}
+
+/*----------------------------------------------Blue Theme-----------------------------------------------*/
+
+.blue-content {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-left: 4px solid #24604a;
+    /*border-left: 4px solid #18a689;*/
+    padding: 25px;
+    background-color: #70e0d1;
+}
+
+.blue-question-title-answered {
+
+    background-color: #ffcc59;
+}
+
+.blue-sd-title {
+
+    color: black;
+    background-color: #73c6ff;
+}
+
+/*----------------------------------------------Pink Theme-----------------------------------------------*/
+
+.pink-content {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-left: 4px solid #24604a;
+    /*border-left: 4px solid #18a689;*/
+    padding: 25px;
+    background-color: #fcb3cb;
+}
+
+.pink-question-title-answered {
+
+    background-color: #61BDAEC1;
+}
+
+.pink-sd-title {
+
+    color: black;
+    background-color: #C5468A9E;
+}
+
+/*----------------------------------------------White Theme-----------------------------------------------*/
+
+.white-content {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-left: 4px solid #18a689;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.white-question-title-answered {
+
+    background-color: lightblue;
+}
+
+.white-sd-title {
+
+    color: black;
+}
+

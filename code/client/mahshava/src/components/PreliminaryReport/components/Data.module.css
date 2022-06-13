@@ -615,7 +615,7 @@ left:-10%;
 .FullInitialReport {
     position: absolute;
     width: 700px;
-    height: 400px;
+    height: 500px;
     left: calc(85% - 1369px/2 - 0.5px);
     top: calc(23% - 802px/2 + 473px);
     overflow-y: scroll;

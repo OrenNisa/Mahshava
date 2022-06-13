@@ -1,45 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import service from "../api";
 import { useNavigate } from 'react-router-dom';
+import '../SurveyList.css';
+
 
 function SurveyList() {
-
-    const titleStyle = {
-        position: 'relative',
-        textAlign: 'center',
-        color: 'darkblue',
-        top: '40px',
-        fontFamily: 'Helvetica',
-        fontSize: '40px',
-    }
-
-    const tableStyle = {
-        position: 'relative',
-        overflow: 'scroll',
-        height: '10cm',
-        margin: 'auto',
-        width: '40%',
-        border: '2px solid lightgrey',
-        padding: '10px',
-        top: '80px',
-        color: 'blue',
-        overflowY: 'scroll',
-        display: 'block',
-    };
-
-    const surveyListStyle = {
-        position: 'relative',
-        left: '175px',
-        listStyleType: 'none',
-        margin: '0',
-        padding: '5px',
-    }
-
-    const inputStyle = {
-        position: 'relative',
-        left: '638px',
-        top: '160px',
-    }
 
     // allows navigation from this component (SurveyList.js) to the survey-rendering component (RenderSurvey.js)
     const navigate = useNavigate();
@@ -71,32 +36,32 @@ function SurveyList() {
 
     // returns a list of all survey titles
     const getTitleList = () => {
-        return <ul style={surveyListStyle}>{surveyTitleArray.map(name => <li  key={name}> {name} </li>)}</ul>
+        return <ul className="surveyList">{surveyTitleArray.map(name => <li  key={name}> {name} </li>)}</ul>
     };
 
     // returns a list of all survey IDs
     const getIdList = () => {
-        return <ul style={surveyListStyle}>{surveyIdArray.map(name => <li key={name}> {name} </li>)}</ul>
+        return <ul className="surveyList">{surveyIdArray.map(name => <li key={name}> {name} </li>)}</ul>
     };
 
     return (
 
         <div>
 
-            <form style={inputStyle}>
+            <h1 className="title">Choose a Survey</h1>
+
+            <form className="input">
             <input id='renderTextBox' placeholder={'Enter survey ID'} onChange={(event) => {
                 setSurveyId(event.target.value)
             }}/>
             <input id='renderButton' type='button' value='Open Survey' onClick={getSurvey}></input>
             </form>
 
-            <h1 style={titleStyle}>Choose a Survey</h1>
-
-            <table style={tableStyle}>
+            <table className="table">
                 <tbody>
                     <tr>
-                        <th style={surveyListStyle}>Survey ID</th>
-                        <th style={surveyListStyle}>Survey Name</th>
+                        <th className="surveyList">Survey ID</th>
+                        <th className="surveyList">Survey Name</th>
                     </tr>
                     <tr>
                         <td>{getIdList()}</td>
@@ -104,7 +69,6 @@ function SurveyList() {
                     </tr>
                 </tbody>
             </table>
-
         </div>
     );
 }
