@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { DetailsB } from './DetailsB';
+import React, {useState} from 'react';
+import DetailsB from './DetailsB';
 import styled from 'styled-components';
-import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
 import LogoPolygon1 from '../../mahshava-admin/LogoHelp/LogoPolygon1'
 import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
@@ -75,36 +73,29 @@ color: red;
 
 
 const AccordionDetailsB = () => {
-    const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = useState(new Array(4).fill(true));
 
     const toggle = index => {
-        if (clicked === index) {
-            //if clicked question is already active, then close it
-            return setClicked(null);
-        }
-
-        setClicked(index);
+        let newArr = [...clicked]
+        newArr[index] = clicked[index] !== true;
+        setClicked(newArr);
     };
 
     return (
         <AccordionSection>
             <Container>
-                {DetailsB.map((item, index) => {
+                {DetailsB().map((item, index) => {
                     return (
                         <>
                             <Wrap onClick={() => toggle(index)} key={index}>
-                                <span>{clicked === index ? <LogoPolygon1 /> : <LogoPolygon2 />}</span>
+                                <span>{clicked[index] === true ? <LogoPolygon1/> : <LogoPolygon2/>}</span>
                                 <h1>{item.title}</h1>
                             </Wrap>
-                            {clicked === index ? (
-
+                            {clicked[index] === true ? (
                                 <Dropdown>
-
-                                <p>{item.content}</p>
-
-                                    </Dropdown>
-
-                                    ) : null}
+                                    <p>{item.content}</p>
+                                </Dropdown>
+                            ) : null}
                         </>
                     );
                 })}

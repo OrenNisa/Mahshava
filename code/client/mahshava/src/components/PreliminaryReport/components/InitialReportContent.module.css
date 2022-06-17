@@ -7,7 +7,7 @@
     order: 1;
     flex-grow: 0;
 }
-.sizee{
+.size{
     width: 201px;
     height: 50px;
 }
@@ -484,7 +484,7 @@ left:-10%;
 }
 .b {
     position: absolute;
-    left: -69.3251953125px;
+    left: -78px;
     top: 150%;
     width: 79.2px;
     height: 33px;
@@ -646,7 +646,7 @@ top: 41%;
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.TitalBox1{
+.TitleBox1{
     position: absolute;
 
     /* מוכנות להשתנות */
@@ -761,10 +761,10 @@ right: 50%;
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.TitalBox2{
+.TitleBox2{
     /* מנהיגות ותרבות אירגונית */
     position: absolute;
-right: 2%;
+    right: 2%;
     top: 7%;
     width: 497px;
     height: 17px;
@@ -781,7 +781,7 @@ right: 2%;
 }
 .LineBox2{
     position: absolute;
-right: 2%;
+    right: 2%;
     top: 25%;
     /* קבלת החלטות */
     width: 121px;
@@ -834,7 +834,7 @@ right: 2%;
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.TitalBox3{
+.TitleBox3{
     position: absolute;
 right: 2%;
     top: 7%;
@@ -948,11 +948,10 @@ right: 2%;
     height: 216px;
     left: 15%;
     top: 255.13px;
-    /* small soft */
 
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.12));
 }
-.TitalPointPow{
+.TitlePointPow{
     position: absolute;
     width: 150px;
     height: 5px;
@@ -1021,13 +1020,13 @@ right: 2%;
 }
 .Group2{
     /* גרף עצמו */
-    position: absolute;
-    left: 20.47%;
-    right: 53.91%;
+    position: relative;
+    width: 23em;
+    right: 40%;
     top: 10.66%;
     bottom: 61.36%;
 }
-.TitalResult{
+.TitleResult{
     /* רופישל תודוקנ */
 
 

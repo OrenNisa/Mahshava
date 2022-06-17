@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
-import { Details } from './Details';
+import React, {useState} from 'react';
+import Details from './Details';
 import styled from 'styled-components';
-import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
 import LogoPolygon1 from '../../mahshava-admin/LogoHelp/LogoPolygon1'
 import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
-
-
 
 
 const Container = styled.div`
@@ -63,39 +59,32 @@ color: #333333;
 
 
 const AccordionDetails = () => {
-    const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = useState(new Array(5).fill(true));
 
     const toggle = index => {
-        if (clicked === index) {
-            //if clicked question is already active, then close it
-            return setClicked(null);
-        }
-
-        setClicked(index);
+        let newArr = [...clicked]
+        newArr[index] = clicked[index] !== true;
+        setClicked(newArr);
     };
 
     return (
-            <Container>
-                {Details.map((item, index) => {
-                    return (
-                        <>
-                            <Wrap onClick={() => toggle(index)} key={index}>
-                                <span>{clicked === index ? <LogoPolygon1 /> : <LogoPolygon2 />}</span>
-                                <h1>{item.title}</h1>
-                            </Wrap>
-                            {clicked === index ? (
-
-                                <Dropdown>
-
+        <Container>
+            {Details().map((item, index) => {
+                return (
+                    <>
+                        <Wrap onClick={() => toggle(index)} key={index}>
+                            <span>{clicked[index] === true ? <LogoPolygon1/> : <LogoPolygon2/>}</span>
+                            <h1>{item.title}</h1>
+                        </Wrap>
+                        {clicked[index] === true ? (
+                            <Dropdown>
                                 <p>{item.content}</p>
-
-                                    </Dropdown>
-
-                                    ) : null}
-                        </>
-                    );
-                })}
-            </Container>
+                            </Dropdown>
+                        ) : null}
+                    </>
+                );
+            })}
+        </Container>
 
     );
 };

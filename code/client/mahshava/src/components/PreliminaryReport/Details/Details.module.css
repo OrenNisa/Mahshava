@@ -1,4 +1,4 @@
-.tital1{
+.title1{
     position: relative;
     flex: none;
     margin-bottom: 16.5px;
@@ -6,7 +6,7 @@
     height: 10.58125px;
     left: 7%;
 }
-.tital1 .LineTital1{
+.title1 .LineTitle1{
     position: absolute;
     left: 73.14895935058594px;
     top: 0.48125000000000007px;
@@ -22,7 +22,7 @@
     font-weight: 700;
     line-height: 25.781250000000004px;
 }
-.tital1 .LineTital2{
+.title1 .LineTitle2{
     position: absolute;
     left: 76.36%;
     right: 12.7%;

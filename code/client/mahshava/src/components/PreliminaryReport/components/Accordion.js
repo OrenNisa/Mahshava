@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Data } from './Data';
+import InitialReportContent from './InitialReportContent';
 import styled from 'styled-components';
-import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
 import LogoPolygon1 from '../../mahshava-admin/LogoHelp/LogoPolygon1'
 import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
@@ -64,7 +62,7 @@ const Accordion = () => {
     return (
         <AccordionSection>
             <Container>
-                {Data.map((item, index) => {
+                {InitialReportContent().map((item, index) => {
                     return (
                         <>
                             <Wrap onClick={() => toggle(index)} key={index}>
