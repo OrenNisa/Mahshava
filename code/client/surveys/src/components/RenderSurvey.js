@@ -4,7 +4,7 @@ import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import service from "../api";
 import {useCallback, useEffect, useState} from "react";
-import  {useLocation} from "react-router-dom";
+import  {useLocation, useNavigate} from "react-router-dom";
 import '../SurveyBranding.css';
 
 
@@ -12,6 +12,15 @@ function RenderSurvey() {
 
     const [surveyJSON, setSurveyJSON] = useState(null);
     const location = useLocation();
+    const navigate = useNavigate();
+
+    const yourFunction = async () => {
+        await delay(5000);
+        console.log("Waited 5s");
+
+        await delay(5000);
+        console.log("Waited an additional 5s");
+    };
 
     useEffect(() => {
 
@@ -39,11 +48,24 @@ function RenderSurvey() {
             console.log(response);
         })
 
-
+        homeRedirection();
     }, []);
 
 
+    // delay and homeRedirection redirect the user back to the homepage 2.5 seconds after completion
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    const homeRedirection = async () => {
+        await delay(2500);
+        alert("Your answer has been saved!");
+        navigate("/", {});
+    };
+
     survey.onComplete.add(alertResults);
+
+
+
+
 
     // Themes:
 
