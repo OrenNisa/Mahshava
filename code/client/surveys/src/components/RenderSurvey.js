@@ -14,14 +14,6 @@ function RenderSurvey() {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const yourFunction = async () => {
-        await delay(5000);
-        console.log("Waited 5s");
-
-        await delay(5000);
-        console.log("Waited an additional 5s");
-    };
-
     useEffect(() => {
 
         service.SurveyService.getSurveyJSON(location.state.surveyID).then(response => {
@@ -62,9 +54,6 @@ function RenderSurvey() {
     };
 
     survey.onComplete.add(alertResults);
-
-
-
 
 
     // Themes:
