@@ -12,6 +12,7 @@ function RenderSurvey() {
 
     const [surveyJSON, setSurveyJSON] = useState(null);
     const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
 
@@ -39,11 +40,21 @@ function RenderSurvey() {
             console.log(response);
         })
 
-
+        homeRedirection();
     }, []);
 
 
+    // delay and homeRedirection redirect the user back to the homepage 2.5 seconds after completion
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    const homeRedirection = async () => {
+        await delay(2500);
+        alert("Your answer has been saved!");
+        navigate("/", {});
+    };
+
     survey.onComplete.add(alertResults);
+
 
     // Themes:
 

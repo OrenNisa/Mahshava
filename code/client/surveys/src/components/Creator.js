@@ -11,11 +11,15 @@ import {useLocation, useNavigate} from "react-router-dom";
 function Creator() {
 
     const location = useLocation();
+    const navigate = useNavigate();
 
     const saveSurvey = () => {
         const survey = creator.text;
         service.SurveyService.saveSurvey(survey, location.state.surveyBackgroundColor).then(response => {
             console.log(response);
+
+            navigate("/", {});
+            alert("Your Survey has been created!");
         });
     };
 
