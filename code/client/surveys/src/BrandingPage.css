@@ -21,8 +21,8 @@
     background-color: #ffba2e;
     border: none;
     color: black;
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     top: 30px;
     text-align: center;
     font-size: 16px;
@@ -45,8 +45,8 @@
     background-color: #92ff57;
     border: none;
     color: black;
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     top: 30px;
     text-align: center;
     font-size: 16px;
@@ -69,8 +69,8 @@
     background-color: #70e0d1;
     border: none;
     color: black;
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     top: 30px;
     text-align: center;
     font-size: 16px;
@@ -93,8 +93,8 @@
     background-color: #fcb3cb;
     border: none;
     color: black;
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     top: 30px;
     text-align: center;
     font-size: 16px;
@@ -115,10 +115,10 @@
 
     position: relative;
     background-color: #f1f1f1;
-    border: solid 1px grey;
+    border: none;
     color: black;
     height: 100px;
-    width: 1260px;
+    width: 100px;
     top: 30px;
     text-align: center;
     font-size: 16px;
@@ -142,7 +142,7 @@
     border: none;
     color: white;
     padding: 10px;
-    top: 15px;
+    top: 50px;
     text-align: center;
     font-size: 16px;
     margin: 0 auto;

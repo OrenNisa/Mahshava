@@ -4,7 +4,7 @@ import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import service from "../api";
 import {useCallback, useEffect, useState} from "react";
-import  {useLocation} from "react-router-dom";
+import  {useLocation, useNavigate} from "react-router-dom";
 import '../SurveyBranding.css';
 
 
