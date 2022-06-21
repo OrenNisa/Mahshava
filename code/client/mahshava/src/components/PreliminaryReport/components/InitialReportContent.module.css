@@ -1,4 +1,4 @@
-.Resilience{
+.Resilience {
     /* מהו חוסן */
     width: 70%;
     height: 90%;
@@ -7,11 +7,13 @@
     order: 1;
     flex-grow: 0;
 }
-.sizee{
+
+.size {
     width: 201px;
     height: 50px;
 }
-.Text1{
+
+.Text1 {
     position: absolute;
     width: 300%;
     height: 20%;
@@ -30,7 +32,8 @@
 
     color: #333333;
 }
-.Text2{
+
+.Text2 {
     position: absolute;
     width: 400%;
     height: 20%;
@@ -48,14 +51,16 @@
     text-align: right;
     color: #333333;
 }
-.SizeImg1{
+
+.SizeImg1 {
     position: absolute;
     width: 100px;
     height: 75px;
     left: 20.88px;
     top: 19%;
 }
-.DetalisSchool{
+
+.DetalisSchool {
     width: 201px;
     height: 191px;
     /* Inside auto layout */
@@ -63,7 +68,8 @@
     order: 2;
     flex-grow: 0;
 }
-.TextImg1{
+
+.TextImg1 {
     /* טקסט */
     /* Auto layout */
 
@@ -79,7 +85,8 @@
     left: 10%;
     top: 32%;
 }
-.TextImg1 .Line1{
+
+.TextImg1 .Line1 {
     /* האורה ידוסי רפס תיב */
     width: 201px;
     height: 13px;
@@ -98,7 +105,8 @@
     color: #333333;
 
 }
-.TextImg1 .Line2{
+
+.TextImg1 .Line2 {
     /* בגנה רעש ,תורדש */
     width: 130px;
     height: 11px;
@@ -122,7 +130,8 @@
     flex-grow: 0;
 
 }
-.TextImg1 .Line3{
+
+.TextImg1 .Line3 {
     /* יתנש 6 ,יתד יתכלממ */
     width: 151px;
     height: 11px;
@@ -145,14 +154,16 @@
     order: 2;
     flex-grow: 0;
 }
-.SizeImg2{
+
+.SizeImg2 {
     position: absolute;
     width: 100px;
     height: 75px;
     right: 150%;
     top: 19%;
 }
-.TextImg2{
+
+.TextImg2 {
     position: relative;
     flex: none;
     width: 208.70000000000002px;
@@ -160,7 +171,8 @@
     top: 42%;
     right: 140%;
 }
-.TextImg2 .Line1a{
+
+.TextImg2 .Line1a {
     position: absolute;
     left: 77px;
     top: 131.8453125px;
@@ -170,13 +182,14 @@
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 17.6px;
     font-weight: 700;
     line-height: 20.625px;
 }
-.TextImg2 .Line1a1{
+
+.TextImg2 .Line1a1 {
     position: absolute;
     width: 45px;
     height: 24px;
@@ -193,7 +206,8 @@
     text-align: right;
     color: #333333;
 }
-.TextImg2 .Line2a{
+
+.TextImg2 .Line2a {
     position: absolute;
     left: 0px;
     top: 161.54531250000002px;
@@ -203,13 +217,14 @@
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 17.6px;
     font-weight: 700;
     line-height: 20.625px;
 }
-.TextImg2 .Line3a{
+
+.TextImg2 .Line3a {
     position: absolute;
     left: 18.700000000000003px;
     top: 198.00000000000003px;
@@ -219,20 +234,22 @@
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 17.6px;
     font-weight: 700;
     line-height: 20.625px;
 }
-.SizeImg3{
+
+.SizeImg3 {
     position: absolute;
     width: 100px;
     height: 75px;
     left: -190%;
     top: 19%;
 }
-.TextImg3{
+
+.TextImg3 {
     /* מספר אנשים בבית הספר */
 
     /* Auto layout */
@@ -249,7 +266,8 @@
     left: -180%;
     top: 35%;
 }
-.TextImg3 .Line1b{
+
+.TextImg3 .Line1b {
     position: relative;
     flex: none;
     margin-bottom: 17.6px;
@@ -259,13 +277,14 @@
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 19.8px;
     font-weight: 400;
     line-height: 23.203125000000004px;
 }
-.TextImg3 .Line2b{
+
+.TextImg3 .Line2b {
     position: relative;
     flex: none;
     margin-bottom: 17.6px;
@@ -275,19 +294,21 @@
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 19.8px;
     font-weight: 400;
     line-height: 23.203125000000004px;
 }
-.sizzee{
+
+.sizzee {
     width: 225px;
     height: 800px;
     float: left;
     left: 90%;
 }
-.TextData{
+
+.TextData {
     position: absolute;
     /* נתונים מרכזיים */
     width: 110%;
@@ -301,7 +322,8 @@
     flex-grow: 0;
 
 }
-.TextData .FullBack{
+
+.TextData .FullBack {
     position: absolute;
 
     /* רקע מלא */
@@ -315,19 +337,21 @@
     gap: 48px;
     width: 60%;
     height: 70px;
-left:-10%;
+    left: -10%;
     background: #FFFFFF;
     /* blue shadow */
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.crid1{
+
+.crid1 {
     position: absolute;
     float: left;
     left: 90%;
     top: 10%;
 }
-.TextData .FullBack .LineC{
+
+.TextData .FullBack .LineC {
     /* כתוב */
     /* Auto layout */
     display: flex;
@@ -341,7 +365,8 @@ left:-10%;
     height: 37px;
     top: 5%;
 }
-.TextData .FullBack .LineC .num1{
+
+.TextData .FullBack .LineC .num1 {
     position: absolute;
     float: left;
     /* םיביכרמ 5 */
@@ -358,13 +383,15 @@ left:-10%;
     text-align: right;
     color: #333333;
 }
-.crid2{
+
+.crid2 {
     position: absolute;
     float: left;
     left: 90%;
     top: 37%;
 }
-.TextData .FullBack .LineC1{
+
+.TextData .FullBack .LineC1 {
     /* כתוב */
     /* Auto layout */
     display: flex;
@@ -378,13 +405,15 @@ left:-10%;
     height: 37px;
     top: 36%;
 }
-.crid3{
+
+.crid3 {
     position: absolute;
     float: left;
     left: 90%;
     top: 68%;
 }
-.TextData .FullBack .LineC2{
+
+.TextData .FullBack .LineC2 {
     /* כתוב */
     /* Auto layout */
     display: flex;
@@ -398,7 +427,8 @@ left:-10%;
     height: 37px;
     top: 65%;
 }
-.TextData .PointData{
+
+.TextData .PointData {
     position: absolute;
     float: right;
     display: flex;
@@ -410,7 +440,8 @@ left:-10%;
     left: 230%;
     top: 0%;
 }
-.Lined1{
+
+.Lined1 {
     /* 76.7% */
 
     position: absolute;
@@ -432,7 +463,8 @@ left:-10%;
     color: #333333;
 
 }
-.TextData .FullBack .PointData .Lined2{
+
+.TextData .FullBack .PointData .Lined2 {
     position: absolute;
     left: 30%;
     top: 40%;
@@ -442,13 +474,14 @@ left:-10%;
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 17.6px;
     font-weight: 700;
     line-height: 20.625px;
 }
-.a{
+
+.a {
     position: absolute;
     float: left;
     right: -168%;
@@ -459,13 +492,14 @@ left:-10%;
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 17.6px;
     font-weight: 700;
     line-height: 20.625px;
 }
-.Linedd2{
+
+.Linedd2 {
     position: absolute;
     float: left;
     left: 10%;
@@ -476,15 +510,16 @@ left:-10%;
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 17.6px;
     font-weight: 700;
     line-height: 20.625px;
 }
+
 .b {
     position: absolute;
-    left: -69.3251953125px;
+    left: -78px;
     top: 150%;
     width: 79.2px;
     height: 33px;
@@ -498,13 +533,15 @@ left:-10%;
     font-weight: 700;
     line-height: 46.40625000000001px;
 }
-.SizeEnd{
+
+.SizeEnd {
     width: 201px;
     height: 600px;
     float: left;
     left: 90%;
- }
-.TextEnd{
+}
+
+.TextEnd {
     position: absolute;
     width: 320%;
     height: 20%;
@@ -512,7 +549,7 @@ left:-10%;
     direction: rtl;
     justify-content: flex-end;
     text-align: right;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 11.6px;
     font-weight: 200;
@@ -520,7 +557,8 @@ left:-10%;
     left: -235%;
     top: 80%;
 }
-.TextELine1{
+
+.TextELine1 {
     position: absolute;
     width: 320%;
     height: 20%;
@@ -528,15 +566,16 @@ left:-10%;
     direction: rtl;
     justify-content: flex-end;
     text-align: right;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 11.6px;
     font-weight: 200;
     line-height: 15.625px;
     left: -235%;
-    top:31.5%;
+    top: 31.5%;
 }
-.TextELine2{
+
+.TextELine2 {
     position: absolute;
     width: 320%;
     height: 20%;
@@ -544,7 +583,7 @@ left:-10%;
     direction: rtl;
     justify-content: flex-end;
     text-align: right;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 11.6px;
     font-weight: 200;
@@ -552,7 +591,8 @@ left:-10%;
     left: -235%;
     top: 34.5%;
 }
-.TextELine3{
+
+.TextELine3 {
     position: absolute;
     width: 320%;
     height: 20%;
@@ -560,7 +600,7 @@ left:-10%;
     direction: rtl;
     justify-content: flex-end;
     text-align: right;
-    color: rgba(51,51,51,1.00);
+    color: rgba(51, 51, 51, 1.00);
     font-family: Heebo;
     font-size: 11.6px;
     font-weight: 200;
@@ -568,9 +608,10 @@ left:-10%;
     left: -235%;
     top: 37.5%;
 }
-.c{
+
+.c {
     position: absolute;
-    left: -75.3251953125px;
+    right: 100%;
     top: 33.5%;
     width: 79.2px;
     height: 33px;
@@ -584,7 +625,8 @@ left:-10%;
     font-weight: 700;
     line-height: 46.40625000000001px;
 }
-.d{
+
+.d {
     position: absolute;
     left: -75.3251953125px;
     top: 59%;
@@ -600,24 +642,27 @@ left:-10%;
     font-weight: 900;
     line-height: 46.40625000000001px;
 }
-.SizeLength{
+
+.SizeLength {
     width: 201px;
     height: 500px;
     float: left;
     left: 90%;
 }
-.NewData{
+
+.NewData {
     width: 201px;
     height: 300px;
     float: right;
     left: 90%;
 }
+
 .FullInitialReport {
     position: absolute;
     width: 700px;
     height: 500px;
-    left: calc(85% - 1369px/2 - 0.5px);
-    top: calc(23% - 802px/2 + 473px);
+    left: calc(85% - 1369px / 2 - 0.5px);
+    top: calc(23% - 802px / 2 + 473px);
     overflow-y: scroll;
 
     background: #FFFFFF;
@@ -625,12 +670,13 @@ left:-10%;
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.SizeBox1{
+
+.SizeBox1 {
     /* נקודות חולשה_הסבר */
     position: absolute;
-right: 2%;
+    right: 2%;
     /* Auto layout */
-top: 41%;
+    top: 41%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -639,18 +685,19 @@ top: 41%;
     gap: 48px;
 
     width: 670px;
-    height: 70px;
+    height: 25px;
 
     background: #FFFFFF;
     /* blue shadow */
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.TitalBox1{
+
+.TitleBox1 {
     position: absolute;
 
     /* מוכנות להשתנות */
-float: right;
+    float: right;
     right: 3%;
     top: 15%;
     width: 300px;
@@ -671,7 +718,8 @@ float: right;
     order: 0;
     flex-grow: 0;
 }
-.Line1Box1{
+
+.Line1Box1 {
     position: absolute;
     top: 40%;
     /* אסטרטגיית תכנון */
@@ -689,7 +737,8 @@ float: right;
     right: 3%;
     color: #333333;
 }
-.Text1Box1{
+
+.Text1Box1 {
     position: absolute;
     /* נמדדות ע"פ יכולת הפיתוח וההערכה של תוכניות ואסטרטגיות לניהול משברים ביחס לתחום הפעילות והשותפים הרלוונטיים. */
     width: 500px;
@@ -705,7 +754,8 @@ float: right;
     right: 3%;
     color: #333333;
 }
-.Line2Box1{
+
+.Line2Box1 {
     /* בדיקת תוכניות */
     position: absolute;
     width: 433px;
@@ -723,16 +773,17 @@ float: right;
     text-align: right;
     color: #2F3A5F;
 }
-.Text2Box1{
+
+.Text2Box1 {
     /* נמדדת ע"פ מידת השתתפות הצוות בסימולציות או בתרחישים שנועדו לתרגל הסדרי תגובה ולאמת תוכניות. */
 
     position: absolute;
-top: 54%;
+    top: 54%;
     width: 500px;
     height: 52px;
 
     /* Big text report */
-right: 50%;
+    right: 50%;
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -742,7 +793,8 @@ right: 50%;
 
     color: #333333;
 }
-.SizeBox2{
+
+.SizeBox2 {
     position: absolute;
     right: 2%;
     /* Auto layout */
@@ -755,16 +807,17 @@ right: 50%;
     gap: 48px;
 
     width: 290px;
-    height: 85px;
+    height: 25px;
     background: #FFFFFF;
     /* blue shadow */
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.TitalBox2{
+
+.TitleBox2 {
     /* מנהיגות ותרבות אירגונית */
     position: absolute;
-right: 2%;
+    right: 2%;
     top: 7%;
     width: 497px;
     height: 17px;
@@ -779,9 +832,10 @@ right: 2%;
     text-align: right;
     color: #E78536;
 }
-.LineBox2{
+
+.LineBox2 {
     position: absolute;
-right: 2%;
+    right: 2%;
     top: 25%;
     /* קבלת החלטות */
     width: 121px;
@@ -797,7 +851,8 @@ right: 2%;
     text-align: right;
     color: #333333;
 }
-.TextBox2{
+
+.TextBox2 {
     position: absolute;
     right: 2%;
     top: 50%;
@@ -815,7 +870,8 @@ right: 2%;
 
     color: #333333;
 }
-.SizeBox3{
+
+.SizeBox3 {
     position: absolute;
     right: 175%;
     /* Auto layout */
@@ -828,15 +884,16 @@ right: 2%;
     gap: 48px;
 
     width: 290px;
-    height: 85px;
+    height: 25px;
     background: #FFFFFF;
     /* blue shadow */
 
     box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
 }
-.TitalBox3{
+
+.TitleBox3 {
     position: absolute;
-right: 2%;
+    right: 2%;
     top: 7%;
     /* רשתות של מערכות יחסים */
     width: 497px;
@@ -852,7 +909,8 @@ right: 2%;
     text-align: right;
     color: #2BA774;
 }
-.LineBox3{
+
+.LineBox3 {
     position: absolute;
     right: 2%;
     top: 25%;
@@ -872,7 +930,8 @@ right: 2%;
     text-align: right;
     color: #333333;
 }
-.TextBox3{
+
+.TextBox3 {
     position: absolute;
     right: 2%;
     top: 50%;
@@ -889,14 +948,16 @@ right: 2%;
     text-align: right;
     color: #333333;
 }
-.EndImg{
+
+.EndImg {
     position: absolute;
     width: 35px;
     height: 35px;
     left: 70%;
     top: 73%;
 }
-.Help{
+
+.Help {
     position: absolute;
     width: 500px;
     height: 40px;
@@ -915,7 +976,8 @@ right: 2%;
     color: #333333;
 
 }
-.EndTextOF{
+
+.EndTextOF {
     position: absolute;
     width: 500px;
     height: 40px;
@@ -933,7 +995,8 @@ right: 2%;
     text-align: right;
     color: #333333;
 }
-.SizeGroup{
+
+.SizeGroup {
     /* גרף עכביש */
     position: absolute;
     width: 250px;
@@ -941,18 +1004,19 @@ right: 2%;
     left: 230px;
     top: 0px;
 }
-.PointPow{
+
+.PointPow {
     /* נקודת חוזק */
     position: absolute;
     width: 597px;
     height: 216px;
     left: 15%;
     top: 255.13px;
-    /* small soft */
 
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.12));
 }
-.TitalPointPow{
+
+.TitlePointPow {
     position: absolute;
     width: 150px;
     height: 5px;
@@ -973,7 +1037,8 @@ right: 2%;
     color: #E78536;
 
 }
-.TextPoint{
+
+.TextPoint {
     /* מנהיגות ותרבות אירגונית */
 
     width: 200px;
@@ -996,7 +1061,8 @@ right: 2%;
 
     color: #333333;
 }
-.NumberPoint{
+
+.NumberPoint {
     /* 6 / 7 */
 
 
@@ -1019,15 +1085,17 @@ right: 2%;
     color: #333333;
 
 }
-.Group2{
+
+.Group2 {
     /* גרף עצמו */
-    position: absolute;
-    left: 20.47%;
-    right: 53.91%;
+    position: relative;
+    width: 23em;
+    right: 42%;
     top: 10.66%;
     bottom: 61.36%;
 }
-.TitalResult{
+
+.TitleResult {
     /* רופישל תודוקנ */
 
 
@@ -1050,7 +1118,8 @@ right: 2%;
 
     color: #333333;
 }
-.TextResult{
+
+.TextResult {
     /* םיסחי תוכרעמ לש תותשר */
 
     width: 170px;
@@ -1073,7 +1142,8 @@ right: 2%;
 
     color: #333333;
 }
-.Num1Result{
+
+.Num1Result {
     /* 5.81/7 */
     position: absolute;
     left: 154%;
@@ -1091,7 +1161,8 @@ right: 2%;
 
     color: #333333;
 }
-.Text2Result{
+
+.Text2Result {
     position: absolute;
     left: 57.52%;
     top: 206%;
@@ -1110,7 +1181,8 @@ right: 2%;
 
     color: #333333;
 }
-.Num2Result{
+
+.Num2Result {
     /* 5.66 /7 */
 
 
@@ -1132,15 +1204,19 @@ right: 2%;
 
     color: #333333;
 }
-.SizeGrup1{
+
+.SizeGrup1 {
     /* גרף עצמו */
     position: absolute;
+    width: 23em;
     left: 123%;
     top: 216.31%;
     bottom: 51.59%;
 }
-.SizeGrup2{
+
+.SizeGrup2 {
     /* גרף עצמו */
+    width: 23em;
     position: absolute;
     left: -12%;
     top: 216.31%;

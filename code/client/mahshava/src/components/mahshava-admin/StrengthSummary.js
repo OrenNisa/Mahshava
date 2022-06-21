@@ -17,7 +17,7 @@ const StrengthSummary = (props) => {
         formatMessage({ id: 'SchoolInformationSideBar.InterventionCheck.header' }),
         formatMessage({ id: 'SchoolInformationSideBar.ReevaluationCheck.header' })]
 
-    const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = useState([true,true,true]);
     const filteredSchoolsByProcess = (array, name) => {
         let count = 0;
         let arr = [];
@@ -32,18 +32,16 @@ const StrengthSummary = (props) => {
         return {count, arr};
     }
     const toggle = index => {
-        if (clicked === index) {
-            //if clicked question is already active, then close it
-            return setClicked(null);
-        }
-        setClicked(index);
+        let newArr = [...clicked]
+        newArr[index] = clicked[index] !== true;
+        setClicked(newArr);
     };
 
     return (
         <Card className={style.SchoolInformation}>
             <CardContent>
                 <div className={style.SchoolsInProgress}>
-                    <Avatar className={style.SchoolCounter}> {props.schoolProcesses.length} </Avatar> {/* Orange circle component. */}
+                    <Avatar className={style.SchoolCounter}> {props.schoolProcesses.length} </Avatar>
                     {formatMessage({ id: 'SchoolInformationSideBar.SchoolsInProgress.message' })}
                 </div>
 
@@ -52,13 +50,13 @@ const StrengthSummary = (props) => {
                         <div key = {index}>
                             <div className={`${items[index]}`}>
                                 <div className={style.SchoolProgressHeader} onClick={() => toggle(index)}>
-                                    <span>{clicked === index ? <LogoPolygon1 /> : <LogoPolygon2 />} </span>
+                                    <span>{clicked[index] === true ? <LogoPolygon1 /> : <LogoPolygon2 />} </span>
                                     {formatMessage({ id: 'SchoolInformationSideBar.' + items[index] + '.header' })}
                                     <span className={style.HeaderAmount}>{filteredSchoolsByProcess(props.schoolProcesses, processNames[index]).count}</span>
                                     <span className={style.HeaderTotal}>/{props.schoolProcesses.length}</span>
                                 </div>
 
-                                {clicked === index ? (
+                                {clicked[index] === true ? (
                                     <ul>
                                         {filteredSchoolsByProcess(props.schoolProcesses, processNames[index]).arr.map(school => {
                                             return (

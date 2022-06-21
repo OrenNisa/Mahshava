@@ -1,13 +1,17 @@
 import React from "react";
 import styled from './Details.module.css'
+import {useSurveyResults} from "../../../SchoolsContext";
 
-export const Details =[
-    {
-        title: <div className='tital1'>
-            <span className={styled.LineTital1}><b>מודעות למצב  </b></span>
-            <span className={styled.LineTital2}><b> 6.1/7 </b> </span>
-        </div>,
-        content: <div className={styled.OutputText1}>
+function Details() {
+    const surveyResultsData = useSurveyResults().surveyResultsData
+
+    const Details =[
+        {
+            title: <div className='title1'>
+                <span className={styled.LineTitle1}><b>מודעות למצב  </b></span>
+                <span className={styled.LineTitle2}><b> {surveyResultsData.leadershipAndOrganizationalCultureSurvey.values[0]}/7 </b> </span>
+            </div>,
+            content: <div className={styled.OutputText1}>
             <span className={styled.InText1}>
                 <a>נמדדת ע"פ רמת השותפות בין חבר הצוות, הבנת הקשר בין העבודה שלהם לעמידות ולחוסן של הארגון וההצלחה שלו
                 <br/>
@@ -15,14 +19,14 @@ export const Details =[
                     </a>
 					<br/>
             </span>
-        </div>
-    },
-    {
-        title: <div className='tital1'>
-            <span className={styled.LineTital1}><b>מעורבות הצוות  </b></span>
-            <span className={styled.LineTital2}><b> 6.1/7 </b> </span>
-        </div>,
-        content: <div className={styled.OutputText1}>
+            </div>
+        },
+        {
+            title: <div className='title1'>
+                <span className={styled.LineTitle1}><b>מעורבות הצוות  </b></span>
+                <span className={styled.LineTitle2}><b> {surveyResultsData.leadershipAndOrganizationalCultureSurvey.values[1]}/7 </b> </span>
+            </div>,
+            content: <div className={styled.OutputText1}>
             <span className={styled.InText2}>
                 <a>נמדדת בהתנהלות מול משברים, הכרחית בכדי לנהל אותם בצורה טובה, לקבל החלטות באופן שקול
                 <br/>
@@ -30,14 +34,14 @@ export const Details =[
                     </a>
 					<br/>
             </span>
-        </div>
-    },
-    {
-        title:  <div className='tital1'>
-            <span className={styled.LineTital1}><b>לכידות הצוות  </b></span>
-            <span className={styled.LineTital2}><b> 6.1/7 </b> </span>
-        </div>,
-        content: <div className={styled.OutputText1}>
+            </div>
+        },
+        {
+            title:  <div className='title1'>
+                <span className={styled.LineTitle1}><b>לכידות הצוות  </b></span>
+                <span className={styled.LineTitle2}><b> {surveyResultsData.leadershipAndOrganizationalCultureSurvey.values[2]}/7 </b> </span>
+            </div>,
+            content: <div className={styled.OutputText1}>
             <span className={styled.InText3}>
                 <a>נמדדת ע"פ רמת השותפות בין חבר הצוות, הבנת הקשר בין העבודה שלהם לעמידות ולחוסן של הארגון וההצלחה שלו
                 <br/>
@@ -45,14 +49,14 @@ export const Details =[
                     </a>
 					<br/>
             </span>
-        </div>
-    },
-    {
-        title:  <div className='tital1'>
-            <span className={styled.LineTital1}><b>חדשנות ויצירתיות  </b></span>
-            <span className={styled.LineTital2}><b> 6.1/7 </b> </span>
-        </div>,
-        content: <div className={styled.OutputText1}>
+            </div>
+        },
+        {
+            title:  <div className='title1'>
+                <span className={styled.LineTitle1}><b>חדשנות ויצירתיות  </b></span>
+                <span className={styled.LineTitle2}><b> {surveyResultsData.leadershipAndOrganizationalCultureSurvey.values[3]}/7 </b> </span>
+            </div>,
+            content: <div className={styled.OutputText1}>
             <span className={styled.InText4}>
                 <a>נמדדת ע"פ המידה בה הצוות מעודד ומוערך לטובה על השימוש בידע שלו בבחירת דרכים חדשות
                 <br/>
@@ -60,14 +64,14 @@ export const Details =[
                     </a>
 					<br/>
             </span>
-        </div>
-    },
-    {
-        title:  <div className='tital1'>
-            <span className={styled.LineTital1}><b>קבלת ההחלטות </b></span>
-            <span className={styled.LineTital2}><b> 6.1/7 </b> </span>
-        </div>,
-        content: <div className={styled.OutputText1}>
+            </div>
+        },
+        {
+            title:  <div className='title1'>
+                <span className={styled.LineTitle1}><b>קבלת ההחלטות </b></span>
+                <span className={styled.LineTitle2}><b> {surveyResultsData.leadershipAndOrganizationalCultureSurvey.values[4]}/7 </b> </span>
+            </div>,
+            content: <div className={styled.OutputText1}>
             <span className={styled.InText5}>
                 <a>נמדדת בדרגות החופש שיש לצוות לקבל החלטות הקשורות לעבודתם ושהסמכות לכך מואצלת באופן ברור כדי
                 <br/>
@@ -75,7 +79,11 @@ export const Details =[
                     </a>
 					<br/>
             </span>
-        </div>
-    },
+            </div>
+        },
 
-];
+    ];
+    return Details;
+}
+
+export default Details;
