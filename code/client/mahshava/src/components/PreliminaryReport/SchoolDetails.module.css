@@ -53,13 +53,120 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 700;
-    font-size: 100%;
+    font-size: 21px;
     line-height: 29px;
     display: flex;
     align-items: center;
     text-align: right;
 
     color: #2F3A5F;
+}
+.aass{
+    /* נתונים כמותיים */
+    /* Auto layout */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: -9px;
+    width: 195px;
+    height: 77px;
+    /* Inside auto layout */
+    top: -5%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.aassTe1{
+    position: absolute;
+    /* םירומ */
+    width: 138px;
+    height: 13px;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+    top: 38%;
+    left: 20%;
+}
+.aassTe2{
+    position: absolute;
+    /* םירומ */
+    width: 138px;
+    height: 13px;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+    top: 65%;
+    left: 20%;
+}
+.aassTe3{
+    position: absolute;
+    /* םירומ */
+    width: 238px;
+    height: 13px;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+    top: 120%;
+    left: -32%;
+}
+.aassTe4{
+    position: absolute;
+    /* םירומ */
+    width: 238px;
+    height: 13px;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+    top: 155%;
+    left: -32%;
+}
+.aassTe5{
+    position: absolute;
+    /* םירומ */
+    width: 238px;
+    height: 13px;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+    top: 213%;
+    left: -32%;
 }
 .time{
     /* םינמז חול */
@@ -68,13 +175,13 @@
     width: 143px;
     height: 15px;
     left: 50%;
-    top: 60%;
+    top: 66%;
 
     /* H2 */
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 700;
-    font-size: 100%;
+    font-size: 21px;
     line-height: 29px;
     display: flex;
     align-items: center;

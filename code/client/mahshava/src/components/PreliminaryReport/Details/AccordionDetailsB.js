@@ -7,8 +7,8 @@ import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
 const AccordionSection = styled.div`
   display: flex;
-  left: -30%;
-  top: -20%;
+  left: -37%;
+  top: -16%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -20,8 +20,8 @@ const AccordionSection = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: 15%;
-  left: 27%;
+  top: 30%;
+  left: -127%;
 `;
 
 const Wrap = styled.div`
@@ -40,12 +40,9 @@ const Wrap = styled.div`
   text-align: left;
   cursor: pointer;
   h1 {
-    padding: 1rem;
-    font-family: 'Heebo';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1px;
+   padding: 0.7rem;
+    font-size: 2rem;
+}
 
 color: #333333;
   }
@@ -55,8 +52,8 @@ color: #333333;
   
 `;
 const Dropdown = styled.div`
-  width: 70%;
-  height: 30px;
+  width: 100%;
+  height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +64,7 @@ const Dropdown = styled.div`
     font-family: 'Heebo';
 font-style: normal;
 text-align: right;
-color: red;
+
   }
 `;
 

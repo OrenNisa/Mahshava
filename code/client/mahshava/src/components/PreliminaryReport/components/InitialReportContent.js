@@ -1,4 +1,4 @@
-import styled from './InitialReportContent.module.css'
+import './InitialReportContent.css';
 import React from "react";
 import Card from "@mui/material/Card";
 import Img1 from "./Img1";
@@ -61,9 +61,11 @@ function InitialReportContent() {
         {
             title: 'החוסן הארגוני',
             content:
-                <div className={styled.size}>
-                    <span className={styled.Text1}>חוסן הוא היכולת של ארגון לשרוד משבר ולשגשג בעולם של אי וודאות.</span>
-                    <span className={styled.Text2}>
+                <div className='SizeR1'>
+                    <div className='ss'>
+                    <span className='Teexxt1'>
+                        <b>חוסן הוא היכולת של ארגון לשרוד משבר ולשגשג בעולם של אי וודאות.</b></span>
+                    <span className='Text2'>
                     <br/>
 						באמצעות מחקר ובדיקה של ארגונים בעלי מאפיינים שונים כגון גודל, מגזר ומבנה אירגוני, זוקקו 31 רכיבים המרכיבים את רמת החוסן של ארגון.
 						<br/>
@@ -71,16 +73,19 @@ function InitialReportContent() {
 						<br/>
                         <br/>
                 </span>
+                    </div>
                 </div>
         },
         {
             title: 'רקע בית הספר',
             content:
-                <div className={styled.DetalisSchool}>
-                    <div className={styled.SizeImg1}>
+                <div className='DetalisSchool'>
+                    <div className='bb'>
+                        <div className='TotalImg1'>
+                    <div className='SizeImg1'>
                         <Img2/>
                     </div>
-                    <div className={styled.TextImg1}>
+                    <div className='TextImg1'>
                         <b>
                             <span className='Line1'>בית ספר {process.schoolID.schoolName}</span>
                         </b>
@@ -88,10 +93,12 @@ function InitialReportContent() {
                         <span
                             className='Line3'>{process.schoolID.religiousAffiliation}, {process.schoolID.lengthOfStudy}</span>
                     </div>
-                    <div className={styled.SizeImg2}>
+                        </div>
+                        <div>
+                    <div className='SizeImg2'>
                         <Img1/>
                     </div>
-                    <div className={styled.TextImg2}>
+                    <div className='TextImg2'>
                         <b>
                             <span className='Line1a'>בסקר השתתפו</span>
                             <span className='Line1a1'><b> {process.schoolID.surveysRes.noOfParticipants} </b></span>
@@ -102,12 +109,14 @@ function InitialReportContent() {
                                 className='Line3a'>בין התאריכים <br/> {process.schoolID.surveysRes.startDate} - {process.schoolID.surveysRes.endDate}</span>
                         </b>
                     </div>
-                    <div className={styled.SizeImg3}>
+                        </div>
+                    <div className='SizeImg3'>
                         <Img3/>
                     </div>
-                    <div className={styled.TextImg3}>
+                    <div className='TextImg3'>
                         <span className='Line1b'> <b> {process.schoolID.noOfStudents} </b>תלמידים</span>
-                        <span className='Line2b'><b> {process.schoolID.noOfTeachers} </b> מורים ואנשי צוות</span>
+                        <span className='Line2b'><b> {process.schoolID.noOfTeachers} </b> מורים ואנשי צוות </span>
+                    </div>
                     </div>
                 </div>
 
@@ -115,110 +124,114 @@ function InitialReportContent() {
         {
             title: 'תוצאות הערכה ',
             content:
-                <div className={styled.sizzee}>
-                    <div className={styled.TextData}>
-                        <Card className={styled.FullBack}>
-                            <svg className={styled.crid1} width="15" height="12" viewBox="0 0 20 20" fill="none"
+                <div className='sizzee'>
+                    <div className='TextData'>
+                        <Card className='FullBack'>
+                            <svg className='crid1' width="20" height="18" viewBox="0 0 20 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <circle r="10" transform="matrix(1 0 0 -1 10 10)" fill="#E78536"/>
                             </svg>
-                            <div className={styled.LineC}>
+                            <div className='LineC'>
                                 <span> <b>מנהיגות ותרבות ארגונית </b></span>
                                 <span className='num1'>5 מרכיבים</span>
                             </div>
-                            <svg className={styled.crid2} width="15" height="12" viewBox="0 0 20 20" fill="none"
+                            <svg className='crid2' width="20" height="18" viewBox="0 0 20 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <circle r="10" transform="matrix(1 0 0 -1 10 10)" fill="#AFCEC2"/>
                             </svg>
-                            <div className={styled.LineC1}>
+                            <div className='LineC1'>
                                 <span> <b>רשתות של מערכות יחסים </b></span>
-                                <span className='num1'>4 מרכיבים</span>
+                                <span className='num2'>4 מרכיבים</span>
                             </div>
-                            <svg className={styled.crid3} width="15" height="12" viewBox="0 0 20 20" fill="none"
+                            <svg className='crid3' width="20" height="18" viewBox="0 0 20 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <circle r="10" transform="matrix(1 0 0 -1 10 10)" fill="#6377C0"/>
                             </svg>
 
-                            <div className={styled.LineC2}>
-                                <span> <b>מוכנות להשתנות </b></span>
-                                <span className='num1'>4 מרכיבים</span>
+                            <div className='LineC2'>
+                                <span> <b> <b>מוכנות להשתנות </b></b></span>
+                                <span className='num3'>4 מרכיבים</span>
                             </div>
                         </Card>
-                        <div className={styled.PointData}>
-                            <span className={styled.Lined1}><h1><b>{evaluationResult}%</b></h1></span>
-                            <span className={styled.a}>מדד החוסן הבית ספרי</span>
-                            <span className={styled.Linedd2}>שלכם הינו</span>
+                        <div className='PointData'>
+                            <span className='Lined1'><h1><b>{evaluationResult}%</b></h1></span>
+                            <span className='a'>מדד החוסן הבית ספרי</span>
+                            <span className='Linedd2'>שלכם הינו</span>
                             <span
-                                className={styled.b}>{evaluationResult > 75 ? "גבוה" : (evaluationResult > 50 ? "בינוני" : "נמוך")}</span>
+                                className='b'>{evaluationResult > 75 ? "גבוה" : (evaluationResult > 50 ? "בינוני" : "נמוך")}</span>
                         </div>
-                        <div className={styled.SizeGroup}>
+                        <div className='SizeGroup'>
                             <RadarChart chartData={radarChartData}/>
                         </div>
-                        <Card className={styled.PointPow}>
-                            <span className={styled.TitlePointPow}> נקודת חוזקה </span>
-                            <span className={styled.TextPoint}>{maxResult.name}</span>
-                            <span className={styled.NumberPoint}>{allAverages[idOfAverages.idOfMaxAverage]}/7</span>
-                            <div className={styled.Group2}>
-                                <BarChart chartData={allFixedSurveysData[idOfAverages.idOfMaxAverage]}/>
+                        <Card className='PointPow'>
+                            <span className='TitlePointPow'> נקודת חוזקה </span>
+                            <span className='TextPoint'>{maxResult.name}</span>
+                            <span className='NumberPoint'>{allAverages[idOfAverages.idOfMaxAverage]}/7</span>
+                            <div className='Group2'>
+                                <BarChart chartData={allFixedSurveysData[idOfAverages.idOfSecondAverage]}/>
                             </div>
                         </Card>
-                        <span className={styled.TitleResult}> נקודות לשיפור </span>
-                        <span className={styled.TextResult}>{secondResult.name}</span>
-                        <span className={styled.Num1Result}>{allAverages[idOfAverages.idOfSecondAverage]}/7</span>
-                        <span className={styled.Text2Result}>{thirdResult.name}</span>
-                        <span className={styled.Num2Result}> {allAverages[idOfAverages.idOfThirdAverage]}/7 </span>
-                        <div className={styled.SizeGrup1}>
-                            <BarChart chartData={allFixedSurveysData[idOfAverages.idOfSecondAverage]}/>
+                        <div className='TotalTex1'>
+                        <span className='TitleResult'> נקודות לשיפור </span>
+                        <span className='TextResult'>{secondResult.name}</span>
+                        <span className='Num1Result'>{allAverages[idOfAverages.idOfSecondAverage]}/7</span>
+                        <span className='Text2Result'>{thirdResult.name}</span>
+                        <span className='Num2Result'> {allAverages[idOfAverages.idOfThirdAverage]}/7 </span>
+                        <div className='SizeGrup1'>
+                            <BarChart chartData={allFixedSurveysData[idOfAverages.idOfMaxAverage]}/>
                         </div>
-                        <div className={styled.SizeGrup2}>
+                        <div className='SizeGrup2'>
                             <BarChart chartData={allFixedSurveysData[idOfAverages.idOfThirdAverage]}/>
+                        </div>
                         </div>
                     </div>
                 </div>
         },
         {
             title: 'פירוט הרכיבים',
-            content: <div className={styled.SizeLength}>
-                <Card className={styled.FullInitialReport}>
-                    <div className={styled.NewData}><AccordionData/></div>
-                </Card>
+            content: <div className='SizeSize'>
+                <div className='FullInitialReport1'>
+                    <AccordionData/>
+                </div>
             </div>
         },
         {
             title: 'סיכום הדוח',
-            content: <div className={styled.SizeEnd}>
-                <span className={styled.TextELine1}>בחלק זה תוכלו לראות סיכום מטומצת של תוצאות השאלון, תוך התמקדות ברכיבי החוסן שניתן ורצוי לחזק</span>
+            content: <div className='SizeEnd'>
+                <div className='TotalEnd'>
+                <span className='TextELine1'>בחלק זה תוכלו לראות סיכום מטומצת של תוצאות השאלון, תוך התמקדות ברכיבי החוסן שניתן ורצוי לחזק</span>
                 <br/><br/>
-                <span className={styled.TextELine2}>מן השאלון עולה כי מדד החוסן הבית ספרי הינו</span>
+                <span className='TextELine2'>מן השאלון עולה כי מדד החוסן הבית ספרי הינו</span>
                 <span
-                    className={styled.c}>{evaluationResult > 75 ? "גבוה" : (evaluationResult > 50 ? "בינוני" : "נמוך")}</span>
-                <span className={styled.TextELine3}>  עם זאת זוהו מספר<b><b> מרכיבים שניתן לחזקם: </b></b> </span>
-                <Card className={styled.SizeBox1}>
-                    <div className={styled.TitleBox1}>{thirdResult.name}</div>
-                    <span className={styled.Line1Box1}>{thirdResult.names[thirdResult.values.indexOf(Math.min(...thirdResult.values))]}</span>
+                    className='c'>{evaluationResult > 75 ? "גבוה" : (evaluationResult > 50 ? "בינוני" : "נמוך")}</span>
+                    <br/>
+                <span className='TextELine3'>  עם זאת זוהו מספר<b><b> מרכיבים שניתן לחזקם: </b></b> </span>
+                <Card className='SizeBox1'>
+                    <div className='TitleBox1'>{thirdResult.name}</div>
+                    <span className='Line1Box1'>{thirdResult.names[thirdResult.values.indexOf(Math.min(...thirdResult.values))]}</span>
                     {/*<span className={styled.Text1Box1}> נמדדות ע"פ יכולת הפיתוח וההערכה של תוכניות ואסטרטגיות לניהול*/}
                     {/* <br/>משברים ביחס לתחום הפעילות והשותפים הרלוונטיים.</span>*/}
-                    <span className={styled.Line2Box1}>{thirdResult.names[thirdResult.values.indexOf(thirdResult.values.sort()[1])]}</span>
+                    <span className='Line2Box1'>{thirdResult.names[thirdResult.values.indexOf(thirdResult.values.sort()[1])]}</span>
                     {/*<span className={styled.Text2Box1}>נמדדת ע"פ מידת השתתפות הצוות בסימולציות או בתרחישים שנועדו <br/>לתרגל הסדרי תגובה ולאמת תוכניות.</span>*/}
                 </Card>
-                <Card className={styled.SizeBox2}>
-                    <div className={styled.TitleBox2}>{secondResult.name}</div>
-                    <span className={styled.LineBox2}>{secondResult.names[secondResult.values.indexOf(Math.min(...secondResult.values))]}</span>
+                <Card className='SizeBox2'>
+                    <div className='TitleBox2'>{secondResult.name}</div>
+                    <span className='LineBox2'>{secondResult.names[secondResult.values.indexOf(Math.min(...secondResult.values))]}</span>
                 {/*    <span className={styled.TextBox2}>*/}
                 {/*    נמדד בדרגות החופש שיש לצוות לקבל החלטות הקשורות לעבודתם <br/> ושהסמכות לכך מואצלת באופן ברור כדי לאפשר תגובה מהירה*/}
                 {/*    <br/> למשבר. כמו כן משפיעים גם מידת המיומנות, הידע הספציפי, <br/> והמעורבות של הצוות .*/}
                 {/*</span>*/}
                 </Card>
-                <Card className={styled.SizeBox3}>
-                    <div className={styled.TitleBox3}>{maxResult.name}</div>
-                    <span className={styled.LineBox3}>{maxResult.names[maxResult.values.indexOf(Math.min(...maxResult.values))]}</span>
+                <Card className='SizeBox3'>
+                    <div className='TitleBox3'>{maxResult.name}</div>
+                    <span className='LineBox3'>{maxResult.names[maxResult.values.indexOf(Math.min(...maxResult.values))]}</span>
                 {/*    <span className={styled.TextBox3}>*/}
                 {/*    נמדדים ע"פי ניהול וניוד משאבי הארגון בכדי להבטיח את יכולתו <br/>*/}
                 {/*    לפעול במהלך השגרה, כמו גם להיות מסוגל לעמוד במשימות נוספות,<br/>*/}
                 {/*    הנדרשות במהלך משבר.*/}
                 {/*</span>*/}
                 </Card>
-                <div className={styled.EndImg}>
+                <div className='EndImg'>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="18.0254" cy="18.2876" r="17.5" fill="#E78536"/>
                         <path
@@ -226,12 +239,12 @@ function InitialReportContent() {
                             fill="white"/>
                     </svg>
                 </div>
-                <span className={styled.Help}><b> חשוב לזכור <br/></b> </span>
-                <div className={styled.EndTextOF}>
+                <span className='Help'><b> חשוב לזכור <br/></b> </span>
+                <div className='EndTextOF'>
                     על מנת להעמיק את הלמידה וההבנה של רמת החוסן הבית ספרי <br/>
                     מומלץ להשלים את התהליך האבחוני באמצעות קבוצת מיקוד וראיונות עומק.
                 </div>
-
+                </div>
             </div>
         },
         {
@@ -240,11 +253,12 @@ function InitialReportContent() {
         },
         {
             title: 'התייחסות נציג חממה',
-            content: <div className={styled.size}>
-            <span className={styled.TextEnd}>
+            content: <div className='Size'>
+            <span className='TextEnd'>
                     <br/>
          		מסמך זה מרכז בו ממצאים ראשוניים ונותן דוגמאות להתערבויות, הוא בסיס לשיח משותף ולגיבוש תוכנית התערבות וחיזוק המרכיבים השונים שנמדדו.
 						<br/>
+                <br/>
 						חשוב לזכור כי רק בשלב המדידה הבא, לאחר ביצוע תוכנית החיזוק, נוכל לראות את ההשלכות של השקעת המשאבים על המרכיבים השונים.
 						<br/>
                         <br/><br/>

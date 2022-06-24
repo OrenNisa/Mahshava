@@ -1,16 +1,17 @@
 .Text1{
     width: 100px;
-    height: 300px;
+    height: 650px;
     float: right;
-    left: 90%;
+    left: 95%;
 }
 .Text2{
     width: 201px;
-    height: 300px;
+    height: 550px;
     float: right;
     left: 90%;
+    color: red;
 }
-.size{
+.Size{
     width: 30%;
     height: 70%;
 }
