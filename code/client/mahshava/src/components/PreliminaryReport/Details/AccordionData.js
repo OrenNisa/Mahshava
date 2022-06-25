@@ -8,7 +8,7 @@ import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 const AccordionSection = styled.div`
   display: flex;
   left: 145%;
-  top: 3%;
+  top: 0%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -19,18 +19,18 @@ const AccordionSection = styled.div`
 `;
 
 const Container = styled.div`
-  position: absolute;
-  top: 0%;
-  left: -76%;
+  position: relative;
+  top: 81%;
+  left: -106%;
 `;
 
 const Wrap = styled.div`
-
+position: relative;
   color: #333333;
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 200%;
+  width: 300%;
   text-align: center;
   font-family: 'Heebo';
   font-style: normal;
