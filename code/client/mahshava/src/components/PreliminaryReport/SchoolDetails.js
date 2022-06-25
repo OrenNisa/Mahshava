@@ -31,6 +31,10 @@ const SchoolDetails = () => {
                     </div>
                     <div className={style.time}>
                         <LogoPolygon1 />  לוח זמנים
+                        <span className={style.time1}> <b> 19/09</b>  יום א דוח ראשוני  </span>
+                        <span className={style.time2}> <b> 26/09</b> יום ב בניית ראיונות עומק  </span>
+                        <span className={style.time3}><b> 07/10</b>  יום ה דוח מסכם  </span>
+                        <span className={style.time4}> <b> 21/10</b> יום ה תוכנית התערבות  </span>
                     </div>
 
                 </div>

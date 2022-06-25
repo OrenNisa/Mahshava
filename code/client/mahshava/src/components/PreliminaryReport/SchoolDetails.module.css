@@ -87,7 +87,7 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -141,7 +141,7 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -159,7 +159,7 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -188,8 +188,78 @@
     text-align: right;
 
     color: #2F3A5F;
-
-
+}
+.time1{
+    position: absolute;
+    width: 292px;
+    height: 24px;
+    left: -117%;
+    top: 213%;
+    /* small text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+}
+.time2{
+    position: absolute;
+    width: 292px;
+    height: 24px;
+    left: -117%;
+    top: 350%;
+    /* small text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+}
+.time3{
+    position: absolute;
+    width: 292px;
+    height: 24px;
+    left: -117%;
+    top: 500%;
+    /* small text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
+}
+.time4{
+    position: absolute;
+    width: 292px;
+    height: 24px;
+    left: -117%;
+    top: 640%;
+    /* small text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #4F4F4F;
 }
 
 
