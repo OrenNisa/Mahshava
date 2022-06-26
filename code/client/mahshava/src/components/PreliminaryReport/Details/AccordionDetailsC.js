@@ -20,17 +20,16 @@ const AccordionSection = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: -17%;
-  left: 27%;
+  top: 100%;
+  left: 7%;
 `;
 
 const Wrap = styled.div`
   color: #2F3A5F;
   display: flex;
-  top: 20%;
   justify-content: right;
   align-items: center;
-  width: 300%;
+  width: 200%;
   text-align: center;
   font-family: 'Heebo';
   font-style: normal;
@@ -40,14 +39,9 @@ const Wrap = styled.div`
   text-align: left;
   cursor: pointer;
   h1 {
-    padding: 1rem;
-    font-family: 'Heebo';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1px;
-
-color: #333333;
+    padding: 0.7rem;
+    font-size: 2rem;
+    color: #333333;
   }
   span {
     margin-right: 0.7 rem;
@@ -55,22 +49,19 @@ color: #333333;
   
 `;
 const Dropdown = styled.div`
-  width: 200%;
-  height: 30px;
+  width: 100%;
+  height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   float: left;
   p {
-    font-size: 3 rem;
-    font-family: 'Heebo';
-font-style: normal;
-text-align: right;
-color: red;
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: #333333;
   }
 `;
-
 
 const AccordionDetailsC = () => {
     const [clicked, setClicked] = useState(new Array(4).fill(true));
@@ -82,7 +73,7 @@ const AccordionDetailsC = () => {
     };
 
     return (
-        <AccordionSection>
+
             <Container>
                 {DetailsC().map((item, index) => {
                     return (
@@ -100,7 +91,6 @@ const AccordionDetailsC = () => {
                     );
                 })}
             </Container>
-        </AccordionSection>
 
     );
 };

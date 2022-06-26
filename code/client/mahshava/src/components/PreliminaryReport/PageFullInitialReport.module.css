@@ -1,50 +1,55 @@
-.title{
+.FullInitialReport{
     position: absolute;
-    left: 0px;
-    top: -13%;
-    width: 100%;
-    height: 32.11009174311927%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: rgba(51,51,51,1.00);
-    font-family: Heebo;
-    font-size: 33.6px;
+    width: 60%;
+    height: 83%;
+    left: 25%;
+    top: 45%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    zoom: 61%;
+    background: rgba(255,255,255,1.00);
+    direction: rtl
+}
+.tital{
+    position: absolute;
+    width: 600px;
+    height: 33px;
+    left: -10%;
+    top: 31px;
+    /* H */
+    font-family: 'Heebo';
+    font-style: normal;
     font-weight: 800;
-    line-height: 46.40625000000001px;
+    font-size: 37px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #333333;
 }
 .SchoolInformation {
     position: absolute;
-
     float: right;
     left: 25%;
-    width: 770px;
-    height: 250%;
-    color: #2F3A5F;
-    top: 44%;
+    width: 650px;
+    height: 2892px;
+    color: #E78536;
+    top: 2%;
 }
 .ReportPurpose{
     /* מטרת הדוח */
-
-
     position: absolute;
-    width: 917px;
-    height: 42px;
-    left: -22%;
+    width: 1085px;
+    height: 48px;
+    left: -29%;
     top: 99px;
-
     /* text */
-
     font-family: 'Heebo';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 26px;
     text-align: right;
 
     color: #333333;
 }
-
-
