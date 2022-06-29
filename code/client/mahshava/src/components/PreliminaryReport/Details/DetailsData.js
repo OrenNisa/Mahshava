@@ -21,6 +21,8 @@ export const DetailsData = [
     },
     {
         title: 'מוכנות להשתנות',
-        content: <AccordionDetailsC/>
+        content: <div className={style.Text3}>
+            <AccordionDetailsC/>
+        </div>
     }
 ];

@@ -5,46 +5,28 @@ import LogoPolygon1 from '../../mahshava-admin/LogoHelp/LogoPolygon1'
 import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
 
-const AccordionSection = styled.div`
-  display: flex;
-  left: 145%;
+const Container = styled.div`  
+ position: absolute;
   top: 0%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 100vh;
-  width: 107%;
-  background: white;
-`;
-
-const Container = styled.div`
-  position: relative;
-  top: 81%;
-  left: -106%;
 `;
 
 const Wrap = styled.div`
-position: relative;
-  color: #333333;
+  position: relative;
+  color:  #333333;
   display: flex;
-  justify-content: right;
-  align-items: center;
-  width: 300%;
-  text-align: center;
   font-family: 'Heebo';
   font-style: normal;
-  font-weight: 900;
-  font-size: 10px;
-  line-height: 20px;
-  text-align: left;
+  align-items: center;
+  width: 200%;
+  text-align: center;
   cursor: pointer;
+  justify-content: right;
   h1 {
-    padding: 0.7rem;
+    padding: 1.8rem;
     font-size: 2.7rem;
   }
   span {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
   }
 `;
 
@@ -58,7 +40,7 @@ const AccordionData = () => {
     };
 
     return (
-        <AccordionSection>
+
             <Container>
                 {DetailsData.map((item, index) => {
                     return (
@@ -74,7 +56,7 @@ const AccordionData = () => {
                     );
                 })}
             </Container>
-        </AccordionSection>
+
 
     );
 };

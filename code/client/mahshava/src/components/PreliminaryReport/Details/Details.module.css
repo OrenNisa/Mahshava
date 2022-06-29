@@ -47,19 +47,20 @@
 
 }
 .OutputText1{
-    width: 121px;
-    height: 120px;
+    width: 90px;
+    height: 60px;
 }
 .OutputText2{
+    position: relative;
     width: 125px;
     height: 170px;
 }
 .InText1{
     position: absolute;
-    width: 1199px;
-    height: 99px;
-    left: -160%;
-    top: 10%;
+    width: 1130px;
+    height: 30px;
+    left: -530%;
+    top: -5%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;
@@ -74,8 +75,8 @@
     position: absolute;
     width: 1199px;
     height: 99px;
-    left: -160%;
-    top: 30%;
+    left: -570%;
+    top: 5%;
     /* Big text report */
 
     font-family: 'Heebo';
@@ -91,7 +92,7 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 50%;
+    top: -5%;
     right: 7%;
     /* Big text report */
     font-family: 'Heebo';
@@ -106,7 +107,7 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 70%;
+    top: -10%;
     right: 7%;
     /* Big text report */
     font-family: 'Heebo';
@@ -121,7 +122,7 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 89%;
+    top: 4%;
     right: 7%;
     /* Big text report */
     font-family: 'Heebo';
@@ -136,8 +137,8 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 13%;
-    right: 20%;
+    top: 0%;
+    right: 10%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;
@@ -151,8 +152,8 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 40%;
-    right: 20%;
+    top: 10%;
+    right: 5%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;
@@ -166,8 +167,8 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 63%;
-    right: 20%;
+    top: 0%;
+    right: 5%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;
@@ -182,8 +183,8 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 89%;
-    right: 7%;
+    top: 0%;
+    right: 5%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;
@@ -197,8 +198,8 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 13%;
-    right: 7%;
+    top: 0%;
+    right: 5%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;
@@ -212,8 +213,8 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 40%;
-    right: 7%;
+    top: 0%;
+    right: 5%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;
@@ -227,8 +228,8 @@
     position: absolute;
     width: 1999px;
     height: 99px;
-    top: 65%;
-    right: 7%;
+    top: 0%;
+    right: 5%;
     /* Big text report */
     font-family: 'Heebo';
     font-style: normal;

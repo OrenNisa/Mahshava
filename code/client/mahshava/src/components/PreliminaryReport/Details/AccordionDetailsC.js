@@ -5,41 +5,24 @@ import LogoPolygon1 from '../../mahshava-admin/LogoHelp/LogoPolygon1'
 import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
 
-const AccordionSection = styled.div`
-  display: flex;
-  left: -30%;
-  top: -20%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 30vh;
-  width: 30%;
-  
-`;
-
 const Container = styled.div`
-  position: absolute;
-  top: 100%;
-  left: 7%;
+   position: relative;
+  top: -13%;
+  left: -11%;
 `;
 
 const Wrap = styled.div`
   color: #2F3A5F;
   display: flex;
-  justify-content: right;
-  align-items: center;
-  width: 200%;
-  text-align: center;
   font-family: 'Heebo';
   font-style: normal;
-  font-weight: 600;
-  font-size: 6px;
-  line-height: 5px;
-  text-align: left;
+  align-items: center;
+  width: 350%;
+  text-align: center;
   cursor: pointer;
+  justify-content: right;
   h1 {
-    padding: 0.7rem;
+    padding: 0.4rem;
     font-size: 2rem;
     color: #333333;
   }
@@ -49,8 +32,9 @@ const Wrap = styled.div`
   
 `;
 const Dropdown = styled.div`
-  width: 100%;
-  height: 60px;
+  position: relative;
+  width: 90%;
+  height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
