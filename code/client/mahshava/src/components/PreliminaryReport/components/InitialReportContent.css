@@ -240,9 +240,9 @@
 }
 .DetalisSchool .bb .TextImg2 .Line3a{
     position: absolute;
-    left: 29px;
-    top: 185.00000000000003px;
-    width: 187.00000000000003px;
+    left: 93px;
+    top: 168px;
+    width: 187px;
     height: 39.6px;
     display: flex;
     justify-content: flex-end;
@@ -251,6 +251,22 @@
     color: rgba(51,51,51,1.00);
     font-family: Heebo;
     font-size: 22px;
+    font-weight: 700;
+    line-height: 23.625px;
+}
+.DetalisSchool .bb .TextImg2 .Line4a{
+    position: absolute;
+    left: 25px;
+    top: 198px;
+    width: 200px;
+    height: 39.6px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 18px;
     font-weight: 700;
     line-height: 23.625px;
 }

@@ -47,7 +47,7 @@
     width: 176px;
     height: 13px;
     left: 40%;
-    top: 188.08px;
+    top: 20%;
 
     /* H2 */
     font-family: 'Heebo';
@@ -169,13 +169,11 @@
     left: -32%;
 }
 .time{
-    /* םינמז חול */
-
     position: absolute;
     width: 143px;
     height: 15px;
     left: 50%;
-    top: 66%;
+    top: 55%;
 
     /* H2 */
     font-family: 'Heebo';

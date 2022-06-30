@@ -44,15 +44,15 @@ const AccordionData = () => {
             <Container>
                 {DetailsData.map((item, index) => {
                     return (
-                        <>
-                            <Wrap onClick={() => toggle(index)} key={index}>
+                        <span key = {index} >
+                            <Wrap onClick={() => toggle(index)}>
                                 <span>{clicked[index] === true ? <LogoPolygon1 /> : <LogoPolygon2 />}</span>
                                 <h1>{item.title}</h1>
                             </Wrap>
                             {clicked[index] === true ? (
-                                <p>{item.content}</p>
+                                <>{item.content}</>
                             ) : null}
-                        </>
+                        </span>
                     );
                 })}
             </Container>
