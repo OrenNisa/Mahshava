@@ -19,7 +19,6 @@ function InitialReportContent() {
     const maxResult = surveyResultsData[Object.keys(surveyResultsData)[idOfAverages.idOfMaxAverage]];
     const secondResult = surveyResultsData[Object.keys(surveyResultsData)[idOfAverages.idOfSecondAverage]];
     const thirdResult = surveyResultsData[Object.keys(surveyResultsData)[idOfAverages.idOfThirdAverage]];
-    console.log(thirdResult)
 
     const sumOfPoints = allAverages.reduce((partialSum, a) => partialSum + a, 0);
     const evaluationResult = (sumOfPoints / 21 * 100).toFixed(1)
@@ -105,8 +104,12 @@ function InitialReportContent() {
                             <br/>
                             <span className='Line2a'>מאנשי סגל בית הספר</span>
                             <br/>
-                            <span
-                                className='Line3a'>בין התאריכים <br/> {process.schoolID.surveysRes.startDate} - {process.schoolID.surveysRes.endDate}</span>
+                            <span className='Line3a'>
+                                בין התאריכים
+                            </span>
+                            <span className='Line4a'>
+                                {process.schoolID.surveysRes.startDate} - {process.schoolID.surveysRes.endDate}
+                            </span>
                         </b>
                     </div>
                         </div>

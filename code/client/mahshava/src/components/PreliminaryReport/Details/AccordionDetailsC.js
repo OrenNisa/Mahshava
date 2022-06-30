@@ -61,17 +61,17 @@ const AccordionDetailsC = () => {
             <Container>
                 {DetailsC().map((item, index) => {
                     return (
-                        <>
+                        <span key={index}>
                             <Wrap onClick={() => toggle(index)} key={index}>
                                 <span>{clicked[index] === true ? <LogoPolygon1/> : <LogoPolygon2/>}</span>
                                 <h1>{item.title}</h1>
                             </Wrap>
                             {clicked[index] === true ? (
                                 <Dropdown>
-                                    <p>{item.content}</p>
+                                    <>{item.content}</>
                                 </Dropdown>
                             ) : null}
-                        </>
+                        </span>
                     );
                 })}
             </Container>
