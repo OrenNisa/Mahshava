@@ -12,8 +12,9 @@ pushd %RELEASE_DIR%\%RELEASE_FOLDER_NAME%
 cmd /c %BUILD_SCRIPTS_DIR%\clone-project.bat
 cmd /c %BUILD_SCRIPTS_DIR%\generate-directory-structure.bat %1
 cmd /c %BUILD_SCRIPTS_DIR%\generate-virtual-env.bat
-cmd /c %BUILD_SCRIPTS_DIR%\generate-mahshava-client.bat
-cmd /c %BUILD_SCRIPTS_DIR%\generate-mahshava-server.bat
+cmd /c %BUILD_SCRIPTS_DIR%\generate-client.bat mahshava
+cmd /c %BUILD_SCRIPTS_DIR%\generate-client.bat surveys
+cmd /c %BUILD_SCRIPTS_DIR%\generate-server.bat
 cmd /c %BUILD_SCRIPTS_DIR%\cleanup.bat
 
 popd
