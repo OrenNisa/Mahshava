@@ -7,7 +7,7 @@ cmd /c npm install
 cmd /c npm run build
 
 echo Copying %1 static content...
-xcopy build ..\..\..\..\output\%1\static\ /eqv
+xcopy build ..\..\..\..\output\client\%1\ /eqv
 popd
 
 exit /B 1

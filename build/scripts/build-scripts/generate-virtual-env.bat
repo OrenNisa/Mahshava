@@ -19,8 +19,8 @@ python -m pip freeze > output\resources\python_requirements\requirements.txt
 :: Generate and copy Django static files
 echo Generate and copy Django static files
 python %PROJECT_NAME%\code\server\src\mahshava\manage.py collectstatic --no-input --clear
-xcopy %PROJECT_NAME%\code\server\src\mahshava\static output\%PROJECT_NAME%\mahshava\static\static\ /eqv
-xcopy %PROJECT_NAME%\code\server\src\mahshava\static output\%PROJECT_NAME%\surveys\static\static\ /eqv
+xcopy %PROJECT_NAME%\code\server\src\mahshava\static output\client\mahshava\static\ /eqv
+xcopy %PROJECT_NAME%\code\server\src\mahshava\static output\client\surveys\static\ /eqv
 
 echo Deactivating Python virtual environment...
 call deactivate
