@@ -7,32 +7,33 @@ import { useMahshavaContext } from './services/state/MahshavaContextProvider';
 import apiService from './services/api/api';
 import './App.css';
 import useAuth from './services/auth/hooks/useAuth';
+import {SchoolProcessesProvider} from "./SchoolsContext";
 
 const App = () => {
-    const { updateAsapUser } = useMahshavaContext();
+    const { updateMahshavaUser } = useMahshavaContext();
     const { isAuthenticated } = useAuth();
 
     useEffect(() => {
         if (isAuthenticated) {
-            apiService.UserService.getCurrentUser().then(user => updateAsapUser({ ...user }));
+            apiService.UserService.getCurrentUser().then(user => updateMahshavaUser({ ...user }));
         }
-    }, [isAuthenticated, updateAsapUser]);
+    }, [isAuthenticated, updateMahshavaUser]);
 
     return (
-        <div className="App">
-            <Routes>
-                <Route path="/login" element={<Login />} />
-                <Route
-                    path="*"
-                    exact
-                    element={
+        <SchoolProcessesProvider>
+            <div className="App">
+                <Routes>
+                    <Route path="/login" element={<Login />} />
+                    <Route
+                        path="*" exact element={
                         <PrivateRoute>
                             <BaseLayout />
                         </PrivateRoute>
                     }
-                />
-            </Routes>
-        </div>
+                    />
+                </Routes>
+            </div>
+        </SchoolProcessesProvider>
     );
 };
 

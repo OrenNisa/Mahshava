@@ -1,12 +1,19 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { Button } from '@mui/material';
+import {useSchoolProcesses} from "../../SchoolsContext";
+import {useNavigate} from "react-router";
 
-const ActionButton = () => {
+
+
+const ActionButton = (props) => {
     const { formatMessage } = useIntl();
+    const {setCurrentProcessID} = useSchoolProcesses();
+    let navigate = useNavigate();
 
     const handleClick = () => {
-        console.log('clicked edit button');
+        setCurrentProcessID(props.ProcessID);
+        navigate("/preliminary-report")
     };
 
     return (

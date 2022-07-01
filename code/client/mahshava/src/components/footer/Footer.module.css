@@ -6,4 +6,6 @@
 }
 .version {
     margin: auto;
+    color: dimgrey;
+    font-size: small;
 }

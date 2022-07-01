@@ -1,4 +1,4 @@
-export const STORAGE_ASAP_AUTH_STATE = 'asapAuthState';
+export const STORAGE_MAHSHAVA_AUTH_STATE = 'mahshavaAuthState';
 
 const getFromLocalStorage = (key, defaultValue = undefined) => getItemFromStorage(localStorage, key, defaultValue);
 

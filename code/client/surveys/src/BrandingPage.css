@@ -1,0 +1,155 @@
+.Header {
+
+    color: #2F3A5F;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.SubTitle {
+
+    position: relative;
+    color: #2F3A5F;
+    font-size: 20px;
+    text-align: center;
+    top: 10px;
+}
+
+.OrangeButton {
+
+    position: relative;
+    background-color: #ffba2e;
+    border: none;
+    color: black;
+    height: 100px;
+    width: 100px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.OrangeButton:hover {
+
+    background-color: #cb8414;
+}
+
+.OrangeButton:focus {
+
+    border: solid 2px black;
+}
+
+.GreenButton {
+
+    position: relative;
+    background-color: #92ff57;
+    border: none;
+    color: black;
+    height: 100px;
+    width: 100px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.GreenButton:hover {
+
+    background-color: #5fb232;
+}
+
+.GreenButton:focus {
+
+    border: solid 2px black;
+}
+
+.BlueButton {
+
+    position: relative;
+    background-color: #70e0d1;
+    border: none;
+    color: black;
+    height: 100px;
+    width: 100px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.BlueButton:hover {
+
+    background-color: #5eb2a6;
+}
+
+.BlueButton:focus {
+
+    border: solid 2px black;
+}
+
+.PinkButton {
+
+    position: relative;
+    background-color: #fcb3cb;
+    border: none;
+    color: black;
+    height: 100px;
+    width: 100px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.PinkButton:hover {
+
+    background-color: #be8298;
+}
+
+.PinkButton:focus {
+
+    border: solid 2px black;
+}
+
+.WhiteButton {
+
+    position: relative;
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    height: 100px;
+    width: 100px;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.WhiteButton:hover {
+
+    background-color: #adadad;
+}
+
+.WhiteButton:focus {
+
+    border: solid 2px black;
+}
+
+.NextStepButton {
+
+    position: relative;
+    background-color: #05d98b;
+    border: none;
+    color: white;
+    padding: 10px;
+    top: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.NextStepButton:hover {
+
+    background-color: #04AA6D;
+}

@@ -21,15 +21,10 @@
       "message": "בתי ספר בתהליך"
     },
     "ResilienceCheck": {
-      "header": "בדיקת חוסן",
-      "placeholderSchool1": "בית ספר הרואה",
-      "placeholderSchool2": "בית ספר העיוור",
-      "placeholderSchool3": "בית ספר החירש"
+      "header": "הערכת חוסן"
     },
     "InterventionCheck": {
-      "header": "תוכנית התערבות",
-      "placeholderSchool1": "בית ספר למדעים אלון",
-      "placeholderSchool2": "בית ספר לספרים ג׳קי"
+      "header": "תוכנית התערבות"
     },
     "ReevaluationCheck": {
       "header": "מדידה חוזרת"
@@ -43,7 +38,8 @@
     "mahshava-admin-add-school": "הוספת בית ספר",
     "mahshava-admin-school-history": "היסטוריה",
     "mahshava-admin-data-sources": "מאגרי מידע",
-    "mahshava-admin-help": "מידע ותמיכה"
+    "mahshava-admin-help": "מידע ותמיכה",
+    "mahshava-admin-preliminary-report" : "דוח ראשוני"
   },
   "admin-main-view-table": {
     "school": {"text": "בית הספר"},

@@ -1,27 +1,25 @@
-import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch} from  'react-router-dom';
-import SurveyCreator from "./Creator";
-import service from "./api";
+import Creator from './components/Creator';
+import SurveyList from './components/SurveyList';
+import Home from './components/Home';
+import RenderSurvey from "./components/RenderSurvey";
+import React from 'react';
+import { HashRouter as Router, Routes, Route, Link} from "react-router-dom";
+import SurveyBranding from "./components/SurveyBranding";
+
 
 function App() {
-
     return (
         <Router>
-            <div>
-                <nav className="navbar navbar-default">
-                    <div className="container-fluid">
-                        <div className="navbar-header">
-                            SurveyJS Creator
-                        </div>
-                    </div>
-                </nav>
-                <Switch>
-                    <SurveyCreator/>
-                </Switch>
-            </div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Creator" element={<Creator />} />
+                <Route path="/SurveyList" element={<SurveyList />} />
+                <Route path="/RenderSurvey" element={<RenderSurvey />} />
+                <Route path="/SurveyBranding" element={<SurveyBranding />} />
+            </Routes>
         </Router>
     );
-}
+};
 
 export default App;

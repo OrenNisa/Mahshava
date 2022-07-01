@@ -1,0 +1,241 @@
+.title1{
+    position: relative;
+    flex: none;
+    margin-bottom: 16.5px;
+    width: 80.44895935058597px;
+    height: 10.58125px;
+    left: 7%;
+}
+.title1 .LineTitle1{
+    position: absolute;
+    left: 73.14895935058594px;
+    top: 0.48125000000000007px;
+    width: 71.02425791781496%;
+    height: 96.17486338797814%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.781250000000004px;
+}
+.title1 .LineTitle2{
+    position: absolute;
+    left: 76.36%;
+    right: 12.7%;
+    top: 0%;
+    bottom: 88.61%;
+
+    /* text bold */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #E78536;
+
+    /* */
+
+
+}
+.OutputText1{
+    width: 90px;
+    height: 60px;
+}
+.OutputText2{
+    position: relative;
+    width: 125px;
+    height: 170px;
+}
+.InText1{
+    position: absolute;
+    width: 1130px;
+    height: 30px;
+    left: -530%;
+    top: -5%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 940;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+
+    color: #333333;
+}
+.InText2{
+    position: absolute;
+    width: 1199px;
+    height: 99px;
+    left: -570%;
+    top: 5%;
+    /* Big text report */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+
+    color: #333333;
+}
+.InText3{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: -5%;
+    right: 7%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText4{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: -10%;
+    right: 7%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText5{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 4%;
+    right: 7%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText7{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 0%;
+    right: 10%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText8{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 10%;
+    right: 5%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText9{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 0%;
+    right: 5%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+
+    color: #333333;
+}
+.InText10{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 0%;
+    right: 5%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText11{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 0%;
+    right: 5%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText12{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 0%;
+    right: 5%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+.InText13{
+    position: absolute;
+    width: 1999px;
+    height: 99px;
+    top: 0%;
+    right: 5%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}

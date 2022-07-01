@@ -1,0 +1,1211 @@
+.FullInitialReport {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    left: 25%;
+    top: 43%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    zoom: 61%;
+    background: rgba(255,255,255,1.00);
+    direction: rtl;
+}
+.Resilience{
+    /* מהו חוסן */
+    width: 70%;
+    height: 90%;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.SizeR1{
+    position: relative;
+    /* מהו חוסן */
+    width: 1530px;
+    height: 124px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.SizeR1 .ss{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 451px;
+    height: 67px;
+    left: 1230.88px;
+    top: 0%;
+}
+.SizeR1 .ss .Teexxt1{
+    position: absolute;
+    width: 150%;
+    height: 1px;
+    left: -92.7%;
+    top: 9%;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.SizeR1 .ss .Text2{
+    position: absolute;
+    width: 600%;
+    height: 30%;
+    right: 42.8%;
+    top: 11%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: right;
+    color: #333333;
+}
+.DetalisSchool{
+    /* נתוני בית הספר */
+    position: relative;
+    width: 2540px;
+    height: 283px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.DetalisSchool .bb{
+    position: relative;
+    left: 0%;
+    top: 0%;
+}
+.DetalisSchool .bb .TotalImg1{
+    /* פרטי בית הספר */
+    width: 201px;
+    height: 191px;
+    top: 40%;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.DetalisSchool .bb .TotalImg1 .SizeImg1{
+    position: absolute;
+    width: 90px;
+    height: 75px;
+    left: 2340.88px;
+    top: 11.8%;
+}
+.DetalisSchool .bb .TotalImg1 .TextImg1{
+    /* טקסט */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 201px;
+    height: 67px;
+    left: 2390.88px;
+    top: 80%;
+}
+.DetalisSchool .bb .TotalImg1 .TextImg1 .Line1{
+    /* האורה ידוסי רפס תיב */
+    width: 211px;
+    height: 15px;
+    position: absolute;
+    left: -70%;
+    /* ExtraBig text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 920;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.DetalisSchool .bb .TotalImg1 .TextImg1 .Line2{
+    /* בגנה רעש ,תורדש */
+    position: absolute;
+    width: 230px;
+    height: 62px;
+    left: -78%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.DetalisSchool .bb .TotalImg1 .TextImg1 .Line3{
+    /* יתנש 6 ,יתד יתכלממ */
+    position: absolute;
+    width: 230px;
+    height: 110px;
+    left: -78%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.DetalisSchool .bb .SizeImg2{
+    position: absolute;
+    width: 90px;
+    height: 75px;
+    left: 2000px;
+    top: 11.8%;
+}
+.DetalisSchool .bb .TextImg2{
+    position: absolute;
+    flex: none;
+    width: 208.70000000000002px;
+    height: 237.60000000000002px;
+    top: 12%;
+    left: 1870px;
+}
+.DetalisSchool .bb .TextImg2 .Line1a{
+    position: absolute;
+    left: 80px;
+    top: 121.8453125px;
+    width: 140.70000000000002px;
+    height: 11.100000000000001px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20.625px;
+}
+.DetalisSchool .bb .TextImg2 .Line1a1{
+    position: absolute;
+    width: 45px;
+    height: 24px;
+    left: 24px;
+    top: 107.86px;
+    /* H */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.DetalisSchool .bb .TextImg2 .Line2a{
+    position: absolute;
+    left: 23px;
+    top: 158.54531250000002px;
+    width: 205.70000000000002px;
+    height: 2.200000000000001px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22.625px;
+}
+.DetalisSchool .bb .TextImg2 .Line3a{
+    position: absolute;
+    left: 93px;
+    top: 168px;
+    width: 187px;
+    height: 39.6px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 23.625px;
+}
+.DetalisSchool .bb .TextImg2 .Line4a{
+    position: absolute;
+    left: 25px;
+    top: 198px;
+    width: 200px;
+    height: 39.6px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.625px;
+}
+.DetalisSchool .bb .SizeImg3{
+    position: absolute;
+    width: 90px;
+    height: 75px;
+    left: 1600px;
+    top: 11.8%;
+}
+.DetalisSchool .bb .TextImg3{
+    /* מספר אנשים בבית הספר */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 13px;
+    text-align: right;
+    position: absolute;
+    width: 153px;
+    height: 38px;
+    left: 1560px;
+    top: 80%;
+}
+.DetalisSchool .bb .TextImg3 .Line1b{
+    position: absolute;
+    flex: none;
+    margin-bottom: 17.6px;
+    width: 123.30000000000001px;
+    height: 12.100000000000001px;
+    direction: rtl;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 23.203125000000004px;
+}
+.DetalisSchool .bb .TextImg3 .Line2b{
+    position: absolute;
+    flex: none;
+    margin-bottom: 17.6px;
+    width: 199.3px;
+    height: 18.100000000000001px;
+    top: 99%;
+    left: -50%;
+    direction: rtl;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.203125000000004px;
+}
+.sizzee{
+    position: relative;
+    width: 1541px;
+    height: 1050.32px;
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+.sizzee .TextData{
+    position: relative;
+    /* נתונים מרכזיים */
+    width: 110%;
+    height: 20%;
+    float: left;
+    right: -79%;
+    top: 8%;
+}
+.sizzee .TextData .FullBack{
+    position: absolute;
+    /* רקע מלא */
+    /* Auto layout */
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 39px;
+    gap: 5px;
+    width: 12%;
+    height: 80px;
+    left: -47%;
+    background: #FFFFFF;
+    /* blue shadow */
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.sizzee .TextData .FullBack .crid1{
+    position: absolute;
+    float: left;
+    left: 90%;
+    top: 10%;
+}
+.sizzee .TextData .FullBack .LineC{
+    /* כתוב */
+    /* Auto layout */
+    display: flex;
+    position: absolute;
+    float: left;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    left: 28%;
+    width: 203px;
+    height: 37px;
+    font-size: 16.8px;
+    top: 4%;
+}
+.sizzee .TextData .FullBack .LineC .num1{
+    position: absolute;
+    float: left;
+    /* םיביכרמ 5 */
+    width: 75px;
+    height: 60px;
+    left: 42%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.sizzee .TextData .FullBack .crid2{
+    position: absolute;
+    float: left;
+    left: 90%;
+    top: 42%;
+}
+.sizzee .TextData .FullBack .LineC1{
+    /* כתוב */
+    /* Auto layout */
+    display: flex;
+    position: absolute;
+    float: left;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    left: 22%;
+    font-size: 16.8px;
+    width: 203px;
+    height: 37px;
+    top: 36%;
+}
+.sizzee .TextData .FullBack .LineC1 .num2{
+    position: absolute;
+    float: left;
+    /* םיביכרמ 5 */
+    width: 75px;
+    height: 60px;
+    left: 50%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.sizzee .TextData .FullBack .crid3{
+    position: absolute;
+    float: left;
+    left: 90%;
+    top: 75%;
+}
+.sizzee .TextData .FullBack .LineC2{
+    /* כתוב */
+    /* Auto layout */
+    display: flex;
+    position: absolute;
+    float: left;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    left: 45%;
+    font-size: 16.8px;
+    width: 205px;
+    height: 37px;
+    top: 70%;
+}
+.sizzee .TextData .FullBack .LineC2 .num3{
+    position: absolute;
+    float: left;
+    /* םיביכרמ 5 */
+    width: 75px;
+    height: 60px;
+    right: 44%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.sizzee .TextData .PointData{
+    position: absolute;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 20%;
+    height: 40%;
+    left: -57%;
+    top: 11%;
+}
+.sizzee .TextData .PointData .Lined1{
+    /* 76.7% */
+    position: absolute;
+    width: 90px;
+    height: 15px;
+    left: 330%;
+    top: -70%;
+    /* H */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 66px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+}
+.sizzee .TextData .PointData .Lined2{
+    position: absolute;
+    left: 80%;
+    top: 25%;
+    width: 205.70000000000002px;
+    height: 13.200000000000001px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20.625px;
+}
+.sizzee .TextData .PointData .a{
+    position: absolute;
+    float: left;
+    left: 307%;
+    top: -8%;
+    width: 205.70000000000002px;
+    height: 13.200000000000001px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 20.625px;
+}
+.sizzee .TextData .PointData .Linedd2{
+    position: absolute;
+    float: left;
+    left: 337%;
+    top: 33%;
+    width: 205.70000000000002px;
+    height: 13.200000000000001px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22.625px;
+}
+.sizzee .TextData .PointData .b {
+    position: absolute;
+    left: 313%;
+    top: 14.2%;
+    width: 79.2px;
+    height: 33px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: rgba(231, 133, 54, 1.00);
+    font-family: Heebo;
+    font-size: 39.6px;
+    font-weight: 700;
+    line-height: 46.40625000000001px;
+}
+.SizeEnd{
+    position: relative;
+    width: 201px;
+    height: 680px;
+ }
+.SizeEnd .TotalEnd{
+    position: absolute;
+    width: 110%;
+    height: 20%;
+    float: left;
+    right: 5%;
+    top: 30%;
+}
+.SizeEnd .TotalEnd .TextELine1{
+    position: absolute;
+    width: 390%;
+    height: 20%;
+    margin-bottom: 26.400000000000002px;
+    direction: rtl;
+    justify-content: flex-end;
+    text-align: right;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 15.625px;
+    left: -310%;
+    top: -170.5%;
+}
+.SizeEnd .TotalEnd .TextELine2{
+    position: absolute;
+    width: 320%;
+    height: 20%;
+    margin-bottom: 26.400000000000002px;
+    direction: rtl;
+    justify-content: flex-end;
+    text-align: right;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 15.625px;
+    left: -240%;
+    top: -130%;
+}
+.SizeEnd .TotalEnd .TextELine3{
+    position: absolute;
+    width: 320%;
+    height: 20%;
+    margin-bottom: 26.400000000000002px;
+    direction: rtl;
+    justify-content: flex-end;
+    text-align: right;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 15.625px;
+    left: -240%;
+    top: -90%;
+}
+.SizeEnd .TotalEnd .c{
+    position: absolute;
+    left: -115.8%;
+    top: -139.3%;
+    width: 79.2px;
+    height: 33px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: #333333;
+    font-family: Heebo;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 46.40625000000001px;
+}
+.d{
+    position: absolute;
+    left: -75.3251953125px;
+    top: 59%;
+    width: 87.2px;
+    height: 38px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    color: #333333;
+    font-family: Heebo;
+    font-size: 11.6px;
+    font-weight: 900;
+    line-height: 46.40625000000001px;
+}
+.SizeSize{
+    position: relative;
+    width: 721px;
+    height: 780px;
+}
+.SizeSize .FullInitialReport1 {
+    position: relative;
+    width: 110%;
+    height: 98%;
+    left: -30%;
+    top: 0%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    zoom: 68%;
+    direction: rtl;
+}
+
+
+
+.SizeEnd .TotalEnd .SizeBox1{
+    /* נקודות חולשה_הסבר */
+    position: relative;
+right: 70%;
+    /* Auto layout */
+top: -90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 48px;
+    width: 770px;
+    height: 100px;
+    background: #FFFFFF;
+    /* blue shadow */
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.SizeEnd .TotalEnd .SizeBox1 .TitleBox1{
+    position: absolute;
+
+    /* מוכנות להשתנות */
+float: right;
+    right: 3%;
+    top: 15%;
+    width: 300px;
+    height: 6px;
+    /* H1 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #6377C0;
+}
+.SizeEnd .TotalEnd .SizeBox1 .Line1Box1{
+    position: absolute;
+    top: 40%;
+    /* אסטרטגיית תכנון */
+    width: 433px;
+    height: 9px;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    right: 3%;
+    color: #333333;
+}
+.SizeEnd .TotalEnd .SizeBox1 .Text1Box1{
+    position: absolute;
+    /* נמדדות ע"פ יכולת הפיתוח וההערכה של תוכניות ואסטרטגיות לניהול משברים ביחס לתחום הפעילות והשותפים הרלוונטיים. */
+    width: 500px;
+    height: 52px;
+    top: 54%;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    right: 8%;
+    color: #333333;
+}
+.SizeEnd .TotalEnd .SizeBox1 .Line2Box1{
+    /* בדיקת תוכניות */
+    position: absolute;
+    width: 433px;
+    height: 11px;
+    top: 40%;
+    right: 50%;
+    /* Big text report bold */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #2F3A5F;
+}
+.SizeEnd .TotalEnd .Text2Box1{
+    /* נמדדת ע"פ מידת השתתפות הצוות בסימולציות או בתרחישים שנועדו לתרגל הסדרי תגובה ולאמת תוכניות. */
+
+    position: absolute;
+top: 54%;
+    width: 500px;
+    height: 52px;
+
+    /* Big text report */
+right: 50%;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+
+    color: #333333;
+}
+.SizeEnd .TotalEnd .SizeBox2{
+    position: relative;
+    right: 70%;
+    /* Auto layout */
+    top: -65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 48px;
+    width: 320px;
+    height: 95px;
+    background: #FFFFFF;
+    /* blue shadow */
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.SizeEnd .TotalEnd .SizeBox2 .TitleBox2{
+    /* מנהיגות ותרבות אירגונית */
+    position: absolute;
+    right: 15%;
+    top: 12%;
+    width: 497px;
+    height: 17px;
+    /* H1 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #E78536;
+}
+.SizeEnd .TotalEnd .SizeBox2 .LineBox2{
+    position: absolute;
+    right: 22%;
+    top: 30%;
+    /* קבלת החלטות */
+    width: 121px;
+    height: 29px;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.SizeEnd .TotalEnd .TextBox2{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+
+    /* נמדד בדרגות החופש שיש לצוות לקבל החלטות הקשורות לעבודתם ושהסמכות לכך מואצלת באופן ברור כדי לאפשר תגובה מהירה למשבר. כמו כן משפיעים גם מידת המיומנות, הידע הספציפי, והמעורבות של הצוות . */
+    width: 497px;
+    height: 104px;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+
+    color: #333333;
+}
+.SizeEnd .TotalEnd .SizeBox3{
+    position: relative;
+    right: 275%;
+    /* Auto layout */
+    top: -183%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 48px;
+    width: 320px;
+    height: 95px;
+    background: #FFFFFF;
+    /* blue shadow */
+
+    box-shadow: 2px 2px 24px rgba(47, 58, 95, 0.1);
+}
+.SizeEnd .TotalEnd .SizeBox3 .TitleBox3{
+    position: absolute;
+right: 24%;
+    top: 12%;
+    /* רשתות של מערכות יחסים */
+    width: 497px;
+    height: 17px;
+    /* H1 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #2BA774;
+}
+.SizeEnd .TotalEnd .SizeBox3 .LineBox3{
+    position: absolute;
+    right: 22%;
+    top: 30%;
+
+    /* משאבים פנימיים */
+
+    width: 149px;
+    height: 29px;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.SizeEnd .TotalEnd .SizeBox3 .TextBox3{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+
+    /* נמדדים ע"פי ניהול וניוד משאבי הארגון בכדי להבטיח את יכולתו לפעול במהלך השגרה, כמו גם להיות מסוגל לעמוד במשימות נוספות, הנדרשות במהלך משבר. */
+    width: 497px;
+    height: 78px;
+    /* Big text report */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    color: #333333;
+}
+.SizeEnd .TotalEnd .EndImg{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    left: -6%;
+    top: -160%;
+}
+.SizeEnd .TotalEnd .Help{
+    position: relative;
+    width: 500px;
+    height: 40px;
+    right: 5%;
+    top: -147%;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+
+}
+.SizeEnd .TotalEnd .EndTextOF{
+    position: relative;
+    width: 700px;
+    height: 50px;
+    right: 5%;
+    top: -140%;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.sizzee .TextData .SizeGroup{
+    /* גרף עכביש */
+    position: relative;
+    width: 450px;
+    height: 290px;
+    left: -98%;
+    top: -27px;
+}
+.sizzee .TextData .PointPow{
+    /* נקודת חוזק */
+    position: relative;
+    width: 889px;
+    height: 256px;
+    left: -86%;
+    top: 70%;
+
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.12));
+}
+.sizzee .TextData .PointPow .TitlePointPow{
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    left: 75%;
+    top: 10%;
+
+    /* H1 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    color: #E78536;
+
+}
+.sizzee .TextData .PointPow .TextPoint{
+    /* מנהיגות ותרבות אירגונית */
+
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    left: 65.14%;
+    top: 34.81%;
+    bottom: 64.68%;
+
+    /* H1 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+}
+.sizzee .TextData .PointPow .NumberPoint{
+    /* 6 / 7 */
+
+
+    position: absolute;
+    left: 72.6%;
+    top: 50.82%;
+    bottom: 63.71%;
+
+    /* H2 */
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+}
+.sizzee .TextData .PointPow .Group2{
+    /* גרף עצמו */
+    position: relative;
+    width: 25em;
+    right: 60%;
+    top: 13.66%;
+    bottom: 61.36%;
+}
+.sizzee .TextData .TotalTex1{
+    position: relative;
+    /* נתונים מרכזיים */
+    width: 50%;
+    height: 20%;
+    float: left;
+    left: -34%;
+    top: 64%;
+}
+.sizzee .TextData .TotalTex1 .TitleResult{
+    /* רופישל תודוקנ */
+    position: absolute;
+    width: 140px;
+    height: 13px;
+    left: 70%;
+    top: 105%;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;;
+}
+.sizzee .TextData .TotalTex1 .TextResult{
+    /* םיסחי תוכרעמ לש תותשר */
+    position: absolute;
+    left: 13%;
+    top: 188%;
+    bottom: 58.06%;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.sizzee .TextData .TotalTex1 .Num1Result{
+    /* 5.81/7 */
+    position: absolute;
+    left: 46%;
+    top: 188%;
+    bottom: 57.79%;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 44px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+.sizzee .TextData .TotalTex1 .Text2Result{
+    position: absolute;
+    left: 64%;
+    top: 188%;
+    bottom: 58.06%;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+.sizzee .TextData .TotalTex1 .Num2Result{
+    /* 5.66 /7 */
+    position: absolute;
+    left: -5%;
+    top: 188%;
+    bottom: 57.96%;
+    /* H2 */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+}
+.sizzee .TextData  .TotalTex1 .SizeGrup1{
+    /* גרף עצמו */
+    position: absolute;
+    width: 28em;
+    left: -8%;
+    top: 260%;
+    bottom: 51.59%;
+}
+.sizzee .TextData .TotalTex1 .SizeGrup2{
+    /* גרף עצמו */
+    position: absolute;
+    width: 28em;
+    left: 45%;
+    top: 260%;
+    bottom: 51.6%;
+}
+.Size{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    flex: none;
+}
+.Size .TextEnd{
+    position: relative;
+    width: 200%;
+    height: 100%;
+    margin-bottom: 29.400000000000002px;
+    direction: rtl;
+    justify-content: flex-end;
+    text-align: right;
+    color: rgba(51,51,51,1.00);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 20.625px;
+    left: -2.4%;
+    top: 0%;
+}

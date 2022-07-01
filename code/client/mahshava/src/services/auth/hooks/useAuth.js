@@ -1,21 +1,21 @@
 import { useMahshavaContext } from '../../state/MahshavaContextProvider';
 import { useNavigate } from 'react-router';
-import { removeFromLocalStorage, STORAGE_ASAP_AUTH_STATE } from '../../storage/storage';
+import { removeFromLocalStorage, STORAGE_MAHSHAVA_AUTH_STATE } from '../../storage/storage';
 
 const useAuth = () => {
     const navigate = useNavigate();
-    const { asapAuth } = useMahshavaContext();
+    const { mahshavaAuth } = useMahshavaContext();
 
-    const hasToken = asapAuth?.token;
+    const hasToken = mahshavaAuth?.token;
 
-    const expires = asapAuth?.exp || 0;
+    const expires = mahshavaAuth?.exp || 0;
     const delta = new Date(expires * 1000) - new Date();
     const isTokenValid = delta > 0;
 
     const isAuthenticated = hasToken && isTokenValid;
 
     const logout = () => {
-        removeFromLocalStorage(STORAGE_ASAP_AUTH_STATE);
+        removeFromLocalStorage(STORAGE_MAHSHAVA_AUTH_STATE);
         navigate('login');
     };
 
@@ -23,3 +23,4 @@ const useAuth = () => {
 };
 
 export default useAuth;
+

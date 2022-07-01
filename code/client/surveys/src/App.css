@@ -7,6 +7,45 @@
   pointer-events: none;
 }
 
+.creatorButtonStyle {
+
+  position: relative;
+  margin-left: 20px;
+  left: 15%;
+  bottom: 140px;
+  width: 200px;
+  height: 80px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.listButtonStyle {
+
+  position: relative;
+  margin-top: 30px;
+  left: 20%;
+  font-weight: bold;
+  bottom: 140px;
+  width: 200px;
+  height: 80px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.homeBackground {
+
+  background-image: url("https://cdn.discordapp.com/attachments/896788926193365033/970715609220391032/pexels-gradienta-7130468.jpg");
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+}
+
+.logoStyle {
+
+  margin-top: 50px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

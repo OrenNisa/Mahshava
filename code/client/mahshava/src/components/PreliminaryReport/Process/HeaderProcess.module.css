@@ -1,0 +1,94 @@
+.ProcessNow{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 17%;
+    top: 7%;
+}
+.Current{
+    /* השלב הנוכחי */
+    position: absolute;
+    left: 70.49%;
+    right: 15%;
+    top: 20%;
+    bottom: 72%;
+    color: #272525;
+}
+.ProcessName{
+    /* הערכת החוסן */
+    position: absolute;
+    left: 88.49%;
+    right: 14%;
+    top: 25%;
+    bottom: 72%;
+}
+.Question{
+    /* השאלון */
+    position: absolute;
+    left: 90.49%;
+    right: 28%;
+    top: 20%;
+    bottom: 72%;
+    order: 0;
+}
+.Group{
+    /* קבוצת מיקוד וראיונות עמוק */
+    position: absolute;
+    left: 90.49%;
+    right: 34%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
+}
+
+.Line{
+    position: absolute;
+    left: 90.49%;
+    right: 54%;
+    top: 21%;
+    bottom: 75%;
+    order: 2
+}
+.MainProcess{
+    /* הבשחמ ךילה יבלש */
+    position: absolute;
+    left: 90.49%;
+    right: 56%;
+    top: 20%;
+    bottom: 72%;
+    order: 0;
+}
+.One{
+    /* הערכת חוסן */
+    position: absolute;
+    left: 90.49%;
+    right: 56%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
+}
+.Two{
+    /* תוכנית התערבות */
+    position: absolute;
+    left: 90.49%;
+    right: 68%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
+}
+.Three{
+    /* מדידה חוזרת */
+    position: absolute;
+    left: 90.49%;
+    right: 80%;
+    top: 27%;
+    bottom: 72%;
+    order: 0;
+
+}
+.Size{
+    background: #C4C4C4;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}

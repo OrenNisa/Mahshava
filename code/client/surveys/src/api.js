@@ -1,34 +1,54 @@
-import Axios from 'axios'
+import Axios from 'axios';
 
 const $axios = Axios.create({
     baseURL: '/api/',
     headers: {
-        'Content-Type': 'application/json'
-    }
-})
+        'Content-Type': 'application/json',
+    },
+});
 
-//Example of a cross-cutting concern - client api error-handling
+// Example of a cross-cutting concern - client api error-handling
 $axios.interceptors.response.use(
-    (response) => response,
-    (error) => {
-        console.error("got error")
-        console.error(error)
+    response => response,
+    error => {
+        console.error('got error');
+        console.error(error);
 
         throw error;
-    });
+    }
+);
 
+class SurveyService {
 
-class SaveSurveyService {
-    static getSurvey(SurveyJSON) {
-        return $axios
-            .post('surveys/save-surveyForm', {
-                SurveyJSON: SurveyJSON})
-            .then(response => response.data)
+    static saveSurvey(survey, color) {
+        return $axios.post('surveys/save-survey/', { survey, color }).then(response => response.data);
+    }
+
+    static saveSurveyResults(survey, title) {
+        return $axios.post('surveys/save-survey-results/', { survey, title }).then(response => response.data);
+    }
+
+    static getAllSurveys(id) {
+        return $axios.get('surveys/get-all-surveys/', {
+            params: {id: id}
+        }).then(response => response.data);
+    }
+
+    static getSurveyJSON(id) {
+        return $axios.get('surveys/get-survey-json/', {
+            params: {id: id}
+        }).then(response => response.data);
+    }
+
+    static getBackgroundColor(id){
+        return $axios.get('surveys/get-survey-background-color/', {
+            params: {id: id}
+        }).then(response => response.data);
     }
 }
 
 const service = {
-    SaveSurveyService
-}
+    SurveyService,
+};
 
-export default service
+export default service;

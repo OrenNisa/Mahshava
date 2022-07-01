@@ -20,7 +20,7 @@ SECRET_KEY = 'django-insecure-=n(x_!k_vli_@8_su)cdqoj%26-=ufkh04f)$--%)u!z&nvaxh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['exlab-sapir.com', '63.34.5.181', '127.0.0.1', 'localhost']
 
 # Application definition
 

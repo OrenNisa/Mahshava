@@ -5,12 +5,18 @@ import MainPageLogo from '../../components/sidebar/logo/MainPageLogo';
 import AddSchoolLogo from '../../components/sidebar/logo/AddSchoolLogo';
 import DataBaseLogo from '../../components/sidebar/logo/DataBaseLogo';
 import HistorySchoolLogo from '../../components/sidebar/logo/HistorySchoolLogo';
+import HelpLogo from '../../components/sidebar/logo/HelpLogo';
+import PreliminaryReport from "../../components/PreliminaryReport/PreliminaryReport";
+
 
 const ROUTE_LOGIN = 'login';
 const MAHSHAVA_ADMIN_HOME = 'home';
 const MAHSHAVA_ADMIN_ADD_SCHOOL = 'add-school';
 const MAHSHAVA_ADMIN_SCHOOL_HISTORY = 'school-history';
 const MAHSHAVA_ADMIN_DATA_SOURCES = 'data-sources';
+const MAHSHAVA_ADMIN_HELP = 'help';
+const MAHSHAVA_ADMIN_PRELIMINARY_REPORT = 'preliminary-report'
+
 
 export const LOGIN_ROUTE = {
     id: ROUTE_LOGIN,
@@ -60,5 +66,25 @@ export const ROUTES = [
         roles: [ROLES.MAHSHAVA_ADMIN],
         LogoComponent: DataBaseLogo,
         i18nKey: 'routes.mahshava-admin-data-sources',
+    },
+    {
+        id: MAHSHAVA_ADMIN_HELP,
+        path: `/${MAHSHAVA_ADMIN_HELP}`,
+        isUnderConstruction: true,
+        Component: Home,
+        isProtected: true,
+        roles: [ROLES.MAHSHAVA_ADMIN],
+        LogoComponent: HelpLogo,
+        i18nKey: 'routes.mahshava-admin-help',
+    },
+    {
+        id: MAHSHAVA_ADMIN_PRELIMINARY_REPORT,
+        path: `/${MAHSHAVA_ADMIN_PRELIMINARY_REPORT}`,
+        isUnderConstruction: true,
+        Component: PreliminaryReport,
+        isProtected: true,
+        roles: [ROLES.MAHSHAVA_ADMIN],
+        LogoComponent: HelpLogo,
+        i18nKey: 'routes.mahshava-admin-preliminary-report',
     },
 ];

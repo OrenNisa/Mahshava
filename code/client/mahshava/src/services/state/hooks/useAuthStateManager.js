@@ -1,18 +1,19 @@
 import useLocalStorageState from 'use-local-storage-state';
-import { getFromLocalStorage, STORAGE_ASAP_AUTH_STATE } from '../../storage/storage';
+import { getFromLocalStorage, STORAGE_MAHSHAVA_AUTH_STATE } from '../../storage/storage';
 import { useCallback } from 'react';
 
-const asapAuthInitialState = getFromLocalStorage(STORAGE_ASAP_AUTH_STATE) || {};
+const mahshavaAuthInitialState = getFromLocalStorage(STORAGE_MAHSHAVA_AUTH_STATE) || {};
 
 export const useAuthStateManager = () => {
-    const [asapAuth, setAsapAuth] = useLocalStorageState(STORAGE_ASAP_AUTH_STATE, asapAuthInitialState);
+    const [mahshavaAuth, setMahshavaAuth] = useLocalStorageState(STORAGE_MAHSHAVA_AUTH_STATE, mahshavaAuthInitialState);
 
-    const updateAsapAuth = useCallback(
-        updatedAsapAuthState => {
-            setAsapAuth(currentAsapAuthState => ({ ...currentAsapAuthState, ...updatedAsapAuthState }));
+    const updateMahshavaAuth = useCallback(
+        updatedMahshavaAuthState => {
+            setMahshavaAuth(currentMahshavaAuthState => ({ ...currentMahshavaAuthState, ...updatedMahshavaAuthState }));
         },
-        [setAsapAuth]
+        [setMahshavaAuth]
     );
 
-    return { asapAuth, updateAsapAuth };
+    return { mahshavaAuth, updateMahshavaAuth };
 };
+

@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import { STORAGE_ASAP_AUTH_STATE } from '../storage/storage';
+import { STORAGE_MAHSHAVA_AUTH_STATE } from '../storage/storage';
 
 const $axios = Axios.create({
     baseURL: '/api/',
@@ -18,7 +18,7 @@ $axios.interceptors.request.use(getOnBeforeRequestHandler(), onRequestErrorHandl
 $axios.interceptors.response.use(getOnResponseHandler(), onResponseErrorHandler());
 
 const authHeader = () => {
-    const state = JSON.parse(localStorage.getItem(STORAGE_ASAP_AUTH_STATE));
+    const state = JSON.parse(localStorage.getItem(STORAGE_MAHSHAVA_AUTH_STATE));
     return state?.token ? { Authorization: 'JWT ' + state.token } : {};
 };
 
@@ -50,6 +50,23 @@ class AppointmentService {
     }
 }
 
-const apiService = { AuthService, UserService, AppointmentService, VersionService };
+class processService {
+    static getSchoolProcess() {
+        return $axios
+            .get('schoolProcess', { headers: authHeader() })
+            .then(response => response.data);
+    }
+
+    static getCurrentProcess(id) {
+        return $axios
+            .get('schoolProcess/' + id, { headers: authHeader() })
+            .then(response => response.data);
+    }
+
+
+}
+
+const apiService = { AuthService, UserService, AppointmentService, VersionService , processService};
 
 export default apiService;
+
