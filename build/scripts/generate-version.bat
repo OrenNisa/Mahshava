@@ -15,7 +15,7 @@ cmd /c %BUILD_SCRIPTS_DIR%\generate-virtual-env.bat
 cmd /c %BUILD_SCRIPTS_DIR%\generate-client.bat mahshava
 cmd /c %BUILD_SCRIPTS_DIR%\generate-client.bat surveys
 cmd /c %BUILD_SCRIPTS_DIR%\generate-server.bat
-rem cmd /c %BUILD_SCRIPTS_DIR%\cleanup.bat
+cmd /c %BUILD_SCRIPTS_DIR%\cleanup.bat
 
 popd
 goto :eof
