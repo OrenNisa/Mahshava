@@ -27,5 +27,5 @@ python -Xutf8 .\manage.py dumpdata core.contact core.processsteps core.school co
 * Client
   * Run `npm install` from `code/client/surveys`
 * Server
-  * Run migration: `python manage.py migrate --database=surveys`
+  * Run migration: `python manage.py migrate --database=core`
   * Populate DB: `python manage.py loaddata surveys`
