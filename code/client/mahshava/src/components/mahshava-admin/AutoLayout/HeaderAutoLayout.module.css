@@ -13,13 +13,6 @@
 }
 
 
-.Search {
-    position: absolute;
-    right: 6%;
-    top: 6%;
-    bottom: 0%;
-
-}
 .StrSchool{
     position: absolute;
     left: 9%;
@@ -30,16 +23,6 @@
     margin: 3%;
 }
 
-.FilteringLog{
-    position: absolute;
-    left: 100%;
-    right: -2%;
-    top: -1%;
-    bottom: 15%;
-    order: 10;
-    margin: 3%;
-
-}
 .Main{
     /* ישאר */
 

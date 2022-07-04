@@ -1,0 +1,55 @@
+.FullInitialReport{
+    position: absolute;
+    width: 60%;
+    height: 83%;
+    left: 25%;
+    top: 45%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    zoom: 61%;
+    background: rgba(255,255,255,1.00);
+    direction: rtl
+}
+.tital{
+    position: absolute;
+    width: 600px;
+    height: 33px;
+    left: -10%;
+    top: 31px;
+    /* H */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+}
+.SchoolInformation {
+    position: absolute;
+    float: right;
+    left: 25%;
+    width: 650px;
+    height: 2892px;
+    color: #E78536;
+    top: 2%;
+}
+.ReportPurpose{
+    /* מטרת הדוח */
+    position: absolute;
+    width: 1085px;
+    height: 48px;
+    left: -29%;
+    top: 99px;
+    /* text */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 26px;
+    text-align: right;
+
+    color: #333333;
+}

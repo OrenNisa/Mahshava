@@ -1,5 +1,11 @@
-import { DataGrid } from '@mui/x-data-grid';
-import { useIntl } from 'react-intl';
+import {
+    DataGrid,
+    heIL,
+    GridToolbarColumnsButton,
+    GridToolbarContainer,
+    GridToolbarFilterButton
+} from '@mui/x-data-grid';
+import {useIntl} from 'react-intl';
 import ActionsButton from './ActionsButton';
 import style from './AdminMainViewTable.module.css';
 
@@ -7,13 +13,13 @@ import {Avatar, Typography} from "@mui/material";
 import {deepOrange} from "@mui/material/colors";
 
 const AdminMainViewTable = (props) => {
-    const { formatMessage } = useIntl();
+    const {formatMessage} = useIntl();
 
     const createDataArray = (array) => {
         let arr = [];
         let len = array.length;
         for (let i = 0; i < len; i++) {
-            let schoolID = array[i].schoolID.id
+            let processID = array[i].id
             let schoolName = array[i].schoolID.schoolName
             let schoolCity = array[i].schoolID.city
             let schoolDistrict = array[i].schoolID.district
@@ -25,12 +31,13 @@ const AdminMainViewTable = (props) => {
             let tasksName = array[i].processID.taskID.taskName
             let lastActionDate = array[i].lastActionDate
             arr.push({
-                id: schoolID,
-                school: {firstRow: 'בית ספר ' + schoolName, secRow: schoolCity + ', ' + schoolDistrict, pic: schoolPicture},
-                communicationDetails: {firstRow: contactName + '-', secRow: contactMail + ' | ' + contactphone},
-                stepInProcess: {firstRow: processName + '-', secRow: tasksName},
+                id: processID,
+                //it is done like this for filter and sort to get working
+                school: [schoolName, schoolCity, schoolDistrict, schoolPicture].join(','),
+                communicationDetails: [contactName, contactMail, contactphone].join(','),
+                stepInProcess: [processName, tasksName].join(','),
                 recentActivity: lastActionDate,
-                taskToPerform:''
+                taskToPerform: ''
             });
         }
         return arr;
@@ -41,51 +48,71 @@ const AdminMainViewTable = (props) => {
             field: 'school',
             align: 'left',
             headerAlign: 'center',
-            headerName: formatMessage({ id: 'admin-main-view-table.school.text' }),
+            headerName: formatMessage({id: 'admin-main-view-table.school.text'}),
             flex: 1,
-            renderCell: (params) => (
-                <div style={{display: 'flex', alignItems: 'center'}}>
-                    <Avatar alt={params.value.schoolName} src={params.value.pic} sx={{ width: '1.5em', height: '1.5em', bgcolor: deepOrange[500] }}/>
-                    <span style={{marginRight: '0.5em'}}>
-                        <Typography variant='inherit'>{params.value.firstRow}</Typography>
-                        <Typography variant='inherit' color="textSecondary">{params.value.secRow}</Typography>
-                    </span>
-                </div>
-            ),
+            valueGetter: (params) => {
+                return params.value
+            },
+            renderCell: function (params) {
+                const data = params.value.split(',');
+                return (
+                    <div style={{display: 'flex', alignItems: 'center'}}>
+                        <Avatar alt={data[0]} src={data[3]}
+                                sx={{width: '1.5em', height: '1.5em', bgcolor: deepOrange[500]}}/>
+                        <span style={{marginRight: '0.5em'}}>
+                            <Typography variant='inherit'>בית ספר {data[0]}</Typography>
+                            <Typography variant='inherit' color="textSecondary">{data[1]}, {data[2]}</Typography>
+                        </span>
+                    </div>
+                );
+            }
         },
         {
             field: 'communicationDetails',
             align: 'left',
             headerAlign: 'center',
-            headerName: formatMessage({ id: 'admin-main-view-table.communicationDetails.text' }),
+            headerName: formatMessage({id: 'admin-main-view-table.communicationDetails.text'}),
             flex: 1.2,
-            renderCell: (params) => (
-                <div>
-                    <Typography variant='inherit'>{params.value.firstRow}</Typography>
-                    <Typography variant='inherit' color="textSecondary" fontSize='80%'>{params.value.secRow}</Typography>
-                </div>
-            ),
+            valueGetter: (params) => {
+                return params.value
+            },
+            renderCell: function (params) {
+                const data = params.value.split(',');
+                return (
+                    <div>
+                        <Typography variant='inherit'>{data[0]}-</Typography>
+                        <Typography variant='inherit' color="textSecondary"
+                                    fontSize='80%'>{data[1]} | {data[2]}</Typography>
+                    </div>
+                );
+            }
         },
         {
             field: 'stepInProcess',
             align: 'center',
             headerAlign: 'center',
             disableColumnMenu: true,
-            headerName: formatMessage({ id: 'admin-main-view-table.stepInProcess.text' }),
+            headerName: formatMessage({id: 'admin-main-view-table.stepInProcess.text'}),
             flex: 0.5,
-            renderCell: (params) => (
-                <div>
-                    <Typography variant='inherit'>{params.value.firstRow}</Typography>
-                    <Typography variant='inherit' color="textSecondary">{params.value.secRow}</Typography>
-                </div>
-            ),
+            valueGetter: (params) => {
+                return params.value
+            },
+            renderCell: function (params) {
+                const data = params.value.split(',');
+                return (
+                    <div>
+                        <Typography variant='inherit'>{data[0]}-</Typography>
+                        <Typography variant='inherit' color="textSecondary" fontSize='90%'>{data[1]}</Typography>
+                    </div>
+                );
+            }
         },
         {
             field: 'recentActivity',
             type: 'date',
             align: 'center',
             headerAlign: 'center',
-            headerName: formatMessage({ id: 'admin-main-view-table.recentActivity.text' }),
+            headerName: formatMessage({id: 'admin-main-view-table.recentActivity.text'}),
             flex: 0.5,
         },
         {
@@ -93,17 +120,30 @@ const AdminMainViewTable = (props) => {
             align: 'center',
             headerAlign: 'center',
             disableColumnMenu: true,
-            headerName: formatMessage({ id: 'admin-main-view-table.taskToPerform.text' }),
+            headerName: formatMessage({id: 'admin-main-view-table.taskToPerform.text'}),
             flex: 0.5,
-            renderCell: (params) => <ActionsButton SchoolID = {params.id}/>,
+            renderCell: (params) => <ActionsButton ProcessID={params.id}/>,
         },
     ];
 
     const rows = createDataArray(props.schoolProcesses);
 
+    const CustomToolbar = () => {
+        return (
+            <GridToolbarContainer>
+                <GridToolbarColumnsButton/>
+                <GridToolbarFilterButton/>
+            </GridToolbarContainer>
+        );
+    };
+
     return (
         <div className={style.appointmentsContainer}>
-            <DataGrid rows={rows} columns={columns}  />
+            <DataGrid rows={rows}
+                      columns={columns}
+                      localeText={heIL.components.MuiDataGrid.defaultProps.localeText}
+                      components={{Toolbar: CustomToolbar}}
+            />
         </div>
     );
 };

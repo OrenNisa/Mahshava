@@ -56,6 +56,14 @@ class processService {
             .get('schoolProcess', { headers: authHeader() })
             .then(response => response.data);
     }
+
+    static getCurrentProcess(id) {
+        return $axios
+            .get('schoolProcess/' + id, { headers: authHeader() })
+            .then(response => response.data);
+    }
+
+
 }
 
 const apiService = { AuthService, UserService, AppointmentService, VersionService , processService};

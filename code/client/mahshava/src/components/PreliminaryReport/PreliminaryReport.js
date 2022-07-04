@@ -4,8 +4,7 @@ import HeaderProcess from "./Process/HeaderProcess";
 import OutputAutoLayout from "./AutoLayout/OutputAutoLayout";
 import SchoolDetails from "./SchoolDetails"
 import Question from "./AutoLayout/Question";
-import Accordion from "./components/Accordion";
-import PageFullnitialReport from "./PageFullnitialReport";
+import PageFullInitialReport from "./PageFullInitialReport";
 
 const PreliminaryReport = () => {
     return (
@@ -23,7 +22,7 @@ const PreliminaryReport = () => {
                     <SchoolDetails />
                 </div>
                 <div className={style.PreliminaryReportPage}>
-                    <PageFullnitialReport />
+                    <PageFullInitialReport />
                 </div>
             </div>
 

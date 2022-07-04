@@ -1,85 +1,62 @@
 import React, { useState } from 'react';
 import { DetailsData } from './DetailsData';
 import styled from 'styled-components';
-import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
 import LogoPolygon1 from '../../mahshava-admin/LogoHelp/LogoPolygon1'
 import LogoPolygon2 from '../../mahshava-admin/LogoHelp/LogoPolygon2'
 
 
-const AccordionSection = styled.div`
-  display: flex;
-  left: 55%;
+const Container = styled.div`  
+ position: absolute;
   top: 0%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 100vh;
-  width: 107%;
-  background: white;
-`;
-
-const Container = styled.div`
-  position: absolute;
-  top: 0%;
-  left: -60%;
 `;
 
 const Wrap = styled.div`
-
-  color: #333333;
+  position: relative;
+  color:  #333333;
   display: flex;
-  justify-content: right;
+  font-family: 'Heebo';
+  font-style: normal;
   align-items: center;
   width: 200%;
   text-align: center;
-  font-family: 'Heebo';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 20px;
-  text-align: left;
   cursor: pointer;
+  justify-content: right;
   h1 {
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 1.8rem;
+    font-size: 2.7rem;
   }
   span {
-    margin-right: 1 rem;
+    margin-right: 1.5rem;
   }
 `;
 
 const AccordionData = () => {
-    const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = useState(new Array(3).fill(true));
 
     const toggle = index => {
-        if (clicked === index) {
-            //if clicked question is already active, then close it
-            return setClicked(null);
-        }
-
-        setClicked(index);
+        let newArr = [...clicked]
+        newArr[index] = clicked[index] !== true;
+        setClicked(newArr);
     };
 
     return (
-        <AccordionSection>
+
             <Container>
                 {DetailsData.map((item, index) => {
                     return (
-                        <>
-                            <Wrap onClick={() => toggle(index)} key={index}>
-                                <span>{clicked === index ? <LogoPolygon1 /> : <LogoPolygon2 />}</span>
+                        <span key = {index} >
+                            <Wrap onClick={() => toggle(index)}>
+                                <span>{clicked[index] === true ? <LogoPolygon1 /> : <LogoPolygon2 />}</span>
                                 <h1>{item.title}</h1>
                             </Wrap>
-                            {clicked === index ? (
-                                <p>{item.content}</p>
+                            {clicked[index] === true ? (
+                                <>{item.content}</>
                             ) : null}
-                        </>
+                        </span>
                     );
                 })}
             </Container>
-        </AccordionSection>
+
 
     );
 };

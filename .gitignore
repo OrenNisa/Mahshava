@@ -1,9 +1,9 @@
 .idea
 venv
 code/client/**/node_modules
-node_modules
 code/server/src/**/.env
-package-lock.json
+build/releases
+__pycache__
 *.iml
 out
 .stignore
