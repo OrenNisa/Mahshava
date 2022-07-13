@@ -15,12 +15,19 @@ function Creator() {
 
     const saveSurvey = () => {
         const survey = creator.text;
-        service.SurveyService.saveSurvey(survey, location.state.surveyBackgroundColor).then(response => {
-            console.log(response);
+        const surveyJSON = JSON.parse(survey);
 
-            navigate("/", {});
-            alert("Your Survey has been created!");
-        });
+        if (surveyJSON.hasOwnProperty('title')) {
+            service.SurveyService.saveSurvey(survey, location.state.surveyBackgroundColor).then(response => {
+                console.log(response);
+
+                navigate("/", {});
+                alert("Your Survey has been created!");
+            });
+        }
+        else {
+            alert("You must enter a title for the Survey before saving it.");
+        }
     };
 
     const creator = new SurveyCreator.SurveyCreator();
